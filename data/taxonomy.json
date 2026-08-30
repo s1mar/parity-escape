@@ -1,0 +1,8064 @@
+[
+ {
+  "model": "qwen25",
+  "task_id": "Python/2",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 513,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -158.8568
+   ],
+   "py": {
+    "ok": true,
+    "v": 0.14320000000000732
+   },
+   "jv": {
+    "ok": true,
+    "v": -0.8567999999999927
+   }
+  },
+  "entry_point": "truncate_number"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/3",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width"
+  ],
+  "n_diverge": 20,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     2147483648,
+     2147483648,
+     2147483648,
+     2147483647,
+     2147483647,
+     2147483647,
+     2147483647,
+     10000,
+     10000,
+     10000,
+     10000,
+     1000,
+     1000,
+     1000,
+     1000,
+     100,
+     10,
+     10,
+     10,
+     10,
+     10,
+     3,
+     3,
+     3,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -2,
+     -2,
+     -2,
+     -3,
+     -3,
+     -3,
+     -3,
+     -3,
+     -3,
+     -10,
+     -10,
+     -10,
+     -10,
+     -10,
+     -10,
+     -100,
+     -100,
+     -100,
+     -1000,
+     -1000,
+     -1000,
+     -10000,
+     -10000,
+     -2147483648,
+     -2147483648,
+     -2147483648,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "below_zero"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/13",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 221,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139,
+    6
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": -1
+   }
+  },
+  "entry_point": "greatest_common_divisor"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/24",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 484,
+  "n_comparable": 484,
+  "first_example": {
+   "in": [
+    3
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": 3
+   }
+  },
+  "entry_point": "largest_divisor"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/37",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 335,
+  "n_comparable": 945,
+  "first_example": {
+   "in": [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     2,
+     3
+    ]
+   },
+   "jv": {
+    "ok": false,
+    "e": "ArrayIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "sort_even"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/43",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     -9223372036854775808,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "pairs_sum_to_zero"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/44",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 177,
+  "n_comparable": 970,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": "-3"
+   },
+   "jv": {
+    "ok": true,
+    "v": "3"
+   }
+  },
+  "entry_point": "change_base"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/47",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width"
+  ],
+  "n_diverge": 8,
+  "n_comparable": 999,
+  "first_example": {
+   "in": [
+    [
+     -9223372036854775808,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -9.223372036854776e+18
+   },
+   "jv": {
+    "ok": true,
+    "v": 0.0
+   }
+  },
+  "entry_point": "median"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/49",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 179,
+  "n_comparable": 985,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": -4
+   },
+   "jv": {
+    "ok": true,
+    "v": 2
+   }
+  },
+  "entry_point": "modp"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/57",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 64,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     3,
+     -6,
+     -736,
+     -5,
+     2
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "monotonic"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/58",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "integer_width",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 37,
+  "n_comparable": 994,
+  "first_example": {
+   "in": [
+    [
+     1,
+     4,
+     3,
+     34,
+     653,
+     2,
+     5
+    ],
+    [
+     5,
+     7,
+     1,
+     5,
+     9,
+     653,
+     121
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     5,
+     653
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     1,
+     653,
+     5
+    ]
+   }
+  },
+  "entry_point": "common"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/59",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 76,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    15
+   ],
+   "py": {
+    "ok": true,
+    "v": 5
+   },
+   "jv": {
+    "ok": true,
+    "v": 15
+   }
+  },
+  "entry_point": "largest_prime_factor"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/65",
+  "category": "target_exception:StringIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException"
+  ],
+  "n_diverge": 469,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": "6537"
+   },
+   "jv": {
+    "ok": false,
+    "e": "StringIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "circular_shift"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/72",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     4611686018427387904,
+     4611686018427387904
+    ],
+    -1
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "will_it_fly"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/79",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 513,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139
+   ],
+   "py": {
+    "ok": true,
+    "v": "dbb10001011db"
+   },
+   "jv": {
+    "ok": true,
+    "v": "db1111111111111111111111111111111111111111111111111111111101110101db"
+   }
+  },
+  "entry_point": "decimal_to_binary"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/86",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 30,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "  "
+   ],
+   "py": {
+    "ok": true,
+    "v": "  "
+   },
+   "jv": {
+    "ok": true,
+    "v": ""
+   }
+  },
+  "entry_point": "anti_shuffle"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/87",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "integer_width",
+   "collection_ordering",
+   "collection_ordering",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "collection_ordering",
+   "integer_width",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 110,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      1,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      1
+     ]
+    ],
+    1
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      2,
+      0
+     ]
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     [
+      2,
+      5
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ]
+   }
+  },
+  "entry_point": "get_row"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/92",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 12,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    3.0,
+    4,
+    7
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "any_int"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/93",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 667,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "TEST"
+   ],
+   "py": {
+    "ok": true,
+    "v": "tgst"
+   },
+   "jv": {
+    "ok": true,
+    "v": "tGst"
+   }
+  },
+  "entry_point": "encode"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/94",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 39,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     -6,
+     -10,
+     -4,
+     143,
+     1
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": 0
+   }
+  },
+  "entry_point": "skjkasdkd"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/97",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 457,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139,
+    6
+   ],
+   "py": {
+    "ok": true,
+    "v": 6
+   },
+   "jv": {
+    "ok": true,
+    "v": 54
+   }
+  },
+  "entry_point": "multiply"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/104",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 11,
+  "n_comparable": 131,
+  "first_example": {
+   "in": [
+    [
+     0
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": []
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     0
+    ]
+   }
+  },
+  "entry_point": "unique_digits"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/108",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 664,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     12,
+     23,
+     34,
+     -45,
+     -56,
+     0
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 5
+   },
+   "jv": {
+    "ok": true,
+    "v": 3
+   }
+  },
+  "entry_point": "count_nums"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/110",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 130,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     10,
+     -498882,
+     0,
+     -9,
+     -712,
+     768,
+     -833,
+     -690
+    ],
+    [
+     9,
+     -61,
+     5,
+     -957579,
+     9
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": "NO"
+   },
+   "jv": {
+    "ok": true,
+    "v": "YES"
+   }
+  },
+  "entry_point": "exchange"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/117",
+  "category": "empty_or_boundary_input",
+  "group": "cross_language",
+  "example_categories": [
+   "empty_or_boundary_input"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "",
+    0
+   ],
+   "py": {
+    "ok": true,
+    "v": []
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     ""
+    ]
+   }
+  },
+  "entry_point": "select_words"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/118",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 53,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "full"
+   ],
+   "py": {
+    "ok": true,
+    "v": "u"
+   },
+   "jv": {
+    "ok": true,
+    "v": ""
+   }
+  },
+  "entry_point": "get_closest_vowel"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/121",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 483,
+  "n_comparable": 957,
+  "first_example": {
+   "in": [
+    [
+     6,
+     880,
+     -363908,
+     -249117,
+     859,
+     -6,
+     -7,
+     -487
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 852
+   },
+   "jv": {
+    "ok": true,
+    "v": 859
+   }
+  },
+  "entry_point": "solution"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/123",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "other_logic",
+   "other_logic",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 733,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    14
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     5,
+     7,
+     11,
+     13,
+     17
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     7,
+     11,
+     17,
+     13,
+     5,
+     1
+    ]
+   }
+  },
+  "entry_point": "get_odd_collatz"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/129",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 345,
+  "first_example": {
+   "in": [
+    [
+     [
+      1,
+      6,
+      -7,
+      -3,
+      -28977,
+      -8,
+      396,
+      -1,
+      10,
+      292,
+      496204,
+      -758,
+      4,
+      -432,
+      7,
+      -981,
+      10,
+      -5,
+      -297,
+      -713677
+     ],
+     [
+      956,
+      -167863
+     ]
+    ],
+    183
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1
+    ]
+   }
+  },
+  "entry_point": "minPath"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/133",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 921,
+  "first_example": {
+   "in": [
+    [
+     1000000000.0,
+     1.0
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 1000000000000000001
+   },
+   "jv": {
+    "ok": true,
+    "v": 1000000000000000000
+   }
+  },
+  "entry_point": "sum_squares"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/134",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 13,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "eeeee e "
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "check_if_last_char_is_a_letter"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/142",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 129,
+  "n_comparable": 932,
+  "first_example": {
+   "in": [
+    [
+     699148,
+     -700,
+     -8,
+     434418,
+     7,
+     3,
+     10,
+     158726,
+     772,
+     -873,
+     150705,
+     -804395,
+     -184,
+     607,
+     -998,
+     695,
+     -488482,
+     441,
+     -599304,
+     -535054
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -116557931305758696
+   },
+   "jv": {
+    "ok": true,
+    "v": -116557931305758686
+   }
+  },
+  "entry_point": "sum_squares"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/143",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 40,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    " aax "
+   ],
+   "py": {
+    "ok": true,
+    "v": "aax"
+   },
+   "jv": {
+    "ok": true,
+    "v": " aax"
+   }
+  },
+  "entry_point": "words_in_sentence"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/146",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "integer_width",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic"
+  ],
+  "n_diverge": 366,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     15,
+     -73,
+     14,
+     -15
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": 0
+   }
+  },
+  "entry_point": "specialFilter"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/152",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 451,
+  "n_comparable": 974,
+  "first_example": {
+   "in": [
+    [
+     7,
+     -7,
+     668,
+     -573855,
+     264971,
+     -411,
+     9,
+     -335105,
+     -406,
+     -5,
+     -2,
+     -817
+    ],
+    [
+     936470,
+     -8
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     936463,
+     1
+    ]
+   },
+   "jv": {
+    "ok": false,
+    "e": "ArrayIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "compare"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/154",
+  "category": "empty_or_boundary_input",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "string_handling",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "string_handling",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input"
+  ],
+  "n_diverge": 106,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "yello",
+    "ell"
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "cycpattern_check"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/157",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 2,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -3,
+    0,
+    -3
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "right_angle_triangle"
+ },
+ {
+  "model": "qwen25",
+  "task_id": "Python/160",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:NumberFormatException",
+   "target_exception:NumberFormatException",
+   "target_exception:NumberFormatException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 169,
+  "n_comparable": 305,
+  "first_example": {
+   "in": [
+    [
+     "**",
+     "*",
+     "+"
+    ],
+    [
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 37
+   },
+   "jv": {
+    "ok": false,
+    "e": "NumberFormatException"
+   }
+  },
+  "entry_point": "do_algebra"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/2",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 513,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -158.8568
+   ],
+   "py": {
+    "ok": true,
+    "v": 0.14320000000000732
+   },
+   "jv": {
+    "ok": true,
+    "v": -0.8567999999999927
+   }
+  },
+  "entry_point": "truncate_number"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/3",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width"
+  ],
+  "n_diverge": 20,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     2147483648,
+     2147483648,
+     2147483648,
+     2147483647,
+     2147483647,
+     2147483647,
+     2147483647,
+     10000,
+     10000,
+     10000,
+     10000,
+     1000,
+     1000,
+     1000,
+     1000,
+     100,
+     10,
+     10,
+     10,
+     10,
+     10,
+     3,
+     3,
+     3,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -2,
+     -2,
+     -2,
+     -3,
+     -3,
+     -3,
+     -3,
+     -3,
+     -3,
+     -10,
+     -10,
+     -10,
+     -10,
+     -10,
+     -10,
+     -100,
+     -100,
+     -100,
+     -1000,
+     -1000,
+     -1000,
+     -10000,
+     -10000,
+     -2147483648,
+     -2147483648,
+     -2147483648,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "below_zero"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/5",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 877,
+  "n_comparable": 949,
+  "first_example": {
+   "in": [
+    [
+     5,
+     6,
+     3,
+     2
+    ],
+    8
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     5,
+     8,
+     6,
+     8,
+     3,
+     8,
+     2
+    ]
+   },
+   "jv": {
+    "ok": false,
+    "e": "ArrayIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "intersperse"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/6",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "\t"
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     0
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": []
+   }
+  },
+  "entry_point": "parse_nested_parens"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/13",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 221,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139,
+    6
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": -1
+   }
+  },
+  "entry_point": "greatest_common_divisor"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/33",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 423,
+  "n_comparable": 946,
+  "first_example": {
+   "in": [
+    [
+     5,
+     3,
+     -5,
+     2,
+     -3,
+     3,
+     9,
+     0,
+     123,
+     1,
+     -10
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     3,
+     -5,
+     2,
+     -3,
+     3,
+     5,
+     0,
+     123,
+     9,
+     -10
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     5,
+     3,
+     -5,
+     2,
+     -3,
+     3,
+     9,
+     0,
+     123,
+     1,
+     -10
+    ]
+   }
+  },
+  "entry_point": "sort_third"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/37",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 590,
+  "n_comparable": 945,
+  "first_example": {
+   "in": [
+    [
+     5,
+     8,
+     -12,
+     4,
+     23,
+     2,
+     3,
+     11,
+     12,
+     -10
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     -12,
+     8,
+     3,
+     4,
+     5,
+     2,
+     12,
+     11,
+     23,
+     -10
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     -12,
+     8,
+     3,
+     4,
+     5,
+     2,
+     12,
+     11,
+     23,
+     0
+    ]
+   }
+  },
+  "entry_point": "sort_even"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/44",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 177,
+  "n_comparable": 970,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": "-3"
+   },
+   "jv": {
+    "ok": true,
+    "v": "3"
+   }
+  },
+  "entry_point": "change_base"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/46",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "other_logic",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "other_logic",
+   "other_logic",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "other_logic"
+  ],
+  "n_diverge": 30,
+  "n_comparable": 35,
+  "first_example": {
+   "in": [
+    5
+   ],
+   "py": {
+    "ok": true,
+    "v": 4
+   },
+   "jv": {
+    "ok": true,
+    "v": 0
+   }
+  },
+  "entry_point": "fib4"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/47",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width"
+  ],
+  "n_diverge": 8,
+  "n_comparable": 999,
+  "first_example": {
+   "in": [
+    [
+     -9223372036854775808,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -9.223372036854776e+18
+   },
+   "jv": {
+    "ok": true,
+    "v": 0.0
+   }
+  },
+  "entry_point": "median"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/49",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 179,
+  "n_comparable": 985,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": -4
+   },
+   "jv": {
+    "ok": true,
+    "v": 2
+   }
+  },
+  "entry_point": "modp"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/65",
+  "category": "target_exception:StringIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException"
+  ],
+  "n_diverge": 469,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": "6537"
+   },
+   "jv": {
+    "ok": false,
+    "e": "StringIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "circular_shift"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/68",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 842,
+  "n_comparable": 946,
+  "first_example": {
+   "in": [
+    [
+     4,
+     2,
+     3
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     2,
+     1
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     2,
+     -1
+    ]
+   }
+  },
+  "entry_point": "pluck"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/72",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     4611686018427387904,
+     4611686018427387904
+    ],
+    -1
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "will_it_fly"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/79",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 513,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139
+   ],
+   "py": {
+    "ok": true,
+    "v": "dbb10001011db"
+   },
+   "jv": {
+    "ok": true,
+    "v": "db1111111111111111111111111111111111111111111111111111111101110101db"
+   }
+  },
+  "entry_point": "decimal_to_binary"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/81",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 42,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     2.2557,
+     2.6029,
+     -513928.7558762875,
+     -765.7314,
+     5.8917
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     "C+",
+     "B-",
+     "E",
+     "E",
+     "A"
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     "C+",
+     null,
+     "E",
+     "E",
+     "A"
+    ]
+   }
+  },
+  "entry_point": "numerical_letter_grade"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/87",
+  "category": "target_exception:IndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException",
+   "target_exception:IndexOutOfBoundsException"
+  ],
+  "n_diverge": 921,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      1,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      1
+     ]
+    ],
+    1
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      2,
+      0
+     ]
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ]
+   }
+  },
+  "entry_point": "get_row"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/91",
+  "category": "target_exception:StringIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException"
+  ],
+  "n_diverge": 36,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "0"
+   ],
+   "py": {
+    "ok": true,
+    "v": 0
+   },
+   "jv": {
+    "ok": false,
+    "e": "StringIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "is_bored"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/92",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 8,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    3.0,
+    4,
+    7
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "any_int"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/93",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 832,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "TEST"
+   ],
+   "py": {
+    "ok": true,
+    "v": "tgst"
+   },
+   "jv": {
+    "ok": true,
+    "v": "TGST"
+   }
+  },
+  "entry_point": "encode"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/97",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 457,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139,
+    6
+   ],
+   "py": {
+    "ok": true,
+    "v": 6
+   },
+   "jv": {
+    "ok": true,
+    "v": 54
+   }
+  },
+  "entry_point": "multiply"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/101",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 52,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "Hi, my name is John"
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     "Hi",
+     "my",
+     "name",
+     "is",
+     "John"
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     "Hi",
+     "",
+     "my",
+     "name",
+     "is",
+     "John"
+    ]
+   }
+  },
+  "entry_point": "words_string"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/110",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 130,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     10,
+     -498882,
+     0,
+     -9,
+     -712,
+     768,
+     -833,
+     -690
+    ],
+    [
+     9,
+     -61,
+     5,
+     -957579,
+     9
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": "NO"
+   },
+   "jv": {
+    "ok": true,
+    "v": "YES"
+   }
+  },
+  "entry_point": "exchange"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/115",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width"
+  ],
+  "n_diverge": 48,
+  "n_comparable": 919,
+  "first_example": {
+   "in": [
+    [
+     [
+      2147483647,
+      -100
+     ],
+     [
+      10,
+      10000,
+      3,
+      2147483647,
+      10000,
+      1000,
+      -1000,
+      -100,
+      3,
+      -2147483648,
+      2,
+      100,
+      1000,
+      -3,
+      2,
+      -3,
+      2,
+      -3,
+      0,
+      1000000000000000000,
+      0,
+      2147483648,
+      -10,
+      1000000000000000000,
+      2147483648,
+      10000,
+      2,
+      2147483647,
+      1000000000000000000,
+      -1,
+      2,
+      10000,
+      0,
+      1000,
+      -10000,
+      -10000,
+      3,
+      2,
+      100,
+      -3,
+      10000,
+      -10000,
+      2147483648,
+      -1,
+      1,
+      2147483648,
+      10000,
+      9223372036854775807,
+      -10000,
+      100,
+      2147483648,
+      10,
+      4611686018427387904,
+      100,
+      4611686018427387904,
+      -1,
+      1000000000000000000,
+      -1000,
+      -2,
+      100,
+      0,
+      2,
+      2147483647,
+      -1,
+      -2147483648,
+      -10,
+      -10,
+      0,
+      100,
+      1000000000000000000,
+      -9223372036854775808,
+      -2147483648,
+      3,
+      1000000000000000000,
+      -10,
+      -100,
+      -9223372036854775808,
+      3,
+      0,
+      1,
+      3,
+      1000,
+      -3,
+      0,
+      -1000,
+      -100,
+      9223372036854775807,
+      -10,
+      10000,
+      -10,
+      0,
+      0,
+      100,
+      -9223372036854775808,
+      3,
+      2147483647,
+      100,
+      1000000000000000000,
+      4611686018427387904,
+      9223372036854775807
+     ]
+    ],
+    3
+   ],
+   "py": {
+    "ok": true,
+    "v": 6945019356771527305
+   },
+   "jv": {
+    "ok": true,
+    "v": 796104665535009536
+   }
+  },
+  "entry_point": "max_fill"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/117",
+  "category": "empty_or_boundary_input",
+  "group": "cross_language",
+  "example_categories": [
+   "empty_or_boundary_input",
+   "string_handling"
+  ],
+  "n_diverge": 2,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "",
+    0
+   ],
+   "py": {
+    "ok": true,
+    "v": []
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     ""
+    ]
+   }
+  },
+  "entry_point": "select_words"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/120",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 457,
+  "n_comparable": 522,
+  "first_example": {
+   "in": [
+    [
+     -4,
+     -3,
+     5
+    ],
+    3
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     -4,
+     -3,
+     5
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     5,
+     -3,
+     -4
+    ]
+   }
+  },
+  "entry_point": "maximum"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/122",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "integer_width",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 153,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     -3,
+     877032,
+     690,
+     215708,
+     5,
+     434,
+     663723,
+     0,
+     -4,
+     -314,
+     -490318,
+     -2,
+     -3,
+     -5,
+     -9,
+     -6,
+     -541199,
+     8,
+     917,
+     393
+    ],
+    -7
+   ],
+   "py": {
+    "ok": true,
+    "v": -7
+   },
+   "jv": {
+    "ok": true,
+    "v": 0
+   }
+  },
+  "entry_point": "add_elements"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/123",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 247,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    14
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     5,
+     7,
+     11,
+     13,
+     17
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": []
+   }
+  },
+  "entry_point": "get_odd_collatz"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/127",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 394,
+  "n_comparable": 474,
+  "first_example": {
+   "in": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": "NO"
+   },
+   "jv": {
+    "ok": true,
+    "v": "YES"
+   }
+  },
+  "entry_point": "intersection"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/130",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 488,
+  "first_example": {
+   "in": [
+    -1
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     3
+    ]
+   },
+   "jv": {
+    "ok": false,
+    "e": "ArrayIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "tri"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/133",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 921,
+  "first_example": {
+   "in": [
+    [
+     1000000000.0,
+     1.0
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 1000000000000000001
+   },
+   "jv": {
+    "ok": true,
+    "v": 1000000000000000000
+   }
+  },
+  "entry_point": "sum_squares"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/134",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 688,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "apple"
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "check_if_last_char_is_a_letter"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/142",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 129,
+  "n_comparable": 932,
+  "first_example": {
+   "in": [
+    [
+     699148,
+     -700,
+     -8,
+     434418,
+     7,
+     3,
+     10,
+     158726,
+     772,
+     -873,
+     150705,
+     -804395,
+     -184,
+     607,
+     -998,
+     695,
+     -488482,
+     441,
+     -599304,
+     -535054
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -116557931305758696
+   },
+   "jv": {
+    "ok": true,
+    "v": -116557931305758686
+   }
+  },
+  "entry_point": "sum_squares"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/151",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 3,
+  "n_comparable": 929,
+  "first_example": {
+   "in": [
+    [
+     5,
+     4
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 25
+   },
+   "jv": {
+    "ok": true,
+    "v": 0
+   }
+  },
+  "entry_point": "double_the_difference"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/152",
+  "category": "target_exception:IllegalArgumentException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException"
+  ],
+  "n_diverge": 869,
+  "n_comparable": 974,
+  "first_example": {
+   "in": [
+    [
+     6,
+     880,
+     -363908,
+     -249117,
+     859,
+     -6,
+     -7,
+     -487
+    ],
+    [
+     699148,
+     -700,
+     -8,
+     434418,
+     7,
+     3,
+     10,
+     158726,
+     772,
+     -873,
+     150705,
+     -804395,
+     -184,
+     607,
+     -998,
+     695,
+     -488482,
+     441,
+     -599304,
+     -535054
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     699142,
+     1580,
+     363900,
+     683535,
+     852,
+     9,
+     17,
+     159213
+    ]
+   },
+   "jv": {
+    "ok": false,
+    "e": "IllegalArgumentException"
+   }
+  },
+  "entry_point": "compare"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/154",
+  "category": "target_exception:StringIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException"
+  ],
+  "n_diverge": 218,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "yello",
+    "ell"
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "cycpattern_check"
+ },
+ {
+  "model": "dscoder",
+  "task_id": "Python/160",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 129,
+  "n_comparable": 305,
+  "first_example": {
+   "in": [
+    [
+     "**",
+     "*",
+     "+"
+    ],
+    [
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 37
+   },
+   "jv": {
+    "ok": true,
+    "v": 29
+   }
+  },
+  "entry_point": "do_algebra"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/1",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 997,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "(()()) ((())) () ((())()())"
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     "(()())",
+     "((()))",
+     "()",
+     "((())()())"
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     "))",
+     " ))",
+     " ",
+     " ))))"
+    ]
+   }
+  },
+  "entry_point": "separate_paren_groups"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/5",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 877,
+  "n_comparable": 949,
+  "first_example": {
+   "in": [
+    [
+     5,
+     6,
+     3,
+     2
+    ],
+    8
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     5,
+     8,
+     6,
+     8,
+     3,
+     8,
+     2
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     5,
+     8,
+     6,
+     8,
+     3,
+     8,
+     2,
+     8,
+     2
+    ]
+   }
+  },
+  "entry_point": "intersperse"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/13",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 483,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": -3
+   },
+   "jv": {
+    "ok": true,
+    "v": 3
+   }
+  },
+  "entry_point": "greatest_common_divisor"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/16",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 116,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "abcdecadeCADE"
+   ],
+   "py": {
+    "ok": true,
+    "v": 5
+   },
+   "jv": {
+    "ok": true,
+    "v": 9
+   }
+  },
+  "entry_point": "count_distinct_characters"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/26",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 251,
+  "n_comparable": 991,
+  "first_example": {
+   "in": [
+    [
+     1,
+     2,
+     3,
+     2,
+     4,
+     3,
+     5
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     4,
+     5
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "entry_point": "remove_duplicates"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/33",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "target_exception:IllegalArgumentException",
+   "collection_ordering",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException"
+  ],
+  "n_diverge": 784,
+  "n_comparable": 946,
+  "first_example": {
+   "in": [
+    [
+     5,
+     3,
+     -5,
+     2,
+     -3,
+     3,
+     9,
+     0,
+     123,
+     1,
+     -10
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     3,
+     -5,
+     2,
+     -3,
+     3,
+     5,
+     0,
+     123,
+     9,
+     -10
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     -5,
+     3,
+     5,
+     2,
+     -3,
+     3,
+     -10,
+     0,
+     1,
+     9,
+     123
+    ]
+   }
+  },
+  "entry_point": "sort_third"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/43",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 72,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     1,
+     3,
+     5,
+     0
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "pairs_sum_to_zero"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/47",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width"
+  ],
+  "n_diverge": 8,
+  "n_comparable": 999,
+  "first_example": {
+   "in": [
+    [
+     -9223372036854775808,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -9.223372036854776e+18
+   },
+   "jv": {
+    "ok": true,
+    "v": 0.0
+   }
+  },
+  "entry_point": "median"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/49",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 407,
+  "n_comparable": 985,
+  "first_example": {
+   "in": [
+    3,
+    5
+   ],
+   "py": {
+    "ok": true,
+    "v": 3
+   },
+   "jv": {
+    "ok": true,
+    "v": 1
+   }
+  },
+  "entry_point": "modp"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/51",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 132,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "abcdef\nghijklm"
+   ],
+   "py": {
+    "ok": true,
+    "v": "bcdf\nghjklm"
+   },
+   "jv": {
+    "ok": true,
+    "v": "bcdfghjklm"
+   }
+  },
+  "entry_point": "remove_vowels"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/54",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "empty_or_boundary_input",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "empty_or_boundary_input",
+   "string_handling",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input"
+  ],
+  "n_diverge": 506,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "eabcdzzzz",
+    "dddzzzzzzzddeddabc"
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "same_chars"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/57",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic"
+  ],
+  "n_diverge": 114,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     4,
+     1,
+     0,
+     -10
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "monotonic"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/58",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "integer_width",
+   "collection_ordering",
+   "collection_ordering",
+   "integer_width",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 33,
+  "n_comparable": 994,
+  "first_example": {
+   "in": [
+    [
+     715,
+     -436,
+     -518,
+     877032,
+     690,
+     215708,
+     5,
+     434,
+     663723,
+     0,
+     -4,
+     -314,
+     -490318,
+     -2,
+     -3,
+     -5,
+     -9,
+     -6,
+     -541199,
+     8
+    ],
+    [
+     -849,
+     10,
+     8,
+     -8,
+     -7,
+     -10,
+     -5,
+     -19,
+     -9,
+     -952222,
+     270,
+     -2,
+     -8,
+     -283,
+     -9,
+     -920,
+     432,
+     -581921,
+     5,
+     926196
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     -9,
+     -5,
+     -2,
+     5,
+     8
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     -2,
+     -5,
+     5,
+     -9,
+     8
+    ]
+   }
+  },
+  "entry_point": "common"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/64",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 21,
+  "n_comparable": 999,
+  "first_example": {
+   "in": [
+    "key"
+   ],
+   "py": {
+    "ok": true,
+    "v": 2
+   },
+   "jv": {
+    "ok": true,
+    "v": 4
+   }
+  },
+  "entry_point": "vowels_count"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/65",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 1000,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    100,
+    2
+   ],
+   "py": {
+    "ok": true,
+    "v": "001"
+   },
+   "jv": {
+    "ok": true,
+    "v": "d"
+   }
+  },
+  "entry_point": "circular_shift"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/72",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     4611686018427387904,
+     4611686018427387904
+    ],
+    -1
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "will_it_fly"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/75",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 84,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    30
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "is_multiply_prime"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/76",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 37,
+  "n_comparable": 943,
+  "first_example": {
+   "in": [
+    2,
+    2
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "is_simple_power"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/77",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 10,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -1
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "iscube"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/82",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 37,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "cbacaa32333ac2b13b3a1c111"
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "prime_length"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/89",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "unicode_or_charset",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 141,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "A"
+   ],
+   "py": {
+    "ok": true,
+    "v": "A"
+   },
+   "jv": {
+    "ok": true,
+    "v": "d"
+   }
+  },
+  "entry_point": "encrypt"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/92",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 12,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    2,
+    6,
+    2
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "any_int"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/97",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 457,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139,
+    6
+   ],
+   "py": {
+    "ok": true,
+    "v": 6
+   },
+   "jv": {
+    "ok": true,
+    "v": 54
+   }
+  },
+  "entry_point": "multiply"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/101",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 136,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "Hi, my name is John"
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     "Hi",
+     "my",
+     "name",
+     "is",
+     "John"
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     "Hi",
+     " my name is John"
+    ]
+   }
+  },
+  "entry_point": "words_string"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/104",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 119,
+  "n_comparable": 131,
+  "first_example": {
+   "in": [
+    [
+     15,
+     33,
+     1422,
+     1
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     15,
+     33
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     1,
+     15,
+     33,
+     1422
+    ]
+   }
+  },
+  "entry_point": "unique_digits"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/107",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 477,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    123
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     8,
+     13
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     61,
+     62
+    ]
+   }
+  },
+  "entry_point": "even_odd_palindrome"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/118",
+  "category": "target_exception:StringIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException"
+  ],
+  "n_diverge": 60,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "ali"
+   ],
+   "py": {
+    "ok": true,
+    "v": ""
+   },
+   "jv": {
+    "ok": false,
+    "e": "StringIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "get_closest_vowel"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/127",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 41,
+  "n_comparable": 472,
+  "first_example": {
+   "in": [
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": "NO"
+   },
+   "jv": {
+    "ok": true,
+    "v": "YES"
+   }
+  },
+  "entry_point": "intersection"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/135",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 520,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     4,
+     8,
+     5,
+     7,
+     3
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 4
+   },
+   "jv": {
+    "ok": true,
+    "v": 2
+   }
+  },
+  "entry_point": "can_arrange"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/143",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 891,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "This is a test"
+   ],
+   "py": {
+    "ok": true,
+    "v": "is"
+   },
+   "jv": {
+    "ok": true,
+    "v": "This is a test"
+   }
+  },
+  "entry_point": "words_in_sentence"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/149",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 235,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     "aaaa",
+     "bbbb",
+     "cc",
+     "dd"
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     "cc",
+     "dd",
+     "aaaa",
+     "bbbb"
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     "aaaa",
+     "bbbb",
+     "cc",
+     "dd"
+    ]
+   }
+  },
+  "entry_point": "sorted_list_sum"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/150",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 337,
+  "n_comparable": 743,
+  "first_example": {
+   "in": [
+    -139,
+    6,
+    880
+   ],
+   "py": {
+    "ok": true,
+    "v": 6
+   },
+   "jv": {
+    "ok": true,
+    "v": 880
+   }
+  },
+  "entry_point": "x_or_y"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/152",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 451,
+  "n_comparable": 974,
+  "first_example": {
+   "in": [
+    [
+     7,
+     -7,
+     668,
+     -573855,
+     264971,
+     -411,
+     9,
+     -335105,
+     -406,
+     -5,
+     -2,
+     -817
+    ],
+    [
+     936470,
+     -8
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     936463,
+     1
+    ]
+   },
+   "jv": {
+    "ok": false,
+    "e": "ArrayIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "compare"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/154",
+  "category": "target_exception:IllegalArgumentException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "string_handling",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:IllegalArgumentException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:IllegalArgumentException"
+  ],
+  "n_diverge": 989,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "xyzw",
+    "xyw"
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": false,
+    "e": "IllegalArgumentException"
+   }
+  },
+  "entry_point": "cycpattern_check"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/158",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "string_handling"
+  ],
+  "n_diverge": 841,
+  "n_comparable": 999,
+  "first_example": {
+   "in": [
+    [
+     "name",
+     "of",
+     "string"
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": "string"
+   },
+   "jv": {
+    "ok": true,
+    "v": "of"
+   }
+  },
+  "entry_point": "find_max"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/159",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 508,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    5,
+    6,
+    10
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     11,
+     4
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     11,
+     10
+    ]
+   }
+  },
+  "entry_point": "eat"
+ },
+ {
+  "model": "mistral",
+  "task_id": "Python/161",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 142,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "1234"
+   ],
+   "py": {
+    "ok": true,
+    "v": "4321"
+   },
+   "jv": {
+    "ok": true,
+    "v": "1234"
+   }
+  },
+  "entry_point": "solve"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/2",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 513,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -158.8568
+   ],
+   "py": {
+    "ok": true,
+    "v": 0.14320000000000732
+   },
+   "jv": {
+    "ok": true,
+    "v": -0.8567999999999927
+   }
+  },
+  "entry_point": "truncate_number"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/11",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 812,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "111000",
+    "101010"
+   ],
+   "py": {
+    "ok": true,
+    "v": "010010"
+   },
+   "jv": {
+    "ok": true,
+    "v": ""
+   }
+  },
+  "entry_point": "string_xor"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/13",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 221,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139,
+    6
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": -1
+   }
+  },
+  "entry_point": "greatest_common_divisor"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/20",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 383,
+  "n_comparable": 882,
+  "first_example": {
+   "in": [
+    [
+     1.0,
+     2.0,
+     5.9,
+     4.0,
+     5.0
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     5.0,
+     5.9
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     5.9,
+     5.0
+    ]
+   }
+  },
+  "entry_point": "find_closest_elements"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/21",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 88,
+  "n_comparable": 863,
+  "first_example": {
+   "in": [
+    [
+     2.0,
+     49.9
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     0.0,
+     1.0
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     0.04008016032064128,
+     1.0
+    ]
+   }
+  },
+  "entry_point": "rescale_to_unit"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/24",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 484,
+  "n_comparable": 484,
+  "first_example": {
+   "in": [
+    3
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": 3
+   }
+  },
+  "entry_point": "largest_divisor"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/27",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 821,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "Hello!"
+   ],
+   "py": {
+    "ok": true,
+    "v": "hELLO!"
+   },
+   "jv": {
+    "ok": true,
+    "v": "hello!"
+   }
+  },
+  "entry_point": "flip_case"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/37",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "collection_ordering",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 710,
+  "n_comparable": 945,
+  "first_example": {
+   "in": [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     2,
+     3
+    ]
+   },
+   "jv": {
+    "ok": false,
+    "e": "ArrayIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "sort_even"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/44",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 177,
+  "n_comparable": 970,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": "-3"
+   },
+   "jv": {
+    "ok": true,
+    "v": "3"
+   }
+  },
+  "entry_point": "change_base"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/46",
+  "category": "target_exception:ArrayIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 31,
+  "n_comparable": 35,
+  "first_example": {
+   "in": [
+    5
+   ],
+   "py": {
+    "ok": true,
+    "v": 4
+   },
+   "jv": {
+    "ok": false,
+    "e": "ArrayIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "fib4"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/47",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 999,
+  "first_example": {
+   "in": [
+    [
+     9223372036854775807,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -0.5
+   },
+   "jv": {
+    "ok": true,
+    "v": 0.0
+   }
+  },
+  "entry_point": "median"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/49",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 179,
+  "n_comparable": 985,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": -4
+   },
+   "jv": {
+    "ok": true,
+    "v": 2
+   }
+  },
+  "entry_point": "modp"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/50",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 999,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "hiyzplrfwtbsqjocw"
+   ],
+   "py": {
+    "ok": true,
+    "v": "cdtukgmarownlejxr"
+   },
+   "jv": {
+    "ok": true,
+    "v": "mndeuqwkbygxvothb"
+   }
+  },
+  "entry_point": "decode_shift"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/65",
+  "category": "target_exception:StringIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException"
+  ],
+  "n_diverge": 469,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": "6537"
+   },
+   "jv": {
+    "ok": false,
+    "e": "StringIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "circular_shift"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/69",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 351,
+  "n_comparable": 470,
+  "first_example": {
+   "in": [
+    [
+     4,
+     1,
+     4,
+     1,
+     4,
+     4
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 4
+   },
+   "jv": {
+    "ok": true,
+    "v": 1
+   }
+  },
+  "entry_point": "search"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/71",
+  "category": "float_precision_or_formatting",
+  "group": "cross_language",
+  "example_categories": [
+   "float_precision_or_formatting",
+   "float_precision_or_formatting",
+   "float_precision_or_formatting",
+   "float_precision_or_formatting",
+   "float_precision_or_formatting",
+   "float_precision_or_formatting",
+   "float_precision_or_formatting"
+  ],
+  "n_diverge": 7,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    4,
+    8,
+    5
+   ],
+   "py": {
+    "ok": true,
+    "v": 8.18
+   },
+   "jv": {
+    "ok": true,
+    "v": 0.0
+   }
+  },
+  "entry_point": "triangle_area"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/72",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     4611686018427387904,
+     4611686018427387904
+    ],
+    -1
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "will_it_fly"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/77",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 11,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -1
+   ],
+   "py": {
+    "ok": true,
+    "v": true
+   },
+   "jv": {
+    "ok": true,
+    "v": false
+   }
+  },
+  "entry_point": "iscube"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/79",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 513,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139
+   ],
+   "py": {
+    "ok": true,
+    "v": "dbb10001011db"
+   },
+   "jv": {
+    "ok": true,
+    "v": "db1111111111111111111111111111111111111111111111111111111101110101db"
+   }
+  },
+  "entry_point": "decimal_to_binary"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/84",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 487,
+  "n_comparable": 487,
+  "first_example": {
+   "in": [
+    1000
+   ],
+   "py": {
+    "ok": true,
+    "v": "1"
+   },
+   "jv": {
+    "ok": true,
+    "v": ""
+   }
+  },
+  "entry_point": "solve"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/89",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "unicode_or_charset",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 141,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "A"
+   ],
+   "py": {
+    "ok": true,
+    "v": "A"
+   },
+   "jv": {
+    "ok": true,
+    "v": "e"
+   }
+  },
+  "entry_point": "encrypt"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/92",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 12,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    3.0,
+    4,
+    7
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "any_int"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/97",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 457,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -139,
+    6
+   ],
+   "py": {
+    "ok": true,
+    "v": 6
+   },
+   "jv": {
+    "ok": true,
+    "v": 54
+   }
+  },
+  "entry_point": "multiply"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/108",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 911,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     1,
+     1,
+     2,
+     -2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 6
+   },
+   "jv": {
+    "ok": true,
+    "v": 16
+   }
+  },
+  "entry_point": "count_nums"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/110",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 130,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     10,
+     -498882,
+     0,
+     -9,
+     -712,
+     768,
+     -833,
+     -690
+    ],
+    [
+     9,
+     -61,
+     5,
+     -957579,
+     9
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": "NO"
+   },
+   "jv": {
+    "ok": true,
+    "v": "YES"
+   }
+  },
+  "entry_point": "exchange"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/116",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 668,
+  "n_comparable": 946,
+  "first_example": {
+   "in": [
+    [
+     1,
+     5,
+     2,
+     3,
+     4
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     2,
+     4,
+     3,
+     5
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "entry_point": "sort_array"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/117",
+  "category": "empty_or_boundary_input",
+  "group": "cross_language",
+  "example_categories": [
+   "empty_or_boundary_input",
+   "string_handling"
+  ],
+  "n_diverge": 2,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "",
+    0
+   ],
+   "py": {
+    "ok": true,
+    "v": []
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     ""
+    ]
+   }
+  },
+  "entry_point": "select_words"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/123",
+  "category": "collection_ordering",
+  "group": "cross_language",
+  "example_categories": [
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering",
+   "collection_ordering"
+  ],
+  "n_diverge": 480,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    14
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     5,
+     7,
+     11,
+     13,
+     17
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     7,
+     11,
+     17,
+     13,
+     5,
+     1
+    ]
+   }
+  },
+  "entry_point": "get_odd_collatz"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/129",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 180,
+  "first_example": {
+   "in": [
+    [
+     [
+      1,
+      6,
+      -7,
+      -3,
+      -28977,
+      -8,
+      396,
+      -1,
+      10,
+      292,
+      496204,
+      -758,
+      4,
+      -432,
+      7,
+      -981,
+      10,
+      -5,
+      -297,
+      -713677
+     ],
+     [
+      956,
+      -167863
+     ]
+    ],
+    183
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1,
+     6,
+     1
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1,
+     5,
+     1
+    ]
+   }
+  },
+  "entry_point": "minPath"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/133",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 921,
+  "first_example": {
+   "in": [
+    [
+     1000000000.0,
+     1.0
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 1000000000000000001
+   },
+   "jv": {
+    "ok": true,
+    "v": 1000000000000000000
+   }
+  },
+  "entry_point": "sum_squares"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/134",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "target_exception:StringIndexOutOfBoundsException",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 719,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "apple"
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "check_if_last_char_is_a_letter"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/140",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 106,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "Mudasir Hanif "
+   ],
+   "py": {
+    "ok": true,
+    "v": "Mudasir_Hanif_"
+   },
+   "jv": {
+    "ok": true,
+    "v": "Mudasir__Hanif_"
+   }
+  },
+  "entry_point": "fix_spaces"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/142",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 129,
+  "n_comparable": 932,
+  "first_example": {
+   "in": [
+    [
+     699148,
+     -700,
+     -8,
+     434418,
+     7,
+     3,
+     10,
+     158726,
+     772,
+     -873,
+     150705,
+     -804395,
+     -184,
+     607,
+     -998,
+     695,
+     -488482,
+     441,
+     -599304,
+     -535054
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -116557931305758696
+   },
+   "jv": {
+    "ok": true,
+    "v": -116557931305758686
+   }
+  },
+  "entry_point": "sum_squares"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/143",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "unicode_or_charset",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 532,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "lets go for swimming"
+   ],
+   "py": {
+    "ok": true,
+    "v": "go for"
+   },
+   "jv": {
+    "ok": true,
+    "v": "go"
+   }
+  },
+  "entry_point": "words_in_sentence"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/146",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "integer_width",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic"
+  ],
+  "n_diverge": 379,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     15,
+     -73,
+     14,
+     -15
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": 0
+   }
+  },
+  "entry_point": "specialFilter"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/148",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 5,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "Jupiter",
+    "Neptune"
+   ],
+   "py": {
+    "ok": true,
+    "v": [
+     "Saturn",
+     "Uranus"
+    ]
+   },
+   "jv": {
+    "ok": true,
+    "v": [
+     "Jupiter",
+     "Saturn",
+     "Uranus"
+    ]
+   }
+  },
+  "entry_point": "bf"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/158",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "empty_or_boundary_input",
+   "string_handling",
+   "unicode_or_charset",
+   "string_handling",
+   "string_handling",
+   "empty_or_boundary_input",
+   "string_handling",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "string_handling",
+   "empty_or_boundary_input"
+  ],
+  "n_diverge": 273,
+  "n_comparable": 999,
+  "first_example": {
+   "in": [
+    [
+     "name",
+     "enam",
+     "game"
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": "enam"
+   },
+   "jv": {
+    "ok": true,
+    "v": "name"
+   }
+  },
+  "entry_point": "find_max"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/160",
+  "category": "target_exception:NumberFormatException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:NumberFormatException",
+   "target_exception:NumberFormatException",
+   "target_exception:NumberFormatException",
+   "target_exception:NumberFormatException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:NumberFormatException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:NumberFormatException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException",
+   "target_exception:ArrayIndexOutOfBoundsException"
+  ],
+  "n_diverge": 122,
+  "n_comparable": 305,
+  "first_example": {
+   "in": [
+    [
+     "**",
+     "*",
+     "+"
+    ],
+    [
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 37
+   },
+   "jv": {
+    "ok": false,
+    "e": "NumberFormatException"
+   }
+  },
+  "entry_point": "do_algebra"
+ },
+ {
+  "model": "llama3",
+  "task_id": "Python/161",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 821,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    "AsDf"
+   ],
+   "py": {
+    "ok": true,
+    "v": "aSdF"
+   },
+   "jv": {
+    "ok": true,
+    "v": "FdSa"
+   }
+  },
+  "entry_point": "solve"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/2",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 513,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    -158.8568
+   ],
+   "py": {
+    "ok": true,
+    "v": 0.14320000000000732
+   },
+   "jv": {
+    "ok": true,
+    "v": -0.8567999999999927
+   }
+  },
+  "entry_point": "truncate_number"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/3",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width"
+  ],
+  "n_diverge": 20,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     9223372036854775807,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     4611686018427387904,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     1000000000000000000,
+     2147483648,
+     2147483648,
+     2147483648,
+     2147483647,
+     2147483647,
+     2147483647,
+     2147483647,
+     10000,
+     10000,
+     10000,
+     10000,
+     1000,
+     1000,
+     1000,
+     1000,
+     100,
+     10,
+     10,
+     10,
+     10,
+     10,
+     3,
+     3,
+     3,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -2,
+     -2,
+     -2,
+     -3,
+     -3,
+     -3,
+     -3,
+     -3,
+     -3,
+     -10,
+     -10,
+     -10,
+     -10,
+     -10,
+     -10,
+     -100,
+     -100,
+     -100,
+     -1000,
+     -1000,
+     -1000,
+     -10000,
+     -10000,
+     -2147483648,
+     -2147483648,
+     -2147483648,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "below_zero"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/43",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     -9223372036854775808,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "pairs_sum_to_zero"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/44",
+  "category": "string_handling",
+  "group": "cross_language",
+  "example_categories": [
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling",
+   "string_handling"
+  ],
+  "n_diverge": 177,
+  "n_comparable": 970,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": "-3"
+   },
+   "jv": {
+    "ok": true,
+    "v": "3"
+   }
+  },
+  "entry_point": "change_base"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/47",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 999,
+  "first_example": {
+   "in": [
+    [
+     9223372036854775807,
+     -9223372036854775808
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -0.5
+   },
+   "jv": {
+    "ok": true,
+    "v": 0.0
+   }
+  },
+  "entry_point": "median"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/49",
+  "category": "target_exception:ArithmeticException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException",
+   "target_exception:ArithmeticException"
+  ],
+  "n_diverge": 220,
+  "n_comparable": 985,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": -4
+   },
+   "jv": {
+    "ok": false,
+    "e": "ArithmeticException"
+   }
+  },
+  "entry_point": "modp"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/65",
+  "category": "target_exception:StringIndexOutOfBoundsException",
+  "group": "cross_language",
+  "example_categories": [
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException",
+   "target_exception:StringIndexOutOfBoundsException"
+  ],
+  "n_diverge": 469,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    6537,
+    -6
+   ],
+   "py": {
+    "ok": true,
+    "v": "6537"
+   },
+   "jv": {
+    "ok": false,
+    "e": "StringIndexOutOfBoundsException"
+   }
+  },
+  "entry_point": "circular_shift"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/69",
+  "category": "negative_division_rounding",
+  "group": "cross_language",
+  "example_categories": [
+   "negative_division_rounding",
+   "negative_division_rounding",
+   "negative_division_rounding"
+  ],
+  "n_diverge": 3,
+  "n_comparable": 470,
+  "first_example": {
+   "in": [
+    [
+     10,
+     -9,
+     -10
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 1
+   },
+   "jv": {
+    "ok": true,
+    "v": -1
+   }
+  },
+  "entry_point": "search"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/72",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width"
+  ],
+  "n_diverge": 1,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     4611686018427387904,
+     4611686018427387904
+    ],
+    -1
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "will_it_fly"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/92",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 12,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    3.0,
+    4,
+    7
+   ],
+   "py": {
+    "ok": true,
+    "v": false
+   },
+   "jv": {
+    "ok": true,
+    "v": true
+   }
+  },
+  "entry_point": "any_int"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/115",
+  "category": "integer_width",
+  "group": "cross_language",
+  "example_categories": [
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width",
+   "integer_width"
+  ],
+  "n_diverge": 46,
+  "n_comparable": 919,
+  "first_example": {
+   "in": [
+    [
+     [
+      2147483647,
+      -100
+     ],
+     [
+      10,
+      10000,
+      3,
+      2147483647,
+      10000,
+      1000,
+      -1000,
+      -100,
+      3,
+      -2147483648,
+      2,
+      100,
+      1000,
+      -3,
+      2,
+      -3,
+      2,
+      -3,
+      0,
+      1000000000000000000,
+      0,
+      2147483648,
+      -10,
+      1000000000000000000,
+      2147483648,
+      10000,
+      2,
+      2147483647,
+      1000000000000000000,
+      -1,
+      2,
+      10000,
+      0,
+      1000,
+      -10000,
+      -10000,
+      3,
+      2,
+      100,
+      -3,
+      10000,
+      -10000,
+      2147483648,
+      -1,
+      1,
+      2147483648,
+      10000,
+      9223372036854775807,
+      -10000,
+      100,
+      2147483648,
+      10,
+      4611686018427387904,
+      100,
+      4611686018427387904,
+      -1,
+      1000000000000000000,
+      -1000,
+      -2,
+      100,
+      0,
+      2,
+      2147483647,
+      -1,
+      -2147483648,
+      -10,
+      -10,
+      0,
+      100,
+      1000000000000000000,
+      -9223372036854775808,
+      -2147483648,
+      3,
+      1000000000000000000,
+      -10,
+      -100,
+      -9223372036854775808,
+      3,
+      0,
+      1,
+      3,
+      1000,
+      -3,
+      0,
+      -1000,
+      -100,
+      9223372036854775807,
+      -10,
+      10000,
+      -10,
+      0,
+      0,
+      100,
+      -9223372036854775808,
+      3,
+      2147483647,
+      100,
+      1000000000000000000,
+      4611686018427387904,
+      9223372036854775807
+     ]
+    ],
+    3
+   ],
+   "py": {
+    "ok": true,
+    "v": 6945019356771527305
+   },
+   "jv": {
+    "ok": true,
+    "v": 796104665535009545
+   }
+  },
+  "entry_point": "max_fill"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/122",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "other_logic",
+   "other_logic",
+   "integer_width",
+   "negative_division_rounding",
+   "other_logic"
+  ],
+  "n_diverge": 51,
+  "n_comparable": 1000,
+  "first_example": {
+   "in": [
+    [
+     -3,
+     877032,
+     690,
+     215708,
+     5,
+     434,
+     663723,
+     0,
+     -4,
+     -314,
+     -490318,
+     -2,
+     -3,
+     -5,
+     -9,
+     -6,
+     -541199,
+     8,
+     917,
+     393
+    ],
+    -7
+   ],
+   "py": {
+    "ok": true,
+    "v": -7
+   },
+   "jv": {
+    "ok": true,
+    "v": 0
+   }
+  },
+  "entry_point": "add_elements"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/151",
+  "category": "other_logic",
+  "group": "logic",
+  "example_categories": [
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "negative_division_rounding",
+   "other_logic",
+   "other_logic",
+   "other_logic",
+   "other_logic"
+  ],
+  "n_diverge": 19,
+  "n_comparable": 929,
+  "first_example": {
+   "in": [
+    [
+     3.0,
+     -0.0
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": 0
+   },
+   "jv": {
+    "ok": true,
+    "v": 9
+   }
+  },
+  "entry_point": "double_the_difference"
+ },
+ {
+  "model": "gemini",
+  "task_id": "Python/160",
+  "category": "empty_or_boundary_input",
+  "group": "cross_language",
+  "example_categories": [
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "negative_division_rounding",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "integer_width",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input",
+   "empty_or_boundary_input"
+  ],
+  "n_diverge": 23,
+  "n_comparable": 305,
+  "first_example": {
+   "in": [
+    [
+     "",
+     ")(}",
+     "qjdensncdncdn",
+     "xa",
+     "nvnapkxiclcdlwallfa h lct",
+     "abC",
+     "a",
+     "yaxbzbb ",
+     "bcbaaabbbbbccbacaaccbabaa",
+     "kqh",
+     "cc",
+     ""
+    ],
+    [
+     -194,
+     -8
+    ]
+   ],
+   "py": {
+    "ok": true,
+    "v": -202
+   },
+   "jv": {
+    "ok": true,
+    "v": -194
+   }
+  },
+  "entry_point": "do_algebra"
+ }
+]

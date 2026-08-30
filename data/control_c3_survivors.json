@@ -1,0 +1,18 @@
+[
+ {
+  "task_id": "Python/118",
+  "model": "llama3",
+  "injection": "relational >= to >",
+  "extra_inputs_tried": 7998,
+  "divergences_found": 0,
+  "verdict": "LIKELY EQUIVALENT MUTANT: no divergence over a much larger, differently seeded input set"
+ },
+ {
+  "task_id": "Python/159",
+  "model": "dscoder",
+  "injection": "relational <= to <",
+  "extra_inputs_tried": 7998,
+  "divergences_found": 0,
+  "verdict": "LIKELY EQUIVALENT MUTANT: no divergence over a much larger, differently seeded input set"
+ }
+]

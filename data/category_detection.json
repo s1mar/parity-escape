@@ -1,0 +1,46 @@
+{
+ "by_group": {
+  "cross_language": {
+   "n": 358,
+   "miss_rate": 0.29608938547486036
+  },
+  "logic": {
+   "n": 167,
+   "miss_rate": 0.17365269461077845
+  }
+ },
+ "by_category": {
+  "other_logic": {
+   "n": 167,
+   "miss_rate": 0.17365269461077845
+  },
+  "string_handling": {
+   "n": 123,
+   "miss_rate": 0.21138211382113822
+  },
+  "integer_width": {
+   "n": 57,
+   "miss_rate": 0.7192982456140351
+  },
+  "negative_division_rounding": {
+   "n": 54,
+   "miss_rate": 0.35185185185185186
+  },
+  "collection_ordering": {
+   "n": 35,
+   "miss_rate": 0.14285714285714285
+  },
+  "target_exception:ArrayIndexOutOfBoundsException": {
+   "n": 34,
+   "miss_rate": 0.20588235294117646
+  },
+  "empty_or_boundary_input": {
+   "n": 17,
+   "miss_rate": 0.0
+  },
+  "target_exception:StringIndexOutOfBoundsException": {
+   "n": 17,
+   "miss_rate": 0.11764705882352941
+  }
+ }
+}

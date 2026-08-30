@@ -1,0 +1,350 @@
+==============================================================================
+ANALYSIS SUMMARY (code/analyze.py)
+==============================================================================
+==========================================================================
+cells (validator x translator x problem, scorable): 1583
+
+RQ1  escape rate = 40.8%  [32.8, 49.2]  (425/1041 parity-passing translations were divergent)
+
+RQ2  miss rate on DIVERGENT translations
+     self  54.3%  [45.1, 63.3]  (n=164)
+     cross 48.4%  [41.2, 55.4]  (n=690)
+     pre-registered paired test (CONFOUNDED, reported for transparency): self 52.3% vs cross 48.6%, diff +3.7pp, p=0.6030, n=153
+     EXACT diagonal test (120 permutations of the 5-model matrix, margins fixed):
+       diagonal 54.3%  off-diagonal 48.4%  mean pseudo-diagonal 49.6%  p=0.1833
+
+     within-validator (own translations vs others'):
+       qwen25    own  53.7% (n= 41)  other  56.9% (n=123)  -3.3pp
+       dscoder   own  66.1% (n= 59)  other  63.9% (n=205)  +2.2pp
+       mistral   own  25.0% (n=  4)  other  75.6% (n= 41)  -50.6pp
+       llama3    own  45.5% (n= 33)  other  59.0% (n=139)  -13.5pp
+       gemini    own  44.4% (n= 27)  other  11.0% (n=182)  +33.5pp
+
+baseline_random: {"n_cells": 500, "escape_rate": 0.5204081632653061, "n_passed": 392, "n_escaped": 204}
+
+complementarity: {"n_cells": 854, "miss_rate_llm_only": 0.4953161592505855, "miss_rate_random_only": 0.594847775175644, "miss_rate_combined": 0.40866510538641687, "caught_only_by_llm": 159, "caught_only_by_random": 74, "gain_over_llm_pp": 8.66510538641686}
+
+oracle_supplemented: {"n_divergent_translations_union": 315, "n_divergent_translations_oracle": 164, "n_found_only_by_a_suite": 151, "share_of_divergent_translations": 0.4793650793650794}
+
+benchmark_suite: {"n_divergent": 165, "n_detected_by_benchmark_inputs": 83, "detection_rate": 0.503030303030303, "mean_benchmark_inputs_per_problem": 8.860294117647058}
+
+suite health: {'n_total': 2695, 'n_ok': 2609, 'n_unparseable': 85, 'n_call_failed': 1, 'n_degenerate': 1026, 'by_validator': {'qwen25': {'n': 539, 'unparseable': 6, 'degenerate': 272}, 'dscoder': {'n': 539, 'unparseable': 9, 'degenerate': 97}, 'mistral': {'n': 539, 'unparseable': 70, 'degenerate': 390}, 'llama3': {'n': 539, 'unparseable': 0, 'degenerate': 232}, 'gemini': {'n': 539, 'unparseable': 0, 'degenerate': 35}}, 'escape_rate_incl_degenerate': 0.4854054054054054, 'n_passed_incl_degenerate': 1850}
+control_c2: {'n_mutants': 151, 'n_killed': 142, 'kill_rate': 0.9403973509933775, 'n_killed_by_benchmark_inputs': 132, 'benchmark_kill_rate': 0.8741721854304636}
+control_c3: {'n': 20, 'n_caught': 18, 'catch_rate': 0.9}
+
+wrote <PATH>\data\results.json
+
+==============================================================================
+TAXONOMY (code/taxonomy.py)
+==============================================================================
+165 divergent translations classified
+
+category                                 n   share
+other_logic                             51   30.9%
+string_handling                         44   26.7%
+integer_width                           17   10.3%
+negative_division_rounding              15    9.1%
+collection_ordering                     11    6.7%
+target_exception:ArrayIndexOutOfBoundsException     9    5.5%
+target_exception:StringIndexOutOfBoundsException     7    4.2%
+empty_or_boundary_input                  5    3.0%
+target_exception:IllegalArgumentException     2    1.2%
+target_exception:IndexOutOfBoundsException     1    0.6%
+float_precision_or_formatting            1    0.6%
+target_exception:NumberFormatException     1    0.6%
+target_exception:ArithmeticException     1    0.6%
+
+groups: cross-language 114 (69.1%), logic 51 (30.9%)
+
+by translator model (cross-language share of its divergences):
+  qwen25    n= 38  cross-language  71.1%   top: other_logic=11, string_handling=8
+  dscoder   n= 37  cross-language  70.3%   top: other_logic=11, string_handling=8
+  mistral   n= 37  cross-language  56.8%   top: other_logic=16, string_handling=13
+  llama3    n= 39  cross-language  74.4%   top: string_handling=14, other_logic=10
+  gemini    n= 14  cross-language  78.6%   top: integer_width=5, other_logic=3
+
+==============================================================================
+RAW RESULT BLOCKS (data/results.json)
+==============================================================================
+rq1 = {"n_escaped": 425, "n_passed": 1041, "escape_rate": 0.40826128722382327, "ci": [0.3278236914600551, 0.49247743229689067]}
+rq1_ordinary = {"n_escaped": 80, "n_passed": 1041, "escape_rate": 0.07684918347742556, "ci": [0.04230769230769231, 0.11884057971014493]}
+rq2 = {"n_divergent_cells": 854, "self": {"n_missed": 89, "n": 164, "miss_rate": 0.5426829268292683, "ci": [0.45121951219512196, 0.6333333333333333]}, "cross": {"n_missed": 334, "n": 690, "miss_rate": 0.48405797101449277, "ci": [0.41201716738197425, 0.5539568345323741]}, "diff_pp": 5.862495581477556, "permutation_preregistered": {"n_groups": 153, "n_cross_obs": 364, "self_miss_rate": 0.5228758169934641, "cross_miss_rate": 0.48626373626373626, "diff_pp": 3.6612080729727827, "p_value": 0.603039696030397}, "permutation_diagonal_exact": {"n_models": 5, "n_permutations": 120, "diagonal_miss_rate": 0.5426829268292683, "offdiagonal_miss_rate": 0.48405797101449277, "mean_pseudodiagonal": 0.4958426858902128, "null_range": [0.40119760479041916, 0.588957055214724], "diagonal_excess_pp": 4.6840240939055535, "p_value_one_sided_diag_worse": 0.18333333333333332}, "diff_ci_pp": [-0.1372255489021923, 12.232925142183749], "permutation_diagonal_union": {"n_models": 5, "n_permutations": 120, "diagonal_miss_rate": 0.4527363184079602, "offdiagonal_miss_rate": 0.4360313315926893, "mean_pseudodiagonal": 0.4401802976764116, "null_range": [0.3507853403141361, 0.5401069518716578], "diagonal_excess_pp": 1.25560207315486, "p_value_one_sided_diag_worse": 0.375}}
+rq2_sample = {"leave_one_out_cells": 854, "oracle_confirmed_cells": 525, "union_cells": 967}
+pairing = {"n_divergent_translations": 309, "n_scored_by_all_validators": 10, "median_validators_per_translation": 3, "distribution": {"1": 56, "2": 70, "3": 84, "4": 89, "5": 10}}
+target_timeouts = 259
+rq1_by_validator = {"qwen25": {"n_escaped": 93, "n_passed": 188, "escape_rate": 0.4946808510638298}, "dscoder": {"n_escaped": 170, "n_passed": 338, "escape_rate": 0.5029585798816568}, "mistral": {"n_escaped": 32, "n_passed": 63, "escape_rate": 0.5079365079365079}, "llama3": {"n_escaped": 97, "n_passed": 230, "escape_rate": 0.4217391304347826}, "gemini": {"n_escaped": 33, "n_passed": 222, "escape_rate": 0.14864864864864866}}
+rq1_by_translator = {"qwen25": {"n_escaped": 109, "n_passed": 231, "escape_rate": 0.47186147186147187}, "dscoder": {"n_escaped": 100, "n_passed": 217, "escape_rate": 0.4608294930875576}, "mistral": {"n_escaped": 42, "n_passed": 75, "escape_rate": 0.56}, "llama3": {"n_escaped": 65, "n_passed": 179, "escape_rate": 0.36312849162011174}, "gemini": {"n_escaped": 109, "n_passed": 339, "escape_rate": 0.3215339233038348}}
+divergence_prevalence = {"qwen25": {"n_usable": 114, "n_divergent": 38, "divergence_rate": 0.3333333333333333}, "dscoder": {"n_usable": 105, "n_divergent": 37, "divergence_rate": 0.3523809523809524}, "mistral": {"n_usable": 58, "n_divergent": 37, "divergence_rate": 0.6379310344827587}, "llama3": {"n_usable": 97, "n_divergent": 39, "divergence_rate": 0.4020618556701031}, "gemini": {"n_usable": 136, "n_divergent": 14, "divergence_rate": 0.10294117647058823}}
+rq4_targeted = {"n_paired_cells": 158, "miss_rate_plain_diag": 0.5253164556962026, "miss_rate_targeted": 0.5379746835443038, "miss_rate_reduction_pp": -1.2658227848101222, "caught_only_targeted": 1, "caught_only_plain": 3, "mcnemar_p": 0.625, "n_cells": 347, "escape_rate": 0.3697478991596639, "n_passed": 238}
+two_factor = {"best_validator": "gemini", "best_validator_miss": 0.10989010989010989, "hardest_translator": "gemini", "hardest_translator_miss": 0.8421052631578947, "worst_cell": {"validator": "dscoder", "translator": "gemini", "miss_rate": 0.8958333333333334, "n": 48}}
+validator_skill_offdiag = {"qwen25": {"n": 123, "miss_rate": 0.5691056910569106}, "dscoder": {"n": 205, "miss_rate": 0.6390243902439025}, "mistral": {"n": 41, "miss_rate": 0.7560975609756098}, "llama3": {"n": 139, "miss_rate": 0.5899280575539568}, "gemini": {"n": 182, "miss_rate": 0.10989010989010989}}
+translation_subtlety_offdiag = {"qwen25": {"n": 167, "miss_rate": 0.5149700598802395}, "dscoder": {"n": 126, "miss_rate": 0.48412698412698413}, "mistral": {"n": 143, "miss_rate": 0.2867132867132867}, "llama3": {"n": 140, "miss_rate": 0.35714285714285715}, "gemini": {"n": 114, "miss_rate": 0.8421052631578947}}
+matrix_miss_rate = {"qwen25": {"qwen25": {"n": 41, "miss_rate": 0.5365853658536586}, "dscoder": {"n": 33, "miss_rate": 0.6666666666666666}, "mistral": {"n": 27, "miss_rate": 0.48148148148148145}, "llama3": {"n": 34, "miss_rate": 0.35294117647058826}, "gemini": {"n": 29, "miss_rate": 0.7931034482758621}}, "dscoder": {"qwen25": {"n": 62, "miss_rate": 0.7258064516129032}, "dscoder": {"n": 59, "miss_rate": 0.6610169491525424}, "mistral": {"n": 43, "miss_rate": 0.3953488372093023}, "llama3": {"n": 52, "miss_rate": 0.5}, "gemini": {"n": 48, "miss_rate": 0.8958333333333334}}, "mistral": {"qwen25": {"n": 11, "miss_rate": 0.7272727272727273}, "dscoder": {"n": 11, "miss_rate": 0.7272727272727273}, "mistral": {"n": 4, "miss_rate": 0.25}, "llama3": {"n": 9, "miss_rate": 0.7777777777777778}, "gemini": {"n": 10, "miss_rate": 0.8}}, "llama3": {"qwen25": {"n": 42, "miss_rate": 0.5952380952380952}, "dscoder": {"n": 38, "miss_rate": 0.6578947368421053}, "mistral": {"n": 32, "miss_rate": 0.3125}, "llama3": {"n": 33, "miss_rate": 0.45454545454545453}, "gemini": {"n": 27, "miss_rate": 0.8148148148148148}}, "gemini": {"qwen25": {"n": 52, "miss_rate": 0.15384615384615385}, "dscoder": {"n": 44, "miss_rate": 0.13636363636363635}, "mistral": {"n": 41, "miss_rate": 0.024390243902439025}, "llama3": {"n": 45, "miss_rate": 0.1111111111111111}, "gemini": {"n": 27, "miss_rate": 0.4444444444444444}}}
+within_validator = {"qwen25": {"n_own": 41, "miss_own": 0.5365853658536586, "n_other": 123, "miss_other": 0.5691056910569106, "diff_pp": -3.2520325203251987}, "dscoder": {"n_own": 59, "miss_own": 0.6610169491525424, "n_other": 205, "miss_other": 0.6390243902439025, "diff_pp": 2.1992558908639936}, "mistral": {"n_own": 4, "miss_own": 0.25, "n_other": 41, "miss_other": 0.7560975609756098, "diff_pp": -50.609756097560975}, "llama3": {"n_own": 33, "miss_own": 0.45454545454545453, "n_other": 139, "miss_other": 0.5899280575539568, "diff_pp": -13.53826030085023}, "gemini": {"n_own": 27, "miss_own": 0.4444444444444444, "n_other": 182, "miss_other": 0.10989010989010989, "diff_pp": 33.45543345543345}}
+within_validator_summary = {"n_validators": 5, "n_worse_on_own": 2, "mean_diff_pp": -6.3490719144877925}
+within_validator_union = {"qwen25": {"n_own": 42, "miss_own": 0.5476190476190477, "n_other": 124, "miss_other": 0.5645161290322581, "diff_pp": -1.6897081413210446}, "dscoder": {"n_own": 60, "miss_own": 0.65, "n_other": 205, "miss_other": 0.6390243902439025, "diff_pp": 1.097560975609757}, "mistral": {"n_own": 4, "miss_own": 0.25, "n_other": 44, "miss_other": 0.7045454545454546, "diff_pp": -45.45454545454546}, "llama3": {"n_own": 34, "miss_own": 0.4411764705882353, "n_other": 140, "miss_other": 0.5857142857142857, "diff_pp": -14.453781512605046}, "gemini": {"n_own": 61, "miss_own": 0.21311475409836064, "n_other": 253, "miss_other": 0.07905138339920949, "diff_pp": 13.406337069915114}}
+within_validator_union_summary = {"n_validators": 5, "n_worse_on_own": 2, "mean_diff_pp": -9.418827412589335}
+selector_comparison_loo = {"random": {"n": 312, "miss_rate": 0.6538461538461539}, "llm": {"n": 847, "miss_rate": 0.49586776859504134}, "note": "leave-one-out ground truth: oracle plus every OTHER selector"}
+selector_comparison_biased_views = {"union_favours_llm": {"random_miss": 0.6538461538461539, "llm_miss": 0.43950361944157185}, "oracle_only_favours_random": {"random_miss": 0.3333333333333333, "llm_miss": 0.2571428571428571}}
+baseline_random = {"n_cells": 500, "escape_rate": 0.5204081632653061, "n_passed": 392, "n_escaped": 204}
+complementarity = {"n_cells": 854, "miss_rate_llm_only": 0.4953161592505855, "miss_rate_random_only": 0.594847775175644, "miss_rate_combined": 0.40866510538641687, "caught_only_by_llm": 159, "caught_only_by_random": 74, "gain_over_llm_pp": 8.66510538641686}
+oracle_supplemented = {"n_divergent_translations_union": 315, "n_divergent_translations_oracle": 164, "n_found_only_by_a_suite": 151, "share_of_divergent_translations": 0.4793650793650794}
+benchmark_suite = {"n_divergent": 165, "n_detected_by_benchmark_inputs": 83, "detection_rate": 0.503030303030303, "mean_benchmark_inputs_per_problem": 8.860294117647058}
+suite_health = {"n_total": 2695, "n_ok": 2609, "n_unparseable": 85, "n_call_failed": 1, "n_degenerate": 1026, "by_validator": {"qwen25": {"n": 539, "unparseable": 6, "degenerate": 272}, "dscoder": {"n": 539, "unparseable": 9, "degenerate": 97}, "mistral": {"n": 539, "unparseable": 70, "degenerate": 390}, "llama3": {"n": 539, "unparseable": 0, "degenerate": 232}, "gemini": {"n": 539, "unparseable": 0, "degenerate": 35}}, "escape_rate_incl_degenerate": 0.4854054054054054, "n_passed_incl_degenerate": 1850}
+k_sensitivity = {"k3": {"n_cells": 1463, "escape_rate": 0.502262443438914, "n_passed": 1105, "self_miss": 0.6910994764397905, "cross_miss": 0.5858725761772853}, "k5": {"n_cells": 1550, "escape_rate": 0.4668458781362007, "n_passed": 1116, "self_miss": 0.6224489795918368, "cross_miss": 0.525691699604743}, "k10": {"n_cells": 1583, "escape_rate": 0.40826128722382327, "n_passed": 1041, "self_miss": 0.4527363184079602, "cross_miss": 0.4360313315926893}}
+control_c2 = {"n_mutants": 151, "n_killed": 142, "kill_rate": 0.9403973509933775, "n_killed_by_benchmark_inputs": 132, "benchmark_kill_rate": 0.8741721854304636}
+control_c3 = {"n": 20, "n_caught": 18, "catch_rate": 0.9}
+control_c3surv = {"n": 2, "n_likely_equivalent": 2, "n_genuine_miss": 0, "extra_inputs_each": 7998}
+control_c5 = {"n_checked": 510, "n_violations": 0}
+
+==============================================================================
+RENDERED VALUES OF EVERY MACRO THE PAPER PRINTS
+Generated from data/results.json by code/make_macros.py. Percentages are
+shown exactly as they appear on the page, so no rounding is left to the reader.
+==============================================================================
+  NAmendments                = 10
+  NHumanEval                 = 164
+  NSigEligible               = 147
+  NProblems                  = 136
+  NDropped                   = 11
+  NFuzz                      = 1000
+  MutantFloor                = 90
+  KParity                    = 10
+  NModels                    = 5
+  NCells                     = 1583
+  NUsable                    = 510
+  NDivergent                 = 165
+  DivRate                    = 32.4
+. UsableQwen                 = 114
+  DivQwen                    = 33.3
+. UsableDsCoder              = 105
+  DivDsCoder                 = 35.2
+. UsableMistral              = 58
+  DivMistral                 = 63.8
+. UsableLlama                = 97
+  DivLlama                   = 40.2
+. UsableGemini               = 136
+  DivGemini                  = 10.3
+  EscapeRate                 = 40.8
+  EscapeLo                   = 32.8
+  EscapeHi                   = 49.2
+  NEscaped                   = 425
+  NPassed                    = 1041
+. EscapeQwen                 = 49.5
+  EscapeDsCoder              = 50.3
+  EscapeMistral              = 50.8
+  EscapeLlama                = 42.2
+  EscapeGemini               = 14.9
+  EscapeOrdinary             = 7.7
+  EscapeOrdinaryLo           = 4.2
+  EscapeOrdinaryHi           = 11.9
+  NEscapedOrdinary           = 80
+. OrdinaryShare              = 46.3
+  EscapeOracleOnly           = 13.0
+  NEscapedOracleOnly         = 135
+  NRepairedTranslations      = 27
+  NRepairedLlama             = 21
+  EscapeExclRepaired         = 40.8
+. EscapeTransQwen            = 47.2
+. EscapeTransDsCoder         = 46.1
+  EscapeTransMistral         = 56.0
+. EscapeTransLlama           = 36.3
+  EscapeTransGemini          = 32.2
+  SelfMiss                   = 54.3
+. SelfMissLo                 = 45.1
+. SelfMissHi                 = 63.3
+  SelfMissN                  = 164
+  CrossMiss                  = 48.4
+. CrossMissLo                = 41.2
+. CrossMissHi                = 55.4
+  CrossMissN                 = 690
+  MissDiff                   = 5.9
+  MissDiffLo                 = -0.1
+  MissDiffHi                 = 12.2
+. PermGroups                 = 153
+. PermSelfMiss               = 52.3
+. PermCrossMiss              = 48.6
+. PermDiff                   = 3.7
+  PermP                      = 0.603
+. DiagMiss                   = 54.3
+. OffDiagMiss                = 48.4
+. PseudoDiagMiss             = 49.6
+  DiagPerms                  = 120
+  DiagP                      = 0.18
+  DiagDiff                   = 4.7
+  DiagNullLo                 = 40.1
+  DiagNullHi                 = 58.9
+  VMissQwen                  = 56.9
+. VMissDsCoder               = 63.9
+  VMissMistral               = 75.6
+. VMissLlama                 = 59.0
+  VMissGemini                = 11.0
+  THardQwen                  = 51.5
+. THardDsCoder               = 48.4
+  THardMistral               = 28.7
+. THardLlama                 = 35.7
+  THardGemini                = 84.2
+. BestValidatorMiss          = 11.0
+. HardestTranslatorMiss      = 84.2
+  WorstCellMiss              = 89.6
+  WorstCellN                 = 48
+  WVValidators               = 5
+  WVWorseOnOwn               = 2
+  WVMeanDiff                 = -6.3
+. PairTranslations           = 309
+. PairAllFive                = 10
+  PairMedian                 = 3
+  TargetTimeouts             = 259
+  CovEscapes                 = 130
+  CovSamePath                = 86.2
+  NTraceFailed               = 5
+  MissCrossLang              = 29.6
+  MissLogic                  = 17.4
+  MissIntWidth               = 71.9
+  CrossExIntMiss             = 21.6
+  NAttempted                 = 680
+. NCompiled                  = 539
+  NCompileFail               = 141
+  NNoComparable              = 29
+  RegCells                   = 854
+  RegOR                      = 0.90
+  RegORLo                    = 0.68
+  RegORHi                    = 1.14
+  NBootRegression            = 2,000
+  RegP                       = 0.38
+  GeeOR                      = 0.89
+  GeeP                       = 0.29
+  MatchTrans                 = 153
+  MatchSelfMiss              = 52.3
+  MatchCrossMiss             = 48.6
+  MatchSelfN                 = 153
+  MatchCrossN                = 364
+  MatchP                     = 0.42
+  DropSelf                   = 34.7
+  DropCross                  = 42.9
+  DropWorseSelfN             = 3
+  DropValidatorsChecked      = 5
+  DiagPUnion                 = 0.38
+  EscapeTwoLo                = 20.7
+  EscapeTwoHi                = 61.2
+  JackLo                     = 34.8
+  JackHi                     = 52.3
+  CfourDropped               = 11
+  CfourNondet                = 0
+  ConeTags                   = 11
+  ConeMismatch               = 0
+  WVWorseOnOwnUnion          = 2
+  WVMeanDiffUnion            = -9.4
+. SelfEscape                 = 37.6
+. CrossEscape                = 41.8
+  EscapeKThree               = 50.2
+. SelfMissKThree             = 69.1
+. CrossMissKThree            = 58.6
+  EscapeKFive                = 46.7
+. SelfMissKFive              = 62.2
+. CrossMissKFive             = 52.6
+  EscapeKTen                 = 40.8
+. SelfMissKTen               = 45.3
+. CrossMissKTen              = 43.6
+  TargetedMiss               = 53.8
+  PlainMiss                  = 52.5
+  TargetedGain               = 1.3
+  TargetedPairs              = 158
+  TargetedOnlyWin            = 1
+  TargetedOnlyLoss           = 3
+  TargetedP                  = 0.625
+. RandomEscape               = 52.0
+. RandomCells                = 500
+. RandomMiss                 = 65.4
+. RandomMissN                = 312
+. LlmMissAll                 = 49.6
+. LlmMissN                   = 847
+. RandomMissUnion            = 65.4
+. LlmMissUnion               = 44.0
+. RandomMissOracle           = 33.3
+. LlmMissOracle              = 25.7
+  ComboMissLlm               = 49.5
+  ComboMissRandom            = 59.5
+  ComboMissBoth              = 40.9
+  ComboGain                  = 8.6
+  ComboOnlyLlm               = 159
+  ComboOnlyRandom            = 74
+  ComboCells                 = 854
+  OnlySuiteFound             = 151
+  DivTransUnion              = 315
+  DivTransOracle             = 164
+. OnlySuiteShare             = 47.9
+  NSuites                    = 2695
+  NUnparseable               = 85
+  NDegenerate                = 1026
+  PctUnparseable             = 3.2
+  EscapeWithDegenerate       = 48.5
+  NCallFailed                = 1
+. DegenQwen                  = 272
+. UnparseQwen                = 6
+. DegenDsCoder               = 97
+. UnparseDsCoder             = 9
+  DegenMistral               = 390
+  UnparseMistral             = 70
+. DegenLlama                 = 232
+. UnparseLlama               = 0
+  DegenGemini                = 35
+  UnparseGemini              = 0
+  MedianSrc                  = -0.5
+  MedianTgt                  = 0.0
+  MedianDiverge              = 1
+  MedianComparable           = 999
+  MaxTokensPerCall           = 1,024
+  CallRetries                = 5
+  BoundaryFraction           = 0.30
+  NScalarIntBoundaries       = 15
+  NElemExtraBoundaries       = 7
+  NFloatBoundaries           = 14
+  NStrBoundaries             = 17
+  MaxStrBoundaryLen          = 200
+  ListShapeProb              = 0.4
+  GcdInA                     = -139
+  GcdInB                     = 6
+  GcdSrc                     = 1
+  GcdTgt                     = -1
+  GcdDiverge                 = 221
+  GcdComparable              = 1,000
+  GcdPassedValidators        = 2
+  GcdUsableSuites            = 4
+  GcdCaughtValidators        = 2
+  IntReturning               = 60,819
+  OutOfRange                 = 2,098
+  OutOfRangeProblems         = 25
+  CtwoMutants                = 151
+  CtwoKill                   = 94.0
+  CtwoBenchKill              = 87.4
+  CtwoGapPP                  = 6.6
+  CthreeN                    = 20
+  CthreeCaught               = 18
+. CthreeEquivalent           = 2
+. CthreeGenuineMiss          = 0
+  CthreeExtraInputs          = 7,998
+  BenchDetect                = 50.3
+  BenchDetected              = 83
+  BenchDivergent             = 165
+  BenchInputsMean            = 9
+  CfiveChecked               = 510
+  CfiveViolations            = 0
+. NClassified                = 165
+  CrossLangShare             = 69.1
+. LogicShare                 = 30.9
+. NCrossLang                 = 114
+. CrossLangQwen              = 71.1
+. CrossLangDsCoder           = 70.3
+  CrossLangMistral           = 56.8
+. CrossLangLlama             = 74.4
+  CrossLangGemini            = 78.6
+. TaxNameOne                 = other logic
+. TaxPctOne                  = 30.9
+. TaxNameTwo                 = string handling
+. TaxPctTwo                  = 26.7
+. TaxNameThree               = integer width
+. TaxPctThree                = 10.3
+. TaxTopThree                = 67.9
+
+legend: leading '.' means the macro is generated but not referenced by the manuscript.

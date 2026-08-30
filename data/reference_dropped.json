@@ -1,0 +1,191 @@
+[
+ {
+  "task_id": "Python/17",
+  "idx": 17,
+  "entry_point": "parse_music",
+  "param_types": [
+   "str"
+  ],
+  "return_type": "list[int]",
+  "java_decl": "public static long[] parse_music(String a0)",
+  "java_ptags": [
+   "String"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 9,
+  "n_nondet": 0,
+  "drop": "only 9 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/19",
+  "idx": 19,
+  "entry_point": "sort_numbers",
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "java_decl": "public static String sort_numbers(String a0)",
+  "java_ptags": [
+   "String"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 8,
+  "n_nondet": 0,
+  "drop": "only 8 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/39",
+  "idx": 39,
+  "entry_point": "prime_fib",
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "java_decl": "public static long prime_fib(long a0)",
+  "java_ptags": [
+   "long"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 11,
+  "n_nondet": 0,
+  "drop": "only 11 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/55",
+  "idx": 55,
+  "entry_point": "fib",
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "java_decl": "public static long fib(long a0)",
+  "java_ptags": [
+   "long"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 11,
+  "n_nondet": 0,
+  "drop": "only 11 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/63",
+  "idx": 63,
+  "entry_point": "fibfib",
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "java_decl": "public static long fibfib(long a0)",
+  "java_ptags": [
+   "long"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 11,
+  "n_nondet": 0,
+  "drop": "only 11 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/99",
+  "idx": 99,
+  "entry_point": "closest_integer",
+  "param_types": [
+   "str"
+  ],
+  "return_type": "int",
+  "java_decl": "public static long closest_integer(String a0)",
+  "java_ptags": [
+   "String"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 14,
+  "n_nondet": 0,
+  "drop": "only 14 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/113",
+  "idx": 113,
+  "entry_point": "odd_count",
+  "param_types": [
+   "list[str]"
+  ],
+  "return_type": "list[str]",
+  "java_decl": "public static String[] odd_count(String[] a0)",
+  "java_ptags": [
+   "String[]"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 10,
+  "n_nondet": 0,
+  "drop": "only 10 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/139",
+  "idx": 139,
+  "entry_point": "special_factorial",
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "java_decl": "public static long special_factorial(long a0)",
+  "java_ptags": [
+   "long"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 59,
+  "n_nondet": 0,
+  "drop": "only 59 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/144",
+  "idx": 144,
+  "entry_point": "simplify",
+  "param_types": [
+   "str",
+   "str"
+  ],
+  "return_type": "bool",
+  "java_decl": "public static boolean simplify(String a0, String a1)",
+  "java_ptags": [
+   "String",
+   "String"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 12,
+  "n_nondet": 0,
+  "drop": "only 12 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/147",
+  "idx": 147,
+  "entry_point": "get_max_triples",
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "java_decl": "public static long get_max_triples(long a0)",
+  "java_ptags": [
+   "long"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 58,
+  "n_nondet": 0,
+  "drop": "only 58 in-domain inputs (< 100)"
+ },
+ {
+  "task_id": "Python/156",
+  "idx": 156,
+  "entry_point": "int_to_mini_roman",
+  "param_types": [
+   "int"
+  ],
+  "return_type": "str",
+  "java_decl": "public static String int_to_mini_roman(long a0)",
+  "java_ptags": [
+   "long"
+  ],
+  "n_inputs": 1000,
+  "n_returned": 44,
+  "n_nondet": 0,
+  "drop": "only 44 in-domain inputs (< 100)"
+ }
+]

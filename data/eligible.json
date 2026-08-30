@@ -1,0 +1,9945 @@
+[
+ {
+  "idx": 0,
+  "task_id": "Python/0",
+  "entry_point": "has_close_elements",
+  "signature": "has_close_elements(numbers: List[float], threshold: float) -> bool",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "list[float]",
+   "float"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    [
+     1.0,
+     2.0,
+     3.9,
+     4.0,
+     5.0,
+     2.2
+    ],
+    0.3
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     3.9,
+     4.0,
+     5.0,
+     2.2
+    ],
+    0.05
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     5.9,
+     4.0,
+     5.0
+    ],
+    0.95
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     5.9,
+     4.0,
+     5.0
+    ],
+    0.8
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     2.0
+    ],
+    0.1
+   ],
+   [
+    [
+     1.1,
+     2.2,
+     3.1,
+     4.1,
+     5.1
+    ],
+    1.0
+   ],
+   [
+    [
+     1.1,
+     2.2,
+     3.1,
+     4.1,
+     5.1
+    ],
+    0.5
+   ]
+  ]
+ },
+ {
+  "idx": 1,
+  "task_id": "Python/1",
+  "entry_point": "separate_paren_groups",
+  "signature": "separate_paren_groups(paren_string: str) -> List[str]",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    "(()()) ((())) () ((())()())"
+   ],
+   [
+    "() (()) ((())) (((())))"
+   ],
+   [
+    "(()(())((())))"
+   ],
+   [
+    "( ) (( )) (( )( ))"
+   ]
+  ]
+ },
+ {
+  "idx": 2,
+  "task_id": "Python/2",
+  "entry_point": "truncate_number",
+  "signature": "truncate_number(number: float) -> float",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "float"
+  ],
+  "return_type": "float",
+  "seed_inputs": [
+   [
+    3.5
+   ],
+   [
+    1.33
+   ],
+   [
+    123.456
+   ]
+  ]
+ },
+ {
+  "idx": 3,
+  "task_id": "Python/3",
+  "entry_point": "below_zero",
+  "signature": "below_zero(operations: List[int]) -> bool",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     1,
+     2,
+     -3,
+     1,
+     2,
+     -3
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     -4,
+     5,
+     6
+    ]
+   ],
+   [
+    [
+     1,
+     -1,
+     2,
+     -2,
+     5,
+     -5,
+     4,
+     -4
+    ]
+   ],
+   [
+    [
+     1,
+     -1,
+     2,
+     -2,
+     5,
+     -5,
+     4,
+     -5
+    ]
+   ],
+   [
+    [
+     1,
+     -2,
+     2,
+     -2,
+     5,
+     -5,
+     4,
+     -4
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 4,
+  "task_id": "Python/4",
+  "entry_point": "mean_absolute_deviation",
+  "signature": "mean_absolute_deviation(numbers: List[float]) -> float",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "list[float]"
+  ],
+  "return_type": "float",
+  "seed_inputs": [
+   [
+    [
+     1.0,
+     2.0,
+     3.0
+    ]
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     3.0,
+     4.0
+    ]
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 5,
+  "task_id": "Python/5",
+  "entry_point": "intersperse",
+  "signature": "intersperse(numbers: List[int], delimeter: int) -> List[int]",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "list[int]",
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [],
+    7
+   ],
+   [
+    [
+     5,
+     6,
+     3,
+     2
+    ],
+    8
+   ],
+   [
+    [
+     2,
+     2,
+     2
+    ],
+    2
+   ]
+  ]
+ },
+ {
+  "idx": 6,
+  "task_id": "Python/6",
+  "entry_point": "parse_nested_parens",
+  "signature": "parse_nested_parens(paren_string: str) -> List[int]",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    "(()()) ((())) () ((())()())"
+   ],
+   [
+    "() (()) ((())) (((())))"
+   ],
+   [
+    "(()(())((())))"
+   ]
+  ]
+ },
+ {
+  "idx": 7,
+  "task_id": "Python/7",
+  "entry_point": "filter_by_substring",
+  "signature": "filter_by_substring(strings: List[str], substring: str) -> List[str]",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "list[str]",
+   "str"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    [],
+    "john"
+   ],
+   [
+    [
+     "xxx",
+     "asd",
+     "xxy",
+     "john doe",
+     "xxxAAA",
+     "xxx"
+    ],
+    "xxx"
+   ],
+   [
+    [
+     "xxx",
+     "asd",
+     "aaaxxy",
+     "john doe",
+     "xxxAAA",
+     "xxx"
+    ],
+    "xx"
+   ],
+   [
+    [
+     "grunt",
+     "trumpet",
+     "prune",
+     "gruesome"
+    ],
+    "run"
+   ]
+  ]
+ },
+ {
+  "idx": 8,
+  "task_id": "Python/8",
+  "entry_point": "sum_product",
+  "signature": "sum_product(numbers: List[int]) -> Tuple[int, int]",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   [
+    [
+     100,
+     0
+    ]
+   ],
+   [
+    [
+     3,
+     5,
+     7
+    ]
+   ],
+   [
+    [
+     10
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 9,
+  "task_id": "Python/9",
+  "entry_point": "rolling_max",
+  "signature": "rolling_max(numbers: List[int]) -> List[int]",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     4,
+     3,
+     2,
+     1
+    ]
+   ],
+   [
+    [
+     3,
+     2,
+     3,
+     100,
+     3
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 10,
+  "task_id": "Python/10",
+  "entry_point": "make_palindrome",
+  "signature": "make_palindrome(string: str) -> str",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "x"
+   ],
+   [
+    "xyz"
+   ],
+   [
+    "xyx"
+   ],
+   [
+    "jerry"
+   ]
+  ]
+ },
+ {
+  "idx": 11,
+  "task_id": "Python/11",
+  "entry_point": "string_xor",
+  "signature": "string_xor(a: str, b: str) -> str",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "str",
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "111000",
+    "101010"
+   ],
+   [
+    "1",
+    "1"
+   ],
+   [
+    "0101",
+    "0000"
+   ]
+  ]
+ },
+ {
+  "idx": 13,
+  "task_id": "Python/13",
+  "entry_point": "greatest_common_divisor",
+  "signature": "greatest_common_divisor(a: int, b: int) -> int",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    3,
+    7
+   ],
+   [
+    10,
+    15
+   ],
+   [
+    49,
+    14
+   ],
+   [
+    144,
+    60
+   ]
+  ]
+ },
+ {
+  "idx": 14,
+  "task_id": "Python/14",
+  "entry_point": "all_prefixes",
+  "signature": "all_prefixes(string: str) -> List[str]",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "asdfgh"
+   ],
+   [
+    "WWW"
+   ]
+  ]
+ },
+ {
+  "idx": 15,
+  "task_id": "Python/15",
+  "entry_point": "string_sequence",
+  "signature": "string_sequence(n: int) -> str",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    10
+   ]
+  ]
+ },
+ {
+  "idx": 16,
+  "task_id": "Python/16",
+  "entry_point": "count_distinct_characters",
+  "signature": "count_distinct_characters(string: str) -> int",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "abcde"
+   ],
+   [
+    "abcdecadeCADE"
+   ],
+   [
+    "aaaaAAAAaaaa"
+   ],
+   [
+    "Jerry jERRY JeRRRY"
+   ]
+  ]
+ },
+ {
+  "idx": 17,
+  "task_id": "Python/17",
+  "entry_point": "parse_music",
+  "signature": "parse_music(music_string: str) -> List[int]",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "o o o o"
+   ],
+   [
+    ".| .| .| .|"
+   ],
+   [
+    "o| o| .| .| o o o o"
+   ],
+   [
+    "o| .| o| .| o o| o o|"
+   ]
+  ]
+ },
+ {
+  "idx": 18,
+  "task_id": "Python/18",
+  "entry_point": "how_many_times",
+  "signature": "how_many_times(string: str, substring: str) -> int",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "str",
+   "str"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    "",
+    "x"
+   ],
+   [
+    "xyxyxyx",
+    "x"
+   ],
+   [
+    "cacacacac",
+    "cac"
+   ],
+   [
+    "john doe",
+    "john"
+   ]
+  ]
+ },
+ {
+  "idx": 19,
+  "task_id": "Python/19",
+  "entry_point": "sort_numbers",
+  "signature": "sort_numbers(numbers: str) -> str",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "three"
+   ],
+   [
+    "three five nine"
+   ],
+   [
+    "five zero four seven nine eight"
+   ],
+   [
+    "six five four three two one zero"
+   ]
+  ]
+ },
+ {
+  "idx": 20,
+  "task_id": "Python/20",
+  "entry_point": "find_closest_elements",
+  "signature": "find_closest_elements(numbers: List[float]) -> Tuple[float, float]",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[float]"
+  ],
+  "return_type": "list[float]",
+  "seed_inputs": [
+   [
+    [
+     1.0,
+     2.0,
+     3.9,
+     4.0,
+     5.0,
+     2.2
+    ]
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     5.9,
+     4.0,
+     5.0
+    ]
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     2.2
+    ]
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     2.0
+    ]
+   ],
+   [
+    [
+     1.1,
+     2.2,
+     3.1,
+     4.1,
+     5.1
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 21,
+  "task_id": "Python/21",
+  "entry_point": "rescale_to_unit",
+  "signature": "rescale_to_unit(numbers: List[float]) -> List[float]",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[float]"
+  ],
+  "return_type": "list[float]",
+  "seed_inputs": [
+   [
+    [
+     2.0,
+     49.9
+    ]
+   ],
+   [
+    [
+     100.0,
+     49.9
+    ]
+   ],
+   [
+    [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0
+    ]
+   ],
+   [
+    [
+     2.0,
+     1.0,
+     5.0,
+     3.0,
+     4.0
+    ]
+   ],
+   [
+    [
+     12.0,
+     11.0,
+     15.0,
+     13.0,
+     14.0
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 23,
+  "task_id": "Python/23",
+  "entry_point": "strlen",
+  "signature": "strlen(string: str) -> int",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "x"
+   ],
+   [
+    "asdasnakj"
+   ]
+  ]
+ },
+ {
+  "idx": 24,
+  "task_id": "Python/24",
+  "entry_point": "largest_divisor",
+  "signature": "largest_divisor(n: int) -> int",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    3
+   ],
+   [
+    7
+   ],
+   [
+    10
+   ],
+   [
+    100
+   ],
+   [
+    49
+   ]
+  ]
+ },
+ {
+  "idx": 25,
+  "task_id": "Python/25",
+  "entry_point": "factorize",
+  "signature": "factorize(n: int) -> List[int]",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    2
+   ],
+   [
+    4
+   ],
+   [
+    8
+   ],
+   [
+    57
+   ],
+   [
+    3249
+   ],
+   [
+    185193
+   ],
+   [
+    20577
+   ],
+   [
+    18
+   ]
+  ]
+ },
+ {
+  "idx": 26,
+  "task_id": "Python/26",
+  "entry_point": "remove_duplicates",
+  "signature": "remove_duplicates(numbers: List[int]) -> List[int]",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     2,
+     4,
+     3,
+     5
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 27,
+  "task_id": "Python/27",
+  "entry_point": "flip_case",
+  "signature": "flip_case(string: str) -> str",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "Hello!"
+   ],
+   [
+    "These violent delights have violent ends"
+   ]
+  ]
+ },
+ {
+  "idx": 28,
+  "task_id": "Python/28",
+  "entry_point": "concatenate",
+  "signature": "concatenate(strings: List[str]) -> str",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "list[str]"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     "x",
+     "y",
+     "z"
+    ]
+   ],
+   [
+    [
+     "x",
+     "y",
+     "z",
+     "w",
+     "k"
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 30,
+  "task_id": "Python/30",
+  "entry_point": "get_positive",
+  "signature": "get_positive(l: list)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     -1,
+     -2,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    [
+     5,
+     3,
+     -5,
+     2,
+     3,
+     3,
+     9,
+     0,
+     123,
+     1,
+     -10
+    ]
+   ],
+   [
+    [
+     -1,
+     -2
+    ]
+   ],
+   [
+    []
+   ]
+  ]
+ },
+ {
+  "idx": 31,
+  "task_id": "Python/31",
+  "entry_point": "is_prime",
+  "signature": "is_prime(n)",
+  "status": "ok",
+  "n_calls": 13,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    6
+   ],
+   [
+    101
+   ],
+   [
+    11
+   ],
+   [
+    13441
+   ],
+   [
+    61
+   ],
+   [
+    4
+   ],
+   [
+    1
+   ],
+   [
+    5
+   ],
+   [
+    11
+   ],
+   [
+    17
+   ],
+   [
+    85
+   ],
+   [
+    77
+   ],
+   [
+    255379
+   ]
+  ]
+ },
+ {
+  "idx": 32,
+  "task_id": "Python/32",
+  "entry_point": "find_zero",
+  "signature": "find_zero(xs: list)",
+  "status": "ok",
+  "n_calls": 100,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "float",
+  "seed_inputs": [
+   [
+    [
+     -10,
+     -2
+    ]
+   ],
+   [
+    [
+     -3,
+     -6,
+     -7,
+     7
+    ]
+   ],
+   [
+    [
+     8,
+     3
+    ]
+   ],
+   [
+    [
+     -10,
+     -8
+    ]
+   ],
+   [
+    [
+     -3,
+     6,
+     9,
+     -10
+    ]
+   ],
+   [
+    [
+     10,
+     7,
+     3,
+     -3
+    ]
+   ],
+   [
+    [
+     8,
+     -2,
+     -10,
+     -5,
+     3,
+     1,
+     -2,
+     -6
+    ]
+   ],
+   [
+    [
+     1,
+     -7,
+     -8,
+     2
+    ]
+   ],
+   [
+    [
+     1,
+     1
+    ]
+   ],
+   [
+    [
+     -9,
+     4,
+     7,
+     -7,
+     2,
+     -8
+    ]
+   ],
+   [
+    [
+     10,
+     9,
+     1,
+     8,
+     -4,
+     -8
+    ]
+   ],
+   [
+    [
+     -3,
+     -1
+    ]
+   ],
+   [
+    [
+     -3,
+     -7
+    ]
+   ],
+   [
+    [
+     -2,
+     4,
+     10,
+     1,
+     -5,
+     1,
+     1,
+     -4
+    ]
+   ],
+   [
+    [
+     10,
+     -8,
+     9,
+     10,
+     -5,
+     7
+    ]
+   ],
+   [
+    [
+     -5,
+     4,
+     2,
+     -2
+    ]
+   ],
+   [
+    [
+     1,
+     -9,
+     -3,
+     -9
+    ]
+   ],
+   [
+    [
+     2,
+     -2,
+     -8,
+     -4,
+     8,
+     1
+    ]
+   ],
+   [
+    [
+     10,
+     5,
+     2,
+     10
+    ]
+   ],
+   [
+    [
+     -6,
+     -2,
+     -6,
+     -3,
+     7,
+     7,
+     -2,
+     8
+    ]
+   ],
+   [
+    [
+     8,
+     2,
+     1,
+     -3,
+     -6,
+     6,
+     5,
+     -8
+    ]
+   ],
+   [
+    [
+     -7,
+     -6
+    ]
+   ],
+   [
+    [
+     3,
+     9,
+     -8,
+     2
+    ]
+   ],
+   [
+    [
+     9,
+     4,
+     6,
+     -2,
+     7,
+     -10,
+     -7,
+     7
+    ]
+   ],
+   [
+    [
+     10,
+     1,
+     -7,
+     -1,
+     3,
+     -5
+    ]
+   ],
+   [
+    [
+     -10,
+     -2,
+     6,
+     -5,
+     6,
+     -7,
+     10,
+     -1
+    ]
+   ],
+   [
+    [
+     -6,
+     1,
+     -5,
+     7
+    ]
+   ],
+   [
+    [
+     9,
+     1
+    ]
+   ],
+   [
+    [
+     -10,
+     -7,
+     1,
+     -1,
+     -3,
+     -9,
+     -3,
+     8
+    ]
+   ],
+   [
+    [
+     -8,
+     5
+    ]
+   ],
+   [
+    [
+     7,
+     -6
+    ]
+   ],
+   [
+    [
+     5,
+     7,
+     -5,
+     -2
+    ]
+   ],
+   [
+    [
+     -4,
+     7,
+     -4,
+     -1,
+     2,
+     10,
+     1,
+     4
+    ]
+   ],
+   [
+    [
+     -7,
+     -3,
+     -3,
+     -8,
+     1,
+     -10,
+     8,
+     7
+    ]
+   ],
+   [
+    [
+     8,
+     -3,
+     -10,
+     -8
+    ]
+   ],
+   [
+    [
+     -3,
+     -8
+    ]
+   ],
+   [
+    [
+     1,
+     -8
+    ]
+   ],
+   [
+    [
+     -2,
+     5,
+     -4,
+     7
+    ]
+   ],
+   [
+    [
+     8,
+     8,
+     5,
+     -3
+    ]
+   ],
+   [
+    [
+     3,
+     -4,
+     -7,
+     -7,
+     3,
+     1,
+     3,
+     3
+    ]
+   ],
+   [
+    [
+     -9,
+     10,
+     10,
+     -7,
+     -9,
+     2,
+     1,
+     -7
+    ]
+   ],
+   [
+    [
+     -4,
+     -4,
+     7,
+     4
+    ]
+   ],
+   [
+    [
+     3,
+     -5,
+     -2,
+     4
+    ]
+   ],
+   [
+    [
+     -8,
+     4,
+     7,
+     -7
+    ]
+   ],
+   [
+    [
+     10,
+     7
+    ]
+   ],
+   [
+    [
+     -8,
+     -3
+    ]
+   ],
+   [
+    [
+     3,
+     5,
+     5,
+     -4
+    ]
+   ],
+   [
+    [
+     -9,
+     -5,
+     2,
+     -10,
+     2,
+     -2,
+     4,
+     -1
+    ]
+   ],
+   [
+    [
+     7,
+     5,
+     -6,
+     -4,
+     -1,
+     -4,
+     -9,
+     8
+    ]
+   ],
+   [
+    [
+     1,
+     -9
+    ]
+   ],
+   [
+    [
+     8,
+     5
+    ]
+   ],
+   [
+    [
+     -9,
+     6,
+     -8,
+     -5
+    ]
+   ],
+   [
+    [
+     9,
+     -8
+    ]
+   ],
+   [
+    [
+     2,
+     -7,
+     8,
+     -3
+    ]
+   ],
+   [
+    [
+     9,
+     -8
+    ]
+   ],
+   [
+    [
+     8,
+     8,
+     6,
+     1,
+     -2,
+     -4,
+     1,
+     -3
+    ]
+   ],
+   [
+    [
+     2,
+     -6,
+     10,
+     -1,
+     4,
+     1
+    ]
+   ],
+   [
+    [
+     -10,
+     4
+    ]
+   ],
+   [
+    [
+     -8,
+     7
+    ]
+   ],
+   [
+    [
+     6,
+     -2,
+     -6,
+     1
+    ]
+   ],
+   [
+    [
+     -3,
+     1
+    ]
+   ],
+   [
+    [
+     -5,
+     4,
+     7,
+     -1,
+     9,
+     10
+    ]
+   ],
+   [
+    [
+     7,
+     -1
+    ]
+   ],
+   [
+    [
+     -6,
+     -2
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 33,
+  "task_id": "Python/33",
+  "entry_point": "sort_third",
+  "signature": "sort_third(l: list)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     5,
+     3,
+     -5,
+     2,
+     -3,
+     3,
+     9,
+     0,
+     123,
+     1,
+     -10
+    ]
+   ],
+   [
+    [
+     5,
+     3,
+     -5,
+     2,
+     -3,
+     3,
+     9,
+     0,
+     123,
+     1,
+     -10
+    ]
+   ],
+   [
+    [
+     5,
+     8,
+     -12,
+     4,
+     23,
+     2,
+     3,
+     11,
+     12,
+     -10
+    ]
+   ],
+   [
+    [
+     5,
+     8,
+     -12,
+     4,
+     23,
+     2,
+     3,
+     11,
+     12,
+     -10
+    ]
+   ],
+   [
+    [
+     5,
+     6,
+     3,
+     4,
+     8,
+     9,
+     2
+    ]
+   ],
+   [
+    [
+     5,
+     8,
+     3,
+     4,
+     6,
+     9,
+     2
+    ]
+   ],
+   [
+    [
+     5,
+     6,
+     9,
+     4,
+     8,
+     3,
+     2
+    ]
+   ],
+   [
+    [
+     5,
+     6,
+     3,
+     4,
+     8,
+     9,
+     2,
+     1
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 36,
+  "task_id": "Python/36",
+  "entry_point": "fizz_buzz",
+  "signature": "fizz_buzz(n: int)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    50
+   ],
+   [
+    78
+   ],
+   [
+    79
+   ],
+   [
+    100
+   ],
+   [
+    200
+   ],
+   [
+    4000
+   ],
+   [
+    10000
+   ],
+   [
+    100000
+   ]
+  ]
+ },
+ {
+  "idx": 37,
+  "task_id": "Python/37",
+  "entry_point": "sort_even",
+  "signature": "sort_even(l: list)",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     5,
+     3,
+     -5,
+     2,
+     -3,
+     3,
+     9,
+     0,
+     123,
+     1,
+     -10
+    ]
+   ],
+   [
+    [
+     5,
+     8,
+     -12,
+     4,
+     23,
+     2,
+     3,
+     11,
+     12,
+     -10
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 38,
+  "task_id": "Python/38",
+  "entry_point": "decode_cyclic",
+  "signature": "decode_cyclic(s: str)",
+  "status": "ok",
+  "n_calls": 100,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "ykagnuqmalirz"
+   ],
+   [
+    "uwvmcnrfejhbw"
+   ],
+   [
+    "ffzgjvtgiuyay"
+   ],
+   [
+    "xfkkhbfddyrwfzfnsif"
+   ],
+   [
+    "invstqwinqkqbbveym"
+   ],
+   [
+    "tsbsuatxcnsxc"
+   ],
+   [
+    "fylccepovmypkpzpa"
+   ],
+   [
+    "sqeypsbcpoilqfh"
+   ],
+   [
+    "aweiqjgkoybkotl"
+   ],
+   [
+    "nwbuocgritfdi"
+   ],
+   [
+    "pvtnkoyejucssldee"
+   ],
+   [
+    "fxpnylseeviurnt"
+   ],
+   [
+    "imzychrrls"
+   ],
+   [
+    "kwnuhtxbukdcdhppcm"
+   ],
+   [
+    "quferdfaaexlrpqaic"
+   ],
+   [
+    "gyqygajrhvjg"
+   ],
+   [
+    "borvjyaacahlsvrdswfc"
+   ],
+   [
+    "ypmojfxabal"
+   ],
+   [
+    "vlscujyhkgztfxi"
+   ],
+   [
+    "dgyuixtmsyqfsutrd"
+   ],
+   [
+    "kmxhpzohlaps"
+   ],
+   [
+    "jefodimgvijmzfve"
+   ],
+   [
+    "uyxhbkhhudirdaxebknm"
+   ],
+   [
+    "bnqxxcfdgmkhbvgjq"
+   ],
+   [
+    "tioosgndwwhnalnwxplu"
+   ],
+   [
+    "fjycthkreblheqlqsf"
+   ],
+   [
+    "dpvvhybkzlnv"
+   ],
+   [
+    "cobmcgbdquabzjwlhnd"
+   ],
+   [
+    "hatxpfzivhkxy"
+   ],
+   [
+    "nuyfquukurhrxlzmnrx"
+   ],
+   [
+    "miqhalpraolsysvkhbr"
+   ],
+   [
+    "yqownunhiqpwgrgqpzt"
+   ],
+   [
+    "lseixfzworfgdjtbdq"
+   ],
+   [
+    "zgvbjxjsgdhbjyvi"
+   ],
+   [
+    "hcuahentlilxvgtpgog"
+   ],
+   [
+    "ikxludievhvu"
+   ],
+   [
+    "jairkckdiqtezfjhzr"
+   ],
+   [
+    "hasqejqwbbzmwdzta"
+   ],
+   [
+    "qglmnuvfugzojuveifq"
+   ],
+   [
+    "lkefujgnoqxfxbs"
+   ],
+   [
+    "fjjuljblqyjyxy"
+   ],
+   [
+    "mkfgaqorybayq"
+   ],
+   [
+    "canuniopgwnuygbql"
+   ],
+   [
+    "sowvhjidcnjghs"
+   ],
+   [
+    "zuqouzicchac"
+   ],
+   [
+    "ejqwckeclurkr"
+   ],
+   [
+    "uxjejtukwtezyxmxttdy"
+   ],
+   [
+    "yvkzayqrsd"
+   ],
+   [
+    "xhxvcxehwzugimxp"
+   ],
+   [
+    "wifnfgblgbwfdr"
+   ],
+   [
+    "sylaszqbjgjp"
+   ],
+   [
+    "otvuucoevzjya"
+   ],
+   [
+    "urctkbfnzxfwnrrvqbru"
+   ],
+   [
+    "lifjgzzrkf"
+   ],
+   [
+    "rrnvznqbwsgoarhv"
+   ],
+   [
+    "kpbvgxzzrpb"
+   ],
+   [
+    "eatizbtwmbdzqorr"
+   ],
+   [
+    "xthyypluxsdrg"
+   ],
+   [
+    "pbhbzgxaqyqx"
+   ],
+   [
+    "lfiudfnvwrztyqtvojl"
+   ],
+   [
+    "gsgvwiesfrzxnkcej"
+   ],
+   [
+    "aitluzjcwhhejunywhu"
+   ],
+   [
+    "egebqfucpaqzz"
+   ],
+   [
+    "usiyrmukymnbjcmgmi"
+   ]
+  ]
+ },
+ {
+  "idx": 39,
+  "task_id": "Python/39",
+  "entry_point": "prime_fib",
+  "signature": "prime_fib(n: int)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ]
+  ]
+ },
+ {
+  "idx": 40,
+  "task_id": "Python/40",
+  "entry_point": "triples_sum_to_zero",
+  "signature": "triples_sum_to_zero(l: list)",
+  "status": "ok",
+  "n_calls": 9,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    [
+     1,
+     3,
+     5,
+     0
+    ]
+   ],
+   [
+    [
+     1,
+     3,
+     5,
+     -1
+    ]
+   ],
+   [
+    [
+     1,
+     3,
+     -2,
+     1
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     7
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     5,
+     7
+    ]
+   ],
+   [
+    [
+     2,
+     4,
+     -5,
+     3,
+     9,
+     7
+    ]
+   ],
+   [
+    [
+     1
+    ]
+   ],
+   [
+    [
+     1,
+     3,
+     5,
+     -100
+    ]
+   ],
+   [
+    [
+     100,
+     3,
+     5,
+     -100
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 41,
+  "task_id": "Python/41",
+  "entry_point": "car_race_collision",
+  "signature": "car_race_collision(n: int)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    8
+   ],
+   [
+    10
+   ]
+  ]
+ },
+ {
+  "idx": 42,
+  "task_id": "Python/42",
+  "entry_point": "incr_list",
+  "signature": "incr_list(l: list)",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     3,
+     2,
+     1
+    ]
+   ],
+   [
+    [
+     5,
+     2,
+     5,
+     2,
+     3,
+     3,
+     9,
+     0,
+     123
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 43,
+  "task_id": "Python/43",
+  "entry_point": "pairs_sum_to_zero",
+  "signature": "pairs_sum_to_zero(l)",
+  "status": "ok",
+  "n_calls": 9,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    [
+     1,
+     3,
+     5,
+     0
+    ]
+   ],
+   [
+    [
+     1,
+     3,
+     -2,
+     1
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     7
+    ]
+   ],
+   [
+    [
+     2,
+     4,
+     -5,
+     3,
+     5,
+     7
+    ]
+   ],
+   [
+    [
+     1
+    ]
+   ],
+   [
+    [
+     -3,
+     9,
+     -1,
+     3,
+     2,
+     30
+    ]
+   ],
+   [
+    [
+     -3,
+     9,
+     -1,
+     3,
+     2,
+     31
+    ]
+   ],
+   [
+    [
+     -3,
+     9,
+     -1,
+     4,
+     2,
+     30
+    ]
+   ],
+   [
+    [
+     -3,
+     9,
+     -1,
+     4,
+     2,
+     31
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 44,
+  "task_id": "Python/44",
+  "entry_point": "change_base",
+  "signature": "change_base(x: int, base: int)",
+  "status": "ok",
+  "n_calls": 12,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    8,
+    3
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    234,
+    2
+   ],
+   [
+    16,
+    2
+   ],
+   [
+    8,
+    2
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ]
+  ]
+ },
+ {
+  "idx": 45,
+  "task_id": "Python/45",
+  "entry_point": "triangle_area",
+  "signature": "triangle_area(a, h)",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "float",
+  "seed_inputs": [
+   [
+    5,
+    3
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    10,
+    8
+   ]
+  ]
+ },
+ {
+  "idx": 46,
+  "task_id": "Python/46",
+  "entry_point": "fib4",
+  "signature": "fib4(n: int)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    5
+   ],
+   [
+    8
+   ],
+   [
+    10
+   ],
+   [
+    12
+   ]
+  ]
+ },
+ {
+  "idx": 47,
+  "task_id": "Python/47",
+  "entry_point": "median",
+  "signature": "median(l: list)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "float",
+  "seed_inputs": [
+   [
+    [
+     3,
+     1,
+     2,
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     -10,
+     4,
+     6,
+     1000,
+     10,
+     20
+    ]
+   ],
+   [
+    [
+     5
+    ]
+   ],
+   [
+    [
+     6,
+     5
+    ]
+   ],
+   [
+    [
+     8,
+     1,
+     3,
+     9,
+     9,
+     2,
+     7
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 48,
+  "task_id": "Python/48",
+  "entry_point": "is_palindrome",
+  "signature": "is_palindrome(text: str)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "aba"
+   ],
+   [
+    "aaaaa"
+   ],
+   [
+    "zbcd"
+   ],
+   [
+    "xywyx"
+   ],
+   [
+    "xywyz"
+   ],
+   [
+    "xywzx"
+   ]
+  ]
+ },
+ {
+  "idx": 49,
+  "task_id": "Python/49",
+  "entry_point": "modp",
+  "signature": "modp(n: int, p: int)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    3,
+    5
+   ],
+   [
+    1101,
+    101
+   ],
+   [
+    0,
+    101
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    100,
+    101
+   ],
+   [
+    30,
+    5
+   ],
+   [
+    31,
+    5
+   ]
+  ]
+ },
+ {
+  "idx": 50,
+  "task_id": "Python/50",
+  "entry_point": "decode_shift",
+  "signature": "decode_shift(s: str)",
+  "status": "ok",
+  "n_calls": 100,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "hiyzplrfwtbsqjocw"
+   ],
+   [
+    "cpvcujteqydmnrjduq"
+   ],
+   [
+    "pzhdhjnzpsk"
+   ],
+   [
+    "voapquzymy"
+   ],
+   [
+    "potpspyccvnrmw"
+   ],
+   [
+    "gwhrmihbsnbpwrurxe"
+   ],
+   [
+    "jrkccviyilr"
+   ],
+   [
+    "hlvoibgkpdcljcr"
+   ],
+   [
+    "tsggpestwpw"
+   ],
+   [
+    "vaaerivzpw"
+   ],
+   [
+    "ujyipkeqqznksrvtqjcb"
+   ],
+   [
+    "sogubexawqbf"
+   ],
+   [
+    "wifzwnyhomw"
+   ],
+   [
+    "nbrvbjneklyhzmbavl"
+   ],
+   [
+    "qqwsywigllbef"
+   ],
+   [
+    "bhdyngokgbruowzepbx"
+   ],
+   [
+    "jrcogctbzpdbinxx"
+   ],
+   [
+    "rnmftvuysqpnouu"
+   ],
+   [
+    "uyhvebielkpefrge"
+   ],
+   [
+    "tizxkxrqszkmzz"
+   ],
+   [
+    "pfwyixtmkqfdvn"
+   ],
+   [
+    "roijdhhosfkiwfnrqqqf"
+   ],
+   [
+    "xyfmxfmqtef"
+   ],
+   [
+    "okqtsbjhwuumavkg"
+   ],
+   [
+    "kgcfutbqdquwm"
+   ],
+   [
+    "lwszlbcuwpfzdqeufead"
+   ],
+   [
+    "bimxdzvegt"
+   ],
+   [
+    "thnxiujzlizvsrdrv"
+   ],
+   [
+    "mgplgnrjeiogpjfya"
+   ],
+   [
+    "rxlmhrsnuseaeerkhti"
+   ],
+   [
+    "xjexkbvpudttlhhy"
+   ],
+   [
+    "ofefflhrxmzdywsnwsb"
+   ],
+   [
+    "halvjlydcmsv"
+   ],
+   [
+    "lgpokfxwsg"
+   ],
+   [
+    "rrgdatjzgpxqild"
+   ],
+   [
+    "pymrstlupqu"
+   ],
+   [
+    "orutcmpffxh"
+   ],
+   [
+    "yczlepvmjajigbooj"
+   ],
+   [
+    "tmmsvshklgelzgzueg"
+   ],
+   [
+    "qcixsfvsfunwbgiqjet"
+   ],
+   [
+    "googftoxktemwtv"
+   ],
+   [
+    "nboyvmuqihzwjeeub"
+   ],
+   [
+    "izkuesgiuxkcbougqfrk"
+   ],
+   [
+    "dlbwbacmkainndffee"
+   ],
+   [
+    "bebfsygtnowgznjorhrk"
+   ],
+   [
+    "urlursiebprgwcr"
+   ],
+   [
+    "ekceywtbozcehvn"
+   ],
+   [
+    "cdynmxhtetqkbuh"
+   ],
+   [
+    "liyhibjptnbcispgd"
+   ],
+   [
+    "hyjeonuwrdmglgme"
+   ],
+   [
+    "ikvcatrofrznq"
+   ],
+   [
+    "myugycibialgbelz"
+   ],
+   [
+    "qtfuitxbgtcpabbmxf"
+   ],
+   [
+    "wyortdwrqgoyrpgduriw"
+   ],
+   [
+    "zaqigsjjwjbrnovuu"
+   ],
+   [
+    "faarliuyfxeavqis"
+   ],
+   [
+    "bowbrmpnockjqzp"
+   ],
+   [
+    "farvjozfrvzgr"
+   ],
+   [
+    "vnyuzimuznbeinoeivf"
+   ],
+   [
+    "hflyvhtjzncutcdurjw"
+   ],
+   [
+    "aumuuidvzjupbfk"
+   ],
+   [
+    "chziuhjnafva"
+   ],
+   [
+    "oyspzxmjtsq"
+   ],
+   [
+    "ihbthzqfnlgxzqpg"
+   ]
+  ]
+ },
+ {
+  "idx": 51,
+  "task_id": "Python/51",
+  "entry_point": "remove_vowels",
+  "signature": "remove_vowels(text)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "abcdef\nghijklm"
+   ],
+   [
+    "fedcba"
+   ],
+   [
+    "eeeee"
+   ],
+   [
+    "acBAA"
+   ],
+   [
+    "EcBOO"
+   ],
+   [
+    "ybcd"
+   ]
+  ]
+ },
+ {
+  "idx": 52,
+  "task_id": "Python/52",
+  "entry_point": "below_threshold",
+  "signature": "below_threshold(l: list, t: int)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "list[int]",
+   "int"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     4,
+     10
+    ],
+    100
+   ],
+   [
+    [
+     1,
+     20,
+     4,
+     10
+    ],
+    5
+   ],
+   [
+    [
+     1,
+     20,
+     4,
+     10
+    ],
+    21
+   ],
+   [
+    [
+     1,
+     20,
+     4,
+     10
+    ],
+    22
+   ],
+   [
+    [
+     1,
+     8,
+     4,
+     10
+    ],
+    11
+   ],
+   [
+    [
+     1,
+     8,
+     4,
+     10
+    ],
+    10
+   ]
+  ]
+ },
+ {
+  "idx": 53,
+  "task_id": "Python/53",
+  "entry_point": "add",
+  "signature": "add(x: int, y: int)",
+  "status": "ok",
+  "n_calls": 105,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    274,
+    230
+   ],
+   [
+    829,
+    282
+   ],
+   [
+    214,
+    196
+   ],
+   [
+    673,
+    35
+   ],
+   [
+    711,
+    714
+   ],
+   [
+    272,
+    841
+   ],
+   [
+    871,
+    866
+   ],
+   [
+    48,
+    968
+   ],
+   [
+    512,
+    288
+   ],
+   [
+    209,
+    737
+   ],
+   [
+    357,
+    753
+   ],
+   [
+    479,
+    758
+   ],
+   [
+    883,
+    172
+   ],
+   [
+    713,
+    431
+   ],
+   [
+    805,
+    151
+   ],
+   [
+    526,
+    706
+   ],
+   [
+    789,
+    287
+   ],
+   [
+    291,
+    243
+   ],
+   [
+    691,
+    704
+   ],
+   [
+    204,
+    252
+   ],
+   [
+    781,
+    89
+   ],
+   [
+    288,
+    649
+   ],
+   [
+    636,
+    956
+   ],
+   [
+    415,
+    542
+   ],
+   [
+    741,
+    235
+   ],
+   [
+    2,
+    859
+   ],
+   [
+    542,
+    510
+   ],
+   [
+    467,
+    549
+   ],
+   [
+    967,
+    468
+   ],
+   [
+    948,
+    235
+   ],
+   [
+    689,
+    717
+   ],
+   [
+    909,
+    607
+   ],
+   [
+    602,
+    515
+   ],
+   [
+    988,
+    12
+   ],
+   [
+    167,
+    774
+   ],
+   [
+    818,
+    169
+   ],
+   [
+    86,
+    776
+   ],
+   [
+    252,
+    714
+   ],
+   [
+    91,
+    645
+   ],
+   [
+    412,
+    878
+   ],
+   [
+    631,
+    169
+   ],
+   [
+    748,
+    585
+   ],
+   [
+    225,
+    490
+   ],
+   [
+    70,
+    813
+   ],
+   [
+    327,
+    140
+   ],
+   [
+    259,
+    10
+   ],
+   [
+    466,
+    218
+   ],
+   [
+    682,
+    614
+   ],
+   [
+    306,
+    759
+   ],
+   [
+    343,
+    735
+   ],
+   [
+    413,
+    468
+   ],
+   [
+    169,
+    488
+   ],
+   [
+    373,
+    455
+   ],
+   [
+    176,
+    651
+   ],
+   [
+    495,
+    516
+   ],
+   [
+    858,
+    478
+   ],
+   [
+    815,
+    422
+   ],
+   [
+    843,
+    321
+   ],
+   [
+    868,
+    587
+   ]
+  ]
+ },
+ {
+  "idx": 54,
+  "task_id": "Python/54",
+  "entry_point": "same_chars",
+  "signature": "same_chars(s0: str, s1: str)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str",
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "eabcdzzzz",
+    "dddzzzzzzzddeddabc"
+   ],
+   [
+    "abcd",
+    "dddddddabc"
+   ],
+   [
+    "dddddddabc",
+    "abcd"
+   ],
+   [
+    "eabcd",
+    "dddddddabc"
+   ],
+   [
+    "abcd",
+    "dddddddabcf"
+   ],
+   [
+    "eabcdzzzz",
+    "dddzzzzzzzddddabc"
+   ],
+   [
+    "aabb",
+    "aaccc"
+   ]
+  ]
+ },
+ {
+  "idx": 55,
+  "task_id": "Python/55",
+  "entry_point": "fib",
+  "signature": "fib(n: int)",
+  "status": "ok",
+  "n_calls": 400,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    4
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ],
+   [
+    5
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    4
+   ],
+   [
+    6
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    4
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ],
+   [
+    5
+   ],
+   [
+    7
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    4
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ],
+   [
+    5
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    2
+   ]
+  ]
+ },
+ {
+  "idx": 56,
+  "task_id": "Python/56",
+  "entry_point": "correct_bracketing",
+  "signature": "correct_bracketing(brackets: str)",
+  "status": "ok",
+  "n_calls": 12,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "<>"
+   ],
+   [
+    "<<><>>"
+   ],
+   [
+    "<><><<><>><>"
+   ],
+   [
+    "<><><<<><><>><>><<><><<>>>"
+   ],
+   [
+    "<<<><>>>>"
+   ],
+   [
+    "><<>"
+   ],
+   [
+    "<"
+   ],
+   [
+    "<<<<"
+   ],
+   [
+    ">"
+   ],
+   [
+    "<<>"
+   ],
+   [
+    "<><><<><>><>><<>"
+   ],
+   [
+    "<><><<><>><>>><>"
+   ]
+  ]
+ },
+ {
+  "idx": 57,
+  "task_id": "Python/57",
+  "entry_point": "monotonic",
+  "signature": "monotonic(l: list)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     4,
+     10
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     4,
+     20
+    ]
+   ],
+   [
+    [
+     1,
+     20,
+     4,
+     10
+    ]
+   ],
+   [
+    [
+     4,
+     1,
+     0,
+     -10
+    ]
+   ],
+   [
+    [
+     4,
+     1,
+     1,
+     0
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     2,
+     5,
+     60
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     60
+    ]
+   ],
+   [
+    [
+     9,
+     9,
+     9,
+     9
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 58,
+  "task_id": "Python/58",
+  "entry_point": "common",
+  "signature": "common(l1: list, l2: list)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "list[int]",
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     1,
+     4,
+     3,
+     34,
+     653,
+     2,
+     5
+    ],
+    [
+     5,
+     7,
+     1,
+     5,
+     9,
+     653,
+     121
+    ]
+   ],
+   [
+    [
+     5,
+     3,
+     2,
+     8
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   [
+    [
+     4,
+     3,
+     2,
+     8
+    ],
+    [
+     3,
+     2,
+     4
+    ]
+   ],
+   [
+    [
+     4,
+     3,
+     2,
+     8
+    ],
+    []
+   ]
+  ]
+ },
+ {
+  "idx": 59,
+  "task_id": "Python/59",
+  "entry_point": "largest_prime_factor",
+  "signature": "largest_prime_factor(n: int)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    15
+   ],
+   [
+    27
+   ],
+   [
+    63
+   ],
+   [
+    330
+   ],
+   [
+    13195
+   ]
+  ]
+ },
+ {
+  "idx": 60,
+  "task_id": "Python/60",
+  "entry_point": "sum_to_n",
+  "signature": "sum_to_n(n: int)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    1
+   ],
+   [
+    6
+   ],
+   [
+    11
+   ],
+   [
+    30
+   ],
+   [
+    100
+   ]
+  ]
+ },
+ {
+  "idx": 61,
+  "task_id": "Python/61",
+  "entry_point": "correct_bracketing",
+  "signature": "correct_bracketing(brackets: str)",
+  "status": "ok",
+  "n_calls": 12,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "()"
+   ],
+   [
+    "(()())"
+   ],
+   [
+    "()()(()())()"
+   ],
+   [
+    "()()((()()())())(()()(()))"
+   ],
+   [
+    "((()())))"
+   ],
+   [
+    ")(()"
+   ],
+   [
+    "("
+   ],
+   [
+    "(((("
+   ],
+   [
+    ")"
+   ],
+   [
+    "(()"
+   ],
+   [
+    "()()(()())())(()"
+   ],
+   [
+    "()()(()())()))()"
+   ]
+  ]
+ },
+ {
+  "idx": 62,
+  "task_id": "Python/62",
+  "entry_point": "derivative",
+  "signature": "derivative(xs: list)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     3,
+     1,
+     2,
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     3,
+     2,
+     1
+    ]
+   ],
+   [
+    [
+     3,
+     2,
+     1,
+     0,
+     4
+    ]
+   ],
+   [
+    [
+     1
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 63,
+  "task_id": "Python/63",
+  "entry_point": "fibfib",
+  "signature": "fibfib(n: int)",
+  "status": "ok",
+  "n_calls": 400,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    4
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    2
+   ],
+   [
+    5
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    4
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    2
+   ],
+   [
+    5
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    4
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    6
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    4
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    2
+   ],
+   [
+    5
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ],
+   [
+    3
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    4
+   ],
+   [
+    7
+   ],
+   [
+    2
+   ],
+   [
+    1
+   ],
+   [
+    0
+   ]
+  ]
+ },
+ {
+  "idx": 64,
+  "task_id": "Python/64",
+  "entry_point": "vowels_count",
+  "signature": "vowels_count(s)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    "abcde"
+   ],
+   [
+    "Alone"
+   ],
+   [
+    "key"
+   ],
+   [
+    "bye"
+   ],
+   [
+    "keY"
+   ],
+   [
+    "bYe"
+   ],
+   [
+    "ACEDY"
+   ]
+  ]
+ },
+ {
+  "idx": 65,
+  "task_id": "Python/65",
+  "entry_point": "circular_shift",
+  "signature": "circular_shift(x, shift)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    100,
+    2
+   ],
+   [
+    12,
+    2
+   ],
+   [
+    97,
+    8
+   ],
+   [
+    12,
+    1
+   ],
+   [
+    11,
+    101
+   ]
+  ]
+ },
+ {
+  "idx": 66,
+  "task_id": "Python/66",
+  "entry_point": "digitSum",
+  "signature": "digitSum(s)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    ""
+   ],
+   [
+    "abAB"
+   ],
+   [
+    "abcCd"
+   ],
+   [
+    "helloE"
+   ],
+   [
+    "woArBld"
+   ],
+   [
+    "aAaaaXa"
+   ],
+   [
+    " How are yOu?"
+   ],
+   [
+    "You arE Very Smart"
+   ]
+  ]
+ },
+ {
+  "idx": 67,
+  "task_id": "Python/67",
+  "entry_point": "fruit_distribution",
+  "signature": "fruit_distribution(s,n)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    "5 apples and 6 oranges",
+    19
+   ],
+   [
+    "5 apples and 6 oranges",
+    21
+   ],
+   [
+    "0 apples and 1 oranges",
+    3
+   ],
+   [
+    "1 apples and 0 oranges",
+    3
+   ],
+   [
+    "2 apples and 3 oranges",
+    100
+   ],
+   [
+    "2 apples and 3 oranges",
+    5
+   ],
+   [
+    "1 apples and 100 oranges",
+    120
+   ]
+  ]
+ },
+ {
+  "idx": 68,
+  "task_id": "Python/68",
+  "entry_point": "pluck",
+  "signature": "pluck(arr)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     4,
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    []
+   ],
+   [
+    [
+     5,
+     0,
+     3,
+     0,
+     4,
+     2
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     0,
+     5,
+     3
+    ]
+   ],
+   [
+    [
+     5,
+     4,
+     8,
+     4,
+     8
+    ]
+   ],
+   [
+    [
+     7,
+     6,
+     7,
+     1
+    ]
+   ],
+   [
+    [
+     7,
+     9,
+     7,
+     1
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 69,
+  "task_id": "Python/69",
+  "entry_point": "search",
+  "signature": "search(lst)",
+  "status": "ok",
+  "n_calls": 25,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     5,
+     5,
+     5,
+     5,
+     1
+    ]
+   ],
+   [
+    [
+     4,
+     1,
+     4,
+     1,
+     4,
+     4
+    ]
+   ],
+   [
+    [
+     3,
+     3
+    ]
+   ],
+   [
+    [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ]
+   ],
+   [
+    [
+     2,
+     3,
+     3,
+     2,
+     2
+    ]
+   ],
+   [
+    [
+     2,
+     7,
+     8,
+     8,
+     4,
+     8,
+     7,
+     3,
+     9,
+     6,
+     5,
+     10,
+     4,
+     3,
+     6,
+     7,
+     1,
+     7,
+     4,
+     10,
+     8,
+     1
+    ]
+   ],
+   [
+    [
+     3,
+     2,
+     8,
+     2
+    ]
+   ],
+   [
+    [
+     6,
+     7,
+     1,
+     8,
+     8,
+     10,
+     5,
+     8,
+     5,
+     3,
+     10
+    ]
+   ],
+   [
+    [
+     8,
+     8,
+     3,
+     6,
+     5,
+     6,
+     4
+    ]
+   ],
+   [
+    [
+     6,
+     9,
+     6,
+     7,
+     1,
+     4,
+     7,
+     1,
+     8,
+     8,
+     9,
+     8,
+     10,
+     10,
+     8,
+     4,
+     10,
+     4,
+     10,
+     1,
+     2,
+     9,
+     5,
+     7,
+     9
+    ]
+   ],
+   [
+    [
+     1,
+     9,
+     10,
+     1,
+     3
+    ]
+   ],
+   [
+    [
+     6,
+     9,
+     7,
+     5,
+     8,
+     7,
+     5,
+     3,
+     7,
+     5,
+     10,
+     10,
+     3,
+     6,
+     10,
+     2,
+     8,
+     6,
+     5,
+     4,
+     9,
+     5,
+     3,
+     10
+    ]
+   ],
+   [
+    [
+     1
+    ]
+   ],
+   [
+    [
+     8,
+     8,
+     10,
+     6,
+     4,
+     3,
+     5,
+     8,
+     2,
+     4,
+     2,
+     8,
+     4,
+     6,
+     10,
+     4,
+     2,
+     1,
+     10,
+     2,
+     1,
+     1,
+     5
+    ]
+   ],
+   [
+    [
+     2,
+     10,
+     4,
+     8,
+     2,
+     10,
+     5,
+     1,
+     2,
+     9,
+     5,
+     5,
+     6,
+     3,
+     8,
+     6,
+     4,
+     10
+    ]
+   ],
+   [
+    [
+     1,
+     6,
+     10,
+     1,
+     6,
+     9,
+     10,
+     8,
+     6,
+     8,
+     7,
+     3
+    ]
+   ],
+   [
+    [
+     9,
+     2,
+     4,
+     1,
+     5,
+     1,
+     5,
+     2,
+     5,
+     7,
+     7,
+     7,
+     3,
+     10,
+     1,
+     5,
+     4,
+     2,
+     8,
+     4,
+     1,
+     9,
+     10,
+     7,
+     10,
+     2,
+     8,
+     10,
+     9,
+     4
+    ]
+   ],
+   [
+    [
+     2,
+     6,
+     4,
+     2,
+     8,
+     7,
+     5,
+     6,
+     4,
+     10,
+     4,
+     6,
+     3,
+     7,
+     8,
+     8,
+     3,
+     1,
+     4,
+     2,
+     2,
+     10,
+     7
+    ]
+   ],
+   [
+    [
+     9,
+     8,
+     6,
+     10,
+     2,
+     6,
+     10,
+     2,
+     7,
+     8,
+     10,
+     3,
+     8,
+     2,
+     6,
+     2,
+     3,
+     1
+    ]
+   ],
+   [
+    [
+     5,
+     5,
+     3,
+     9,
+     5,
+     6,
+     3,
+     2,
+     8,
+     5,
+     6,
+     10,
+     10,
+     6,
+     8,
+     4,
+     10,
+     7,
+     7,
+     10,
+     8
+    ]
+   ],
+   [
+    [
+     10
+    ]
+   ],
+   [
+    [
+     9,
+     7,
+     7,
+     2,
+     4,
+     7,
+     2,
+     10,
+     9,
+     7,
+     5,
+     7,
+     2
+    ]
+   ],
+   [
+    [
+     5,
+     4,
+     10,
+     2,
+     1,
+     1,
+     10,
+     3,
+     6,
+     1,
+     8
+    ]
+   ],
+   [
+    [
+     7,
+     9,
+     9,
+     9,
+     3,
+     4,
+     1,
+     5,
+     9,
+     1,
+     2,
+     1,
+     1,
+     10,
+     7,
+     5,
+     6,
+     7,
+     6,
+     7,
+     7,
+     6
+    ]
+   ],
+   [
+    [
+     3,
+     10,
+     10,
+     9,
+     2
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 71,
+  "task_id": "Python/71",
+  "entry_point": "triangle_area",
+  "signature": "triangle_area(a, b, c)",
+  "status": "ok",
+  "n_calls": 9,
+  "param_types": [
+   "int",
+   "int",
+   "int"
+  ],
+  "return_type": "float",
+  "seed_inputs": [
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    1,
+    2,
+    10
+   ],
+   [
+    4,
+    8,
+    5
+   ],
+   [
+    2,
+    2,
+    2
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    10,
+    5,
+    7
+   ],
+   [
+    2,
+    6,
+    3
+   ],
+   [
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    10
+   ]
+  ]
+ },
+ {
+  "idx": 72,
+  "task_id": "Python/72",
+  "entry_point": "will_it_fly",
+  "signature": "will_it_fly(q,w)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "list[int]",
+   "int"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    [
+     3,
+     2,
+     3
+    ],
+    9
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    5
+   ],
+   [
+    [
+     3
+    ],
+    5
+   ],
+   [
+    [
+     3,
+     2,
+     3
+    ],
+    1
+   ],
+   [
+    [
+     1,
+     2,
+     3
+    ],
+    6
+   ],
+   [
+    [
+     5
+    ],
+    5
+   ]
+  ]
+ },
+ {
+  "idx": 73,
+  "task_id": "Python/73",
+  "entry_point": "smallest_change",
+  "signature": "smallest_change(arr)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     3,
+     5,
+     4,
+     7,
+     9,
+     6
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4,
+     3,
+     2,
+     2
+    ]
+   ],
+   [
+    [
+     1,
+     4,
+     2
+    ]
+   ],
+   [
+    [
+     1,
+     4,
+     4,
+     2
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     2,
+     1
+    ]
+   ],
+   [
+    [
+     3,
+     1,
+     1,
+     3
+    ]
+   ],
+   [
+    [
+     1
+    ]
+   ],
+   [
+    [
+     0,
+     1
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 74,
+  "task_id": "Python/74",
+  "entry_point": "total_match",
+  "signature": "total_match(lst1, lst2)",
+  "status": "ok",
+  "n_calls": 9,
+  "param_types": [
+   "list[str]",
+   "list[str]"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    [],
+    []
+   ],
+   [
+    [
+     "hi",
+     "admin"
+    ],
+    [
+     "hi",
+     "hi"
+    ]
+   ],
+   [
+    [
+     "hi",
+     "admin"
+    ],
+    [
+     "hi",
+     "hi",
+     "admin",
+     "project"
+    ]
+   ],
+   [
+    [
+     "4"
+    ],
+    [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ]
+   ],
+   [
+    [
+     "hi",
+     "admin"
+    ],
+    [
+     "hI",
+     "Hi"
+    ]
+   ],
+   [
+    [
+     "hi",
+     "admin"
+    ],
+    [
+     "hI",
+     "hi",
+     "hi"
+    ]
+   ],
+   [
+    [
+     "hi",
+     "admin"
+    ],
+    [
+     "hI",
+     "hi",
+     "hii"
+    ]
+   ],
+   [
+    [],
+    [
+     "this"
+    ]
+   ],
+   [
+    [
+     "this"
+    ],
+    []
+   ]
+  ]
+ },
+ {
+  "idx": 75,
+  "task_id": "Python/75",
+  "entry_point": "is_multiply_prime",
+  "signature": "is_multiply_prime(a)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    5
+   ],
+   [
+    30
+   ],
+   [
+    8
+   ],
+   [
+    10
+   ],
+   [
+    125
+   ],
+   [
+    105
+   ],
+   [
+    126
+   ],
+   [
+    729
+   ],
+   [
+    891
+   ],
+   [
+    1001
+   ]
+  ]
+ },
+ {
+  "idx": 76,
+  "task_id": "Python/76",
+  "entry_point": "is_simple_power",
+  "signature": "is_simple_power(x, n)",
+  "status": "ok",
+  "n_calls": 16,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    1,
+    4
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    8,
+    2
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    16,
+    2
+   ],
+   [
+    143214,
+    16
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    16,
+    4
+   ],
+   [
+    24,
+    2
+   ],
+   [
+    128,
+    4
+   ],
+   [
+    12,
+    6
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "idx": 77,
+  "task_id": "Python/77",
+  "entry_point": "iscube",
+  "signature": "iscube(a)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    -1
+   ],
+   [
+    64
+   ],
+   [
+    180
+   ],
+   [
+    1000
+   ],
+   [
+    0
+   ],
+   [
+    1729
+   ]
+  ]
+ },
+ {
+  "idx": 79,
+  "task_id": "Python/79",
+  "entry_point": "decimal_to_binary",
+  "signature": "decimal_to_binary(decimal)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    0
+   ],
+   [
+    32
+   ],
+   [
+    103
+   ],
+   [
+    15
+   ]
+  ]
+ },
+ {
+  "idx": 80,
+  "task_id": "Python/80",
+  "entry_point": "is_happy",
+  "signature": "is_happy(s)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "a"
+   ],
+   [
+    "aa"
+   ],
+   [
+    "abcd"
+   ],
+   [
+    "aabb"
+   ],
+   [
+    "adb"
+   ],
+   [
+    "xyy"
+   ],
+   [
+    "iopaxpoi"
+   ],
+   [
+    "iopaxioi"
+   ]
+  ]
+ },
+ {
+  "idx": 81,
+  "task_id": "Python/81",
+  "entry_point": "numerical_letter_grade",
+  "signature": "numerical_letter_grade(grades)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "list[float]"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    [
+     4.0,
+     3,
+     1.7,
+     2,
+     3.5
+    ]
+   ],
+   [
+    [
+     1.2
+    ]
+   ],
+   [
+    [
+     0.5
+    ]
+   ],
+   [
+    [
+     0.0
+    ]
+   ],
+   [
+    [
+     1,
+     0.3,
+     1.5,
+     2.8,
+     3.3
+    ]
+   ],
+   [
+    [
+     0,
+     0.7
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 82,
+  "task_id": "Python/82",
+  "entry_point": "prime_length",
+  "signature": "prime_length(string)",
+  "status": "ok",
+  "n_calls": 16,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "Hello"
+   ],
+   [
+    "abcdcba"
+   ],
+   [
+    "kittens"
+   ],
+   [
+    "orange"
+   ],
+   [
+    "wow"
+   ],
+   [
+    "world"
+   ],
+   [
+    "MadaM"
+   ],
+   [
+    "Wow"
+   ],
+   [
+    ""
+   ],
+   [
+    "HI"
+   ],
+   [
+    "go"
+   ],
+   [
+    "gogo"
+   ],
+   [
+    "aaaaaaaaaaaaaaa"
+   ],
+   [
+    "Madam"
+   ],
+   [
+    "M"
+   ],
+   [
+    "0"
+   ]
+  ]
+ },
+ {
+  "idx": 83,
+  "task_id": "Python/83",
+  "entry_point": "starts_one_ends",
+  "signature": "starts_one_ends(n)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ]
+  ]
+ },
+ {
+  "idx": 84,
+  "task_id": "Python/84",
+  "entry_point": "solve",
+  "signature": "solve(N)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    1000
+   ],
+   [
+    150
+   ],
+   [
+    147
+   ],
+   [
+    333
+   ],
+   [
+    963
+   ]
+  ]
+ },
+ {
+  "idx": 85,
+  "task_id": "Python/85",
+  "entry_point": "add",
+  "signature": "add(lst)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     4,
+     88
+    ]
+   ],
+   [
+    [
+     4,
+     5,
+     6,
+     7,
+     2,
+     122
+    ]
+   ],
+   [
+    [
+     4,
+     0,
+     6,
+     7
+    ]
+   ],
+   [
+    [
+     4,
+     4,
+     6,
+     8
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 86,
+  "task_id": "Python/86",
+  "entry_point": "anti_shuffle",
+  "signature": "anti_shuffle(s)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "Hi"
+   ],
+   [
+    "hello"
+   ],
+   [
+    "number"
+   ],
+   [
+    "abcd"
+   ],
+   [
+    "Hello World!!!"
+   ],
+   [
+    ""
+   ],
+   [
+    "Hi. My name is Mister Robot. How are you?"
+   ]
+  ]
+ },
+ {
+  "idx": 87,
+  "task_id": "Python/87",
+  "entry_point": "get_row",
+  "signature": "get_row(lst, x)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "list[list[int]]",
+   "int"
+  ],
+  "return_type": "list[list[int]]",
+  "seed_inputs": [
+   [
+    [
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      1,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      1
+     ]
+    ],
+    1
+   ],
+   [
+    [
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    ],
+    2
+   ],
+   [
+    [
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      1,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      1,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      1,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      1,
+      6
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      1
+     ]
+    ],
+    1
+   ],
+   [
+    [],
+    1
+   ],
+   [
+    [
+     [
+      1
+     ]
+    ],
+    2
+   ],
+   [
+    [
+     [],
+     [
+      1
+     ],
+     [
+      1,
+      2,
+      3
+     ]
+    ],
+    3
+   ]
+  ]
+ },
+ {
+  "idx": 88,
+  "task_id": "Python/88",
+  "entry_point": "sort_array",
+  "signature": "sort_array(array)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     5
+    ]
+   ],
+   [
+    [
+     2,
+     4,
+     3,
+     0,
+     1,
+     5
+    ]
+   ],
+   [
+    [
+     2,
+     4,
+     3,
+     0,
+     1,
+     5,
+     6
+    ]
+   ],
+   [
+    [
+     2,
+     1
+    ]
+   ],
+   [
+    [
+     15,
+     42,
+     87,
+     32,
+     11,
+     0
+    ]
+   ],
+   [
+    [
+     21,
+     14,
+     23,
+     11
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 89,
+  "task_id": "Python/89",
+  "entry_point": "encrypt",
+  "signature": "encrypt(s)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "hi"
+   ],
+   [
+    "asdfghjkl"
+   ],
+   [
+    "gf"
+   ],
+   [
+    "et"
+   ],
+   [
+    "faewfawefaewg"
+   ],
+   [
+    "hellomyfriend"
+   ],
+   [
+    "dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh"
+   ],
+   [
+    "a"
+   ]
+  ]
+ },
+ {
+  "idx": 91,
+  "task_id": "Python/91",
+  "entry_point": "is_bored",
+  "signature": "is_bored(S)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    "Hello world"
+   ],
+   [
+    "Is the sky blue?"
+   ],
+   [
+    "I love It !"
+   ],
+   [
+    "bIt"
+   ],
+   [
+    "I feel good today. I will be productive. will kill It"
+   ],
+   [
+    "You and I are going for a walk"
+   ]
+  ]
+ },
+ {
+  "idx": 92,
+  "task_id": "Python/92",
+  "entry_point": "any_int",
+  "signature": "any_int(x, y, z)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "float",
+   "float",
+   "float"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    2,
+    3,
+    1
+   ],
+   [
+    2.5,
+    2,
+    3
+   ],
+   [
+    1.5,
+    5,
+    3.5
+   ],
+   [
+    2,
+    6,
+    2
+   ],
+   [
+    4,
+    2,
+    2
+   ],
+   [
+    2.2,
+    2.2,
+    2.2
+   ],
+   [
+    -4,
+    6,
+    2
+   ],
+   [
+    2,
+    1,
+    1
+   ],
+   [
+    3,
+    4,
+    7
+   ],
+   [
+    3.0,
+    4,
+    7
+   ]
+  ]
+ },
+ {
+  "idx": 93,
+  "task_id": "Python/93",
+  "entry_point": "encode",
+  "signature": "encode(message)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "TEST"
+   ],
+   [
+    "Mudasir"
+   ],
+   [
+    "YES"
+   ],
+   [
+    "This is a message"
+   ],
+   [
+    "I DoNt KnOw WhAt tO WrItE"
+   ]
+  ]
+ },
+ {
+  "idx": 94,
+  "task_id": "Python/94",
+  "entry_point": "skjkasdkd",
+  "signature": "skjkasdkd(lst)",
+  "status": "ok",
+  "n_calls": 9,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     0,
+     3,
+     2,
+     1,
+     3,
+     5,
+     7,
+     4,
+     5,
+     5,
+     5,
+     2,
+     181,
+     32,
+     4,
+     32,
+     3,
+     2,
+     32,
+     324,
+     4,
+     3
+    ]
+   ],
+   [
+    [
+     1,
+     0,
+     1,
+     8,
+     2,
+     4597,
+     2,
+     1,
+     3,
+     40,
+     1,
+     2,
+     1,
+     2,
+     4,
+     2,
+     5,
+     1
+    ]
+   ],
+   [
+    [
+     1,
+     3,
+     1,
+     32,
+     5107,
+     34,
+     83278,
+     109,
+     163,
+     23,
+     2323,
+     32,
+     30,
+     1,
+     9,
+     3
+    ]
+   ],
+   [
+    [
+     0,
+     724,
+     32,
+     71,
+     99,
+     32,
+     6,
+     0,
+     5,
+     91,
+     83,
+     0,
+     5,
+     6
+    ]
+   ],
+   [
+    [
+     0,
+     81,
+     12,
+     3,
+     1,
+     21
+    ]
+   ],
+   [
+    [
+     0,
+     8,
+     1,
+     2,
+     1,
+     7
+    ]
+   ],
+   [
+    [
+     8191
+    ]
+   ],
+   [
+    [
+     8191,
+     123456,
+     127,
+     7
+    ]
+   ],
+   [
+    [
+     127,
+     97,
+     8192
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 96,
+  "task_id": "Python/96",
+  "entry_point": "count_up_to",
+  "signature": "count_up_to(n)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    10
+   ],
+   [
+    0
+   ],
+   [
+    22
+   ],
+   [
+    1
+   ],
+   [
+    18
+   ],
+   [
+    47
+   ],
+   [
+    101
+   ]
+  ]
+ },
+ {
+  "idx": 97,
+  "task_id": "Python/97",
+  "entry_point": "multiply",
+  "signature": "multiply(a, b)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    148,
+    412
+   ],
+   [
+    19,
+    28
+   ],
+   [
+    2020,
+    1851
+   ],
+   [
+    14,
+    -15
+   ],
+   [
+    76,
+    67
+   ],
+   [
+    17,
+    27
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "idx": 98,
+  "task_id": "Python/98",
+  "entry_point": "count_upper",
+  "signature": "count_upper(s)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    "aBCdEf"
+   ],
+   [
+    "abcdefg"
+   ],
+   [
+    "dBBE"
+   ],
+   [
+    "B"
+   ],
+   [
+    "U"
+   ],
+   [
+    ""
+   ],
+   [
+    "EEEE"
+   ]
+  ]
+ },
+ {
+  "idx": 99,
+  "task_id": "Python/99",
+  "entry_point": "closest_integer",
+  "signature": "closest_integer(value)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    "10"
+   ],
+   [
+    "14.5"
+   ],
+   [
+    "-15.5"
+   ],
+   [
+    "15.3"
+   ],
+   [
+    "0"
+   ]
+  ]
+ },
+ {
+  "idx": 100,
+  "task_id": "Python/100",
+  "entry_point": "make_a_pile",
+  "signature": "make_a_pile(n)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    8
+   ]
+  ]
+ },
+ {
+  "idx": 101,
+  "task_id": "Python/101",
+  "entry_point": "words_string",
+  "signature": "words_string(s)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    "Hi, my name is John"
+   ],
+   [
+    "One, two, three, four, five, six"
+   ],
+   [
+    "Hi, my name"
+   ],
+   [
+    "One,, two, three, four, five, six,"
+   ],
+   [
+    ""
+   ],
+   [
+    "ahmed     , gamal"
+   ]
+  ]
+ },
+ {
+  "idx": 102,
+  "task_id": "Python/102",
+  "entry_point": "choose_num",
+  "signature": "choose_num(x, y)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    12
+   ],
+   [
+    33,
+    12354
+   ],
+   [
+    5234,
+    5233
+   ],
+   [
+    6,
+    29
+   ],
+   [
+    27,
+    10
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    546,
+    546
+   ]
+  ]
+ },
+ {
+  "idx": 104,
+  "task_id": "Python/104",
+  "entry_point": "unique_digits",
+  "signature": "unique_digits(x)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     15,
+     33,
+     1422,
+     1
+    ]
+   ],
+   [
+    [
+     152,
+     323,
+     1422,
+     10
+    ]
+   ],
+   [
+    [
+     12345,
+     2033,
+     111,
+     151
+    ]
+   ],
+   [
+    [
+     135,
+     103,
+     31
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 105,
+  "task_id": "Python/105",
+  "entry_point": "by_length",
+  "signature": "by_length(arr)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    [
+     2,
+     1,
+     1,
+     4,
+     5,
+     8,
+     2,
+     3
+    ]
+   ],
+   [
+    []
+   ],
+   [
+    [
+     1,
+     -1,
+     55
+    ]
+   ],
+   [
+    [
+     1,
+     -1,
+     3,
+     2
+    ]
+   ],
+   [
+    [
+     9,
+     4,
+     8
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 106,
+  "task_id": "Python/106",
+  "entry_point": "f",
+  "signature": "f(n)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    5
+   ],
+   [
+    7
+   ],
+   [
+    1
+   ],
+   [
+    3
+   ]
+  ]
+ },
+ {
+  "idx": 107,
+  "task_id": "Python/107",
+  "entry_point": "even_odd_palindrome",
+  "signature": "even_odd_palindrome(n)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    123
+   ],
+   [
+    12
+   ],
+   [
+    3
+   ],
+   [
+    63
+   ],
+   [
+    25
+   ],
+   [
+    19
+   ],
+   [
+    9
+   ],
+   [
+    1
+   ]
+  ]
+ },
+ {
+  "idx": 108,
+  "task_id": "Python/108",
+  "entry_point": "count_nums",
+  "signature": "count_nums(arr)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     -1,
+     -2,
+     0
+    ]
+   ],
+   [
+    [
+     1,
+     1,
+     2,
+     -2,
+     3,
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     6,
+     9,
+     -6,
+     0,
+     1,
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     100,
+     98,
+     -7,
+     1,
+     -1
+    ]
+   ],
+   [
+    [
+     12,
+     23,
+     34,
+     -45,
+     -56,
+     0
+    ]
+   ],
+   [
+    [
+     0,
+     1
+    ]
+   ],
+   [
+    [
+     1
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 109,
+  "task_id": "Python/109",
+  "entry_point": "move_one_ball",
+  "signature": "move_one_ball(arr)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    [
+     3,
+     4,
+     5,
+     1,
+     2
+    ]
+   ],
+   [
+    [
+     3,
+     5,
+     10,
+     1,
+     2
+    ]
+   ],
+   [
+    [
+     4,
+     3,
+     1,
+     2
+    ]
+   ],
+   [
+    [
+     3,
+     5,
+     4,
+     1,
+     2
+    ]
+   ],
+   [
+    []
+   ]
+  ]
+ },
+ {
+  "idx": 110,
+  "task_id": "Python/110",
+  "entry_point": "exchange",
+  "signature": "exchange(lst1, lst2)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "list[int]",
+   "list[int]"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     3,
+     4
+    ],
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4
+    ],
+    [
+     1,
+     5,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     1,
+     4,
+     3
+    ]
+   ],
+   [
+    [
+     5,
+     7,
+     3
+    ],
+    [
+     2,
+     6,
+     4
+    ]
+   ],
+   [
+    [
+     5,
+     7,
+     3
+    ],
+    [
+     2,
+     6,
+     3
+    ]
+   ],
+   [
+    [
+     3,
+     2,
+     6,
+     1,
+     8,
+     9
+    ],
+    [
+     3,
+     5,
+     5,
+     1,
+     1,
+     1
+    ]
+   ],
+   [
+    [
+     100,
+     200
+    ],
+    [
+     200,
+     200
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 113,
+  "task_id": "Python/113",
+  "entry_point": "odd_count",
+  "signature": "odd_count(lst)",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "list[str]"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    [
+     "1234567"
+    ]
+   ],
+   [
+    [
+     "3",
+     "11111111"
+    ]
+   ],
+   [
+    [
+     "271",
+     "137",
+     "314"
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 114,
+  "task_id": "Python/114",
+  "entry_point": "minSubArraySum",
+  "signature": "minSubArraySum(nums)",
+  "status": "ok",
+  "n_calls": 12,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     2,
+     3,
+     4,
+     1,
+     2,
+     4
+    ]
+   ],
+   [
+    [
+     -1,
+     -2,
+     -3
+    ]
+   ],
+   [
+    [
+     -1,
+     -2,
+     -3,
+     2,
+     -10
+    ]
+   ],
+   [
+    [
+     -9999999999999999
+    ]
+   ],
+   [
+    [
+     0,
+     10,
+     20,
+     1000000
+    ]
+   ],
+   [
+    [
+     -1,
+     -2,
+     -3,
+     10,
+     -5
+    ]
+   ],
+   [
+    [
+     100,
+     -1,
+     -2,
+     -3,
+     10,
+     -5
+    ]
+   ],
+   [
+    [
+     10,
+     11,
+     13,
+     8,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     100,
+     -33,
+     32,
+     -1,
+     0,
+     -2
+    ]
+   ],
+   [
+    [
+     -10
+    ]
+   ],
+   [
+    [
+     7
+    ]
+   ],
+   [
+    [
+     1,
+     -1
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 115,
+  "task_id": "Python/115",
+  "entry_point": "max_fill",
+  "signature": "max_fill(grid, capacity):\n    import math",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[list[int]]",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     [
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    1
+   ],
+   [
+    [
+     [
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      1
+     ]
+    ],
+    2
+   ],
+   [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    5
+   ],
+   [
+    [
+     [
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    2
+   ],
+   [
+    [
+     [
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    9
+   ]
+  ]
+ },
+ {
+  "idx": 116,
+  "task_id": "Python/116",
+  "entry_point": "sort_array",
+  "signature": "sort_array(arr)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     1,
+     5,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     -2,
+     -3,
+     -4,
+     -5,
+     -6
+    ]
+   ],
+   [
+    [
+     1,
+     0,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    []
+   ],
+   [
+    [
+     2,
+     5,
+     77,
+     4,
+     5,
+     3,
+     5,
+     7,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     3,
+     6,
+     44,
+     12,
+     32,
+     5
+    ]
+   ],
+   [
+    [
+     2,
+     4,
+     8,
+     16,
+     32
+    ]
+   ],
+   [
+    [
+     2,
+     4,
+     8,
+     16,
+     32
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 117,
+  "task_id": "Python/117",
+  "entry_point": "select_words",
+  "signature": "select_words(s, n)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str",
+   "int"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    "Mary had a little lamb",
+    4
+   ],
+   [
+    "Mary had a little lamb",
+    3
+   ],
+   [
+    "simple white space",
+    2
+   ],
+   [
+    "Hello world",
+    4
+   ],
+   [
+    "Uncle sam",
+    3
+   ],
+   [
+    "",
+    4
+   ],
+   [
+    "a b c d e f",
+    1
+   ]
+  ]
+ },
+ {
+  "idx": 118,
+  "task_id": "Python/118",
+  "entry_point": "get_closest_vowel",
+  "signature": "get_closest_vowel(word)",
+  "status": "ok",
+  "n_calls": 13,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "yogurt"
+   ],
+   [
+    "full"
+   ],
+   [
+    "easy"
+   ],
+   [
+    "eAsy"
+   ],
+   [
+    "ali"
+   ],
+   [
+    "bad"
+   ],
+   [
+    "most"
+   ],
+   [
+    "ab"
+   ],
+   [
+    "ba"
+   ],
+   [
+    "quick"
+   ],
+   [
+    "anime"
+   ],
+   [
+    "Asia"
+   ],
+   [
+    "Above"
+   ]
+  ]
+ },
+ {
+  "idx": 119,
+  "task_id": "Python/119",
+  "entry_point": "match_parens",
+  "signature": "match_parens(lst)",
+  "status": "ok",
+  "n_calls": 12,
+  "param_types": [
+   "list[str]"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    [
+     "()(",
+     ")"
+    ]
+   ],
+   [
+    [
+     ")",
+     ")"
+    ]
+   ],
+   [
+    [
+     "(()(())",
+     "())())"
+    ]
+   ],
+   [
+    [
+     ")())",
+     "(()()("
+    ]
+   ],
+   [
+    [
+     "(())))",
+     "(()())(("
+    ]
+   ],
+   [
+    [
+     "()",
+     "())"
+    ]
+   ],
+   [
+    [
+     "(()(",
+     "()))()"
+    ]
+   ],
+   [
+    [
+     "((((",
+     "((())"
+    ]
+   ],
+   [
+    [
+     ")(()",
+     "(()("
+    ]
+   ],
+   [
+    [
+     ")(",
+     ")("
+    ]
+   ],
+   [
+    [
+     "(",
+     ")"
+    ]
+   ],
+   [
+    [
+     ")",
+     "("
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 120,
+  "task_id": "Python/120",
+  "entry_point": "maximum",
+  "signature": "maximum(arr, k)",
+  "status": "ok",
+  "n_calls": 11,
+  "param_types": [
+   "list[int]",
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     -4,
+     -3,
+     5
+    ],
+    3
+   ],
+   [
+    [
+     -4,
+     4,
+     4
+    ],
+    2
+   ],
+   [
+    [
+     -3,
+     -2,
+     -1,
+     1,
+     1,
+     2,
+     2
+    ],
+    1
+   ],
+   [
+    [
+     -123,
+     -3,
+     0,
+     1,
+     2,
+     20,
+     123
+    ],
+    3
+   ],
+   [
+    [
+     -123,
+     -3,
+     0,
+     1,
+     2,
+     20
+    ],
+    4
+   ],
+   [
+    [
+     -13,
+     -8,
+     0,
+     0,
+     3,
+     5,
+     15
+    ],
+    7
+   ],
+   [
+    [
+     -10,
+     -1,
+     0,
+     2,
+     3,
+     5
+    ],
+    2
+   ],
+   [
+    [
+     -7,
+     0,
+     1,
+     5
+    ],
+    1
+   ],
+   [
+    [
+     -4,
+     4
+    ],
+    2
+   ],
+   [
+    [
+     -10,
+     10
+    ],
+    2
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     -23,
+     243,
+     -400,
+     0
+    ],
+    0
+   ]
+  ]
+ },
+ {
+  "idx": 121,
+  "task_id": "Python/121",
+  "entry_point": "solution",
+  "signature": "solution(lst)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     5,
+     8,
+     7,
+     1
+    ]
+   ],
+   [
+    [
+     3,
+     3,
+     3,
+     3,
+     3
+    ]
+   ],
+   [
+    [
+     30,
+     13,
+     24,
+     321
+    ]
+   ],
+   [
+    [
+     5,
+     9
+    ]
+   ],
+   [
+    [
+     2,
+     4,
+     8
+    ]
+   ],
+   [
+    [
+     30,
+     13,
+     23,
+     32
+    ]
+   ],
+   [
+    [
+     3,
+     13,
+     2,
+     9
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 122,
+  "task_id": "Python/122",
+  "entry_point": "add_elements",
+  "signature": "add_elements(arr, k)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[int]",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     1,
+     -2,
+     -3,
+     41,
+     57,
+     76,
+     87,
+     88,
+     99
+    ],
+    3
+   ],
+   [
+    [
+     111,
+     121,
+     3,
+     4000,
+     5,
+     6
+    ],
+    2
+   ],
+   [
+    [
+     11,
+     21,
+     3,
+     90,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    4
+   ],
+   [
+    [
+     111,
+     21,
+     3,
+     4000,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    4
+   ],
+   [
+    [
+     1
+    ],
+    1
+   ]
+  ]
+ },
+ {
+  "idx": 123,
+  "task_id": "Python/123",
+  "entry_point": "get_odd_collatz",
+  "signature": "get_odd_collatz(n)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    14
+   ],
+   [
+    5
+   ],
+   [
+    12
+   ],
+   [
+    1
+   ]
+  ]
+ },
+ {
+  "idx": 124,
+  "task_id": "Python/124",
+  "entry_point": "valid_date",
+  "signature": "valid_date(date)",
+  "status": "ok",
+  "n_calls": 16,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "03-11-2000"
+   ],
+   [
+    "15-01-2012"
+   ],
+   [
+    "04-0-2040"
+   ],
+   [
+    "06-04-2020"
+   ],
+   [
+    "01-01-2007"
+   ],
+   [
+    "03-32-2011"
+   ],
+   [
+    ""
+   ],
+   [
+    "04-31-3000"
+   ],
+   [
+    "06-06-2005"
+   ],
+   [
+    "21-31-2000"
+   ],
+   [
+    "04-12-2003"
+   ],
+   [
+    "04122003"
+   ],
+   [
+    "20030412"
+   ],
+   [
+    "2003-04"
+   ],
+   [
+    "2003-04-12"
+   ],
+   [
+    "04-2003"
+   ]
+  ]
+ },
+ {
+  "idx": 126,
+  "task_id": "Python/126",
+  "entry_point": "is_sorted",
+  "signature": "is_sorted(lst)",
+  "status": "ok",
+  "n_calls": 13,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    [
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     3,
+     2,
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   ],
+   [
+    [
+     1,
+     3,
+     2,
+     4,
+     5,
+     6,
+     7
+    ]
+   ],
+   [
+    []
+   ],
+   [
+    [
+     1
+    ]
+   ],
+   [
+    [
+     3,
+     2,
+     1
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     2,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     3,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     2,
+     3,
+     3,
+     4
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 127,
+  "task_id": "Python/127",
+  "entry_point": "intersection",
+  "signature": "intersection(interval1, interval2)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "list[int]",
+   "list[int]"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   [
+    [
+     -3,
+     -1
+    ],
+    [
+     -5,
+     5
+    ]
+   ],
+   [
+    [
+     -2,
+     2
+    ],
+    [
+     -4,
+     0
+    ]
+   ],
+   [
+    [
+     -11,
+     2
+    ],
+    [
+     -1,
+     -1
+    ]
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   [
+    [
+     -2,
+     -2
+    ],
+    [
+     -3,
+     -2
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 129,
+  "task_id": "Python/129",
+  "entry_point": "minPath",
+  "signature": "minPath(grid, k)",
+  "status": "ok",
+  "n_calls": 11,
+  "param_types": [
+   "list[list[int]]",
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     [
+      1,
+      2,
+      3
+     ],
+     [
+      4,
+      5,
+      6
+     ],
+     [
+      7,
+      8,
+      9
+     ]
+    ],
+    3
+   ],
+   [
+    [
+     [
+      5,
+      9,
+      3
+     ],
+     [
+      4,
+      1,
+      6
+     ],
+     [
+      7,
+      8,
+      2
+     ]
+    ],
+    1
+   ],
+   [
+    [
+     [
+      1,
+      2,
+      3,
+      4
+     ],
+     [
+      5,
+      6,
+      7,
+      8
+     ],
+     [
+      9,
+      10,
+      11,
+      12
+     ],
+     [
+      13,
+      14,
+      15,
+      16
+     ]
+    ],
+    4
+   ],
+   [
+    [
+     [
+      6,
+      4,
+      13,
+      10
+     ],
+     [
+      5,
+      7,
+      12,
+      1
+     ],
+     [
+      3,
+      16,
+      11,
+      15
+     ],
+     [
+      8,
+      14,
+      9,
+      2
+     ]
+    ],
+    7
+   ],
+   [
+    [
+     [
+      8,
+      14,
+      9,
+      2
+     ],
+     [
+      6,
+      4,
+      13,
+      15
+     ],
+     [
+      5,
+      7,
+      1,
+      12
+     ],
+     [
+      3,
+      10,
+      11,
+      16
+     ]
+    ],
+    5
+   ],
+   [
+    [
+     [
+      11,
+      8,
+      7,
+      2
+     ],
+     [
+      5,
+      16,
+      14,
+      4
+     ],
+     [
+      9,
+      3,
+      15,
+      6
+     ],
+     [
+      12,
+      13,
+      10,
+      1
+     ]
+    ],
+    9
+   ],
+   [
+    [
+     [
+      12,
+      13,
+      10,
+      1
+     ],
+     [
+      9,
+      3,
+      15,
+      6
+     ],
+     [
+      5,
+      16,
+      14,
+      4
+     ],
+     [
+      11,
+      8,
+      7,
+      2
+     ]
+    ],
+    12
+   ],
+   [
+    [
+     [
+      2,
+      7,
+      4
+     ],
+     [
+      3,
+      1,
+      5
+     ],
+     [
+      6,
+      8,
+      9
+     ]
+    ],
+    8
+   ],
+   [
+    [
+     [
+      6,
+      1,
+      5
+     ],
+     [
+      3,
+      8,
+      9
+     ],
+     [
+      2,
+      7,
+      4
+     ]
+    ],
+    8
+   ],
+   [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    10
+   ],
+   [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    10
+   ]
+  ]
+ },
+ {
+  "idx": 130,
+  "task_id": "Python/130",
+  "entry_point": "tri",
+  "signature": "tri(n)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "list[float]",
+  "seed_inputs": [
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    20
+   ],
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ]
+ },
+ {
+  "idx": 131,
+  "task_id": "Python/131",
+  "entry_point": "digits",
+  "signature": "digits(n)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    5
+   ],
+   [
+    54
+   ],
+   [
+    120
+   ],
+   [
+    5014
+   ],
+   [
+    98765
+   ],
+   [
+    5576543
+   ],
+   [
+    2468
+   ]
+  ]
+ },
+ {
+  "idx": 132,
+  "task_id": "Python/132",
+  "entry_point": "is_nested",
+  "signature": "is_nested(string)",
+  "status": "ok",
+  "n_calls": 14,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "[[]]"
+   ],
+   [
+    "[]]]]]]][[[[[]"
+   ],
+   [
+    "[][]"
+   ],
+   [
+    "[]"
+   ],
+   [
+    "[[[[]]]]"
+   ],
+   [
+    "[]]]]]]]]]]"
+   ],
+   [
+    "[][][[]]"
+   ],
+   [
+    "[[]"
+   ],
+   [
+    "[]]"
+   ],
+   [
+    "[[]][["
+   ],
+   [
+    "[[][]]"
+   ],
+   [
+    ""
+   ],
+   [
+    "[[[[[[[["
+   ],
+   [
+    "]]]]]]]]"
+   ]
+  ]
+ },
+ {
+  "idx": 133,
+  "task_id": "Python/133",
+  "entry_point": "sum_squares",
+  "signature": "sum_squares(lst)",
+  "status": "ok",
+  "n_calls": 12,
+  "param_types": [
+   "list[float]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     1.0,
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     1,
+     3,
+     5,
+     7
+    ]
+   ],
+   [
+    [
+     1.4,
+     4.2,
+     0
+    ]
+   ],
+   [
+    [
+     -2.4,
+     1,
+     1
+    ]
+   ],
+   [
+    [
+     100,
+     1,
+     15,
+     2
+    ]
+   ],
+   [
+    [
+     10000,
+     10000
+    ]
+   ],
+   [
+    [
+     -1.4,
+     4.6,
+     6.3
+    ]
+   ],
+   [
+    [
+     -1.4,
+     17.9,
+     18.9,
+     19.9
+    ]
+   ],
+   [
+    [
+     0
+    ]
+   ],
+   [
+    [
+     -1
+    ]
+   ],
+   [
+    [
+     -1,
+     1,
+     0
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 134,
+  "task_id": "Python/134",
+  "entry_point": "check_if_last_char_is_a_letter",
+  "signature": "check_if_last_char_is_a_letter(txt)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "apple"
+   ],
+   [
+    "apple pi e"
+   ],
+   [
+    "eeeee"
+   ],
+   [
+    "A"
+   ],
+   [
+    "Pumpkin pie "
+   ],
+   [
+    "Pumpkin pie 1"
+   ],
+   [
+    ""
+   ],
+   [
+    "eeeee e "
+   ],
+   [
+    "apple pie"
+   ],
+   [
+    "apple pi e "
+   ]
+  ]
+ },
+ {
+  "idx": 135,
+  "task_id": "Python/135",
+  "entry_point": "can_arrange",
+  "signature": "can_arrange(arr)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     4,
+     3,
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     1,
+     4,
+     2,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   ],
+   [
+    [
+     4,
+     8,
+     5,
+     7,
+     3
+    ]
+   ],
+   [
+    []
+   ]
+  ]
+ },
+ {
+  "idx": 138,
+  "task_id": "Python/138",
+  "entry_point": "is_equal_to_sum_even",
+  "signature": "is_equal_to_sum_even(n)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    4
+   ],
+   [
+    6
+   ],
+   [
+    8
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    16
+   ]
+  ]
+ },
+ {
+  "idx": 139,
+  "task_id": "Python/139",
+  "entry_point": "special_factorial",
+  "signature": "special_factorial(n)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    7
+   ],
+   [
+    1
+   ]
+  ]
+ },
+ {
+  "idx": 140,
+  "task_id": "Python/140",
+  "entry_point": "fix_spaces",
+  "signature": "fix_spaces(text)",
+  "status": "ok",
+  "n_calls": 5,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "Example"
+   ],
+   [
+    "Mudasir Hanif "
+   ],
+   [
+    "Yellow Yellow  Dirty  Fellow"
+   ],
+   [
+    "Exa   mple"
+   ],
+   [
+    "   Exa 1 2 2 mple"
+   ]
+  ]
+ },
+ {
+  "idx": 141,
+  "task_id": "Python/141",
+  "entry_point": "file_name_check",
+  "signature": "file_name_check(file_name)",
+  "status": "ok",
+  "n_calls": 26,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "example.txt"
+   ],
+   [
+    "1example.dll"
+   ],
+   [
+    "s1sdf3.asd"
+   ],
+   [
+    "K.dll"
+   ],
+   [
+    "MY16FILE3.exe"
+   ],
+   [
+    "His12FILE94.exe"
+   ],
+   [
+    "_Y.txt"
+   ],
+   [
+    "?aREYA.exe"
+   ],
+   [
+    "/this_is_valid.dll"
+   ],
+   [
+    "this_is_valid.wow"
+   ],
+   [
+    "this_is_valid.txt"
+   ],
+   [
+    "this_is_valid.txtexe"
+   ],
+   [
+    "#this2_i4s_5valid.ten"
+   ],
+   [
+    "@this1_is6_valid.exe"
+   ],
+   [
+    "this_is_12valid.6exe4.txt"
+   ],
+   [
+    "all.exe.txt"
+   ],
+   [
+    "I563_No.exe"
+   ],
+   [
+    "Is3youfault.txt"
+   ],
+   [
+    "no_one#knows.dll"
+   ],
+   [
+    "1I563_Yes3.exe"
+   ],
+   [
+    "I563_Yes3.txtt"
+   ],
+   [
+    "final..txt"
+   ],
+   [
+    "final132"
+   ],
+   [
+    "_f4indsartal132."
+   ],
+   [
+    ".txt"
+   ],
+   [
+    "s."
+   ]
+  ]
+ },
+ {
+  "idx": 142,
+  "task_id": "Python/142",
+  "entry_point": "sum_squares",
+  "signature": "sum_squares(lst)",
+  "status": "ok",
+  "n_calls": 11,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    [
+     1,
+     4,
+     9
+    ]
+   ],
+   [
+    []
+   ],
+   [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   [
+    [
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   ],
+   [
+    [
+     0
+    ]
+   ],
+   [
+    [
+     -1,
+     -5,
+     2,
+     -1,
+     -5
+    ]
+   ],
+   [
+    [
+     -56,
+     -99,
+     1,
+     0,
+     -2
+    ]
+   ],
+   [
+    [
+     -1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     -1
+    ]
+   ],
+   [
+    [
+     -16,
+     -9,
+     -2,
+     36,
+     36,
+     26,
+     -20,
+     25,
+     -40,
+     20,
+     -4,
+     12,
+     -26,
+     35,
+     37
+    ]
+   ],
+   [
+    [
+     -1,
+     -3,
+     17,
+     -1,
+     -15,
+     13,
+     -1,
+     14,
+     -14,
+     -12,
+     -5,
+     14,
+     -14,
+     6,
+     13,
+     11,
+     16,
+     16,
+     4,
+     10
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 143,
+  "task_id": "Python/143",
+  "entry_point": "words_in_sentence",
+  "signature": "words_in_sentence(sentence)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "This is a test"
+   ],
+   [
+    "lets go for swimming"
+   ],
+   [
+    "there is no place available here"
+   ],
+   [
+    "Hi I am Hussein"
+   ],
+   [
+    "go for it"
+   ],
+   [
+    "here"
+   ],
+   [
+    "here is"
+   ]
+  ]
+ },
+ {
+  "idx": 144,
+  "task_id": "Python/144",
+  "entry_point": "simplify",
+  "signature": "simplify(x, n)",
+  "status": "ok",
+  "n_calls": 13,
+  "param_types": [
+   "str",
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "1/5",
+    "5/1"
+   ],
+   [
+    "1/6",
+    "2/1"
+   ],
+   [
+    "5/1",
+    "3/1"
+   ],
+   [
+    "7/10",
+    "10/2"
+   ],
+   [
+    "2/10",
+    "50/10"
+   ],
+   [
+    "7/2",
+    "4/2"
+   ],
+   [
+    "11/6",
+    "6/1"
+   ],
+   [
+    "2/3",
+    "5/2"
+   ],
+   [
+    "5/2",
+    "3/5"
+   ],
+   [
+    "2/4",
+    "8/4"
+   ],
+   [
+    "2/4",
+    "4/2"
+   ],
+   [
+    "1/5",
+    "5/1"
+   ],
+   [
+    "1/5",
+    "1/5"
+   ]
+  ]
+ },
+ {
+  "idx": 145,
+  "task_id": "Python/145",
+  "entry_point": "order_by_points",
+  "signature": "order_by_points(nums)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     1,
+     11,
+     -1,
+     -11,
+     -12
+    ]
+   ],
+   [
+    [
+     1234,
+     423,
+     463,
+     145,
+     2,
+     423,
+     423,
+     53,
+     6,
+     37,
+     3457,
+     3,
+     56,
+     0,
+     46
+    ]
+   ],
+   [
+    []
+   ],
+   [
+    [
+     1,
+     -11,
+     -32,
+     43,
+     54,
+     -98,
+     2,
+     -3
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   ],
+   [
+    [
+     0,
+     6,
+     6,
+     -76,
+     -21,
+     23,
+     4
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 146,
+  "task_id": "Python/146",
+  "entry_point": "specialFilter",
+  "signature": "specialFilter(nums)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     5,
+     -2,
+     1,
+     -5
+    ]
+   ],
+   [
+    [
+     15,
+     -73,
+     14,
+     -15
+    ]
+   ],
+   [
+    [
+     33,
+     -2,
+     -3,
+     45,
+     21,
+     109
+    ]
+   ],
+   [
+    [
+     43,
+     -12,
+     93,
+     125,
+     121,
+     109
+    ]
+   ],
+   [
+    [
+     71,
+     -2,
+     -33,
+     75,
+     21,
+     19
+    ]
+   ],
+   [
+    [
+     1
+    ]
+   ],
+   [
+    []
+   ]
+  ]
+ },
+ {
+  "idx": 147,
+  "task_id": "Python/147",
+  "entry_point": "get_max_triples",
+  "signature": "get_max_triples(n)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    10
+   ],
+   [
+    100
+   ]
+  ]
+ },
+ {
+  "idx": 148,
+  "task_id": "Python/148",
+  "entry_point": "bf",
+  "signature": "bf(planet1, planet2)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "str",
+   "str"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    "Jupiter",
+    "Neptune"
+   ],
+   [
+    "Earth",
+    "Mercury"
+   ],
+   [
+    "Mercury",
+    "Uranus"
+   ],
+   [
+    "Neptune",
+    "Venus"
+   ],
+   [
+    "Earth",
+    "Earth"
+   ],
+   [
+    "Mars",
+    "Earth"
+   ],
+   [
+    "Jupiter",
+    "Makemake"
+   ]
+  ]
+ },
+ {
+  "idx": 149,
+  "task_id": "Python/149",
+  "entry_point": "sorted_list_sum",
+  "signature": "sorted_list_sum(lst)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "list[str]"
+  ],
+  "return_type": "list[str]",
+  "seed_inputs": [
+   [
+    [
+     "a",
+     "aa",
+     "aaa"
+    ]
+   ],
+   [
+    [
+     "AI",
+     "asdf",
+     "b",
+     "school"
+    ]
+   ],
+   [
+    [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   ],
+   [
+    [
+     "a",
+     "abcd",
+     "d",
+     "dcba"
+    ]
+   ],
+   [
+    [
+     "AI",
+     "ai",
+     "au"
+    ]
+   ],
+   [
+    [
+     "a",
+     "a",
+     "b",
+     "b",
+     "c",
+     "c"
+    ]
+   ],
+   [
+    [
+     "aaaa",
+     "bbbb",
+     "cc",
+     "dd"
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 150,
+  "task_id": "Python/150",
+  "entry_point": "x_or_y",
+  "signature": "x_or_y(n, x, y)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "int",
+   "int",
+   "int"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    7,
+    34,
+    12
+   ],
+   [
+    15,
+    8,
+    5
+   ],
+   [
+    3,
+    33,
+    5212
+   ],
+   [
+    1259,
+    3,
+    52
+   ],
+   [
+    7919,
+    -1,
+    12
+   ],
+   [
+    3609,
+    1245,
+    583
+   ],
+   [
+    91,
+    56,
+    129
+   ],
+   [
+    6,
+    34,
+    1234
+   ],
+   [
+    1,
+    2,
+    0
+   ],
+   [
+    2,
+    2,
+    0
+   ]
+  ]
+ },
+ {
+  "idx": 151,
+  "task_id": "Python/151",
+  "entry_point": "double_the_difference",
+  "signature": "double_the_difference(lst)",
+  "status": "ok",
+  "n_calls": 7,
+  "param_types": [
+   "list[float]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    []
+   ],
+   [
+    [
+     5,
+     4
+    ]
+   ],
+   [
+    [
+     0.1,
+     0.2,
+     0.3
+    ]
+   ],
+   [
+    [
+     -10,
+     -20,
+     -30
+    ]
+   ],
+   [
+    [
+     -1,
+     -2,
+     8
+    ]
+   ],
+   [
+    [
+     0.2,
+     3,
+     5
+    ]
+   ],
+   [
+    [
+     -99,
+     -97,
+     -95,
+     -93,
+     -91,
+     -89,
+     -87,
+     -85,
+     -83,
+     -81,
+     -79,
+     -77,
+     -75,
+     -73,
+     -71,
+     -69,
+     -67,
+     -65,
+     -63,
+     -61,
+     -59,
+     -57,
+     -55,
+     -53,
+     -51,
+     -49,
+     -47,
+     -45,
+     -43,
+     -41,
+     -39,
+     -37,
+     -35,
+     -33,
+     -31,
+     -29,
+     -27,
+     -25,
+     -23,
+     -21,
+     -19,
+     -17,
+     -15,
+     -13,
+     -11,
+     -9,
+     -7,
+     -5,
+     -3,
+     -1,
+     1,
+     3,
+     5,
+     7,
+     9,
+     11,
+     13,
+     15,
+     17,
+     19,
+     21,
+     23,
+     25,
+     27,
+     29,
+     31,
+     33,
+     35,
+     37,
+     39,
+     41,
+     43,
+     45,
+     47,
+     49,
+     51,
+     53,
+     55,
+     57,
+     59,
+     61,
+     63,
+     65,
+     67,
+     69,
+     71,
+     73,
+     75,
+     77,
+     79,
+     81,
+     83,
+     85,
+     87,
+     89,
+     91,
+     93,
+     95,
+     97,
+     99
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 152,
+  "task_id": "Python/152",
+  "entry_point": "compare",
+  "signature": "compare(game,guess)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "list[int]",
+   "list[int]"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     1
+    ],
+    [
+     1,
+     2,
+     3,
+     4,
+     2,
+     -2
+    ]
+   ],
+   [
+    [
+     0,
+     5,
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     4,
+     1,
+     1,
+     0,
+     0,
+     -2
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     1
+    ],
+    [
+     1,
+     2,
+     3,
+     4,
+     2,
+     -2
+    ]
+   ],
+   [
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     -1,
+     -2,
+     -3
+    ]
+   ],
+   [
+    [
+     1,
+     2,
+     3,
+     5
+    ],
+    [
+     -1,
+     2,
+     3,
+     4
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 153,
+  "task_id": "Python/153",
+  "entry_point": "Strongest_Extension",
+  "signature": "Strongest_Extension(class_name, extensions)",
+  "status": "ok",
+  "n_calls": 9,
+  "param_types": [
+   "str",
+   "list[str]"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "Watashi",
+    [
+     "tEN",
+     "niNE",
+     "eIGHt8OKe"
+    ]
+   ],
+   [
+    "Boku123",
+    [
+     "nani",
+     "NazeDa",
+     "YEs.WeCaNe",
+     "32145tggg"
+    ]
+   ],
+   [
+    "__YESIMHERE",
+    [
+     "t",
+     "eMptY",
+     "nothing",
+     "zeR00",
+     "NuLl__",
+     "123NoooneB321"
+    ]
+   ],
+   [
+    "K",
+    [
+     "Ta",
+     "TAR",
+     "t234An",
+     "cosSo"
+    ]
+   ],
+   [
+    "__HAHA",
+    [
+     "Tab",
+     "123",
+     "781345",
+     "-_-"
+    ]
+   ],
+   [
+    "YameRore",
+    [
+     "HhAas",
+     "okIWILL123",
+     "WorkOut",
+     "Fails",
+     "-_-"
+    ]
+   ],
+   [
+    "finNNalLLly",
+    [
+     "Die",
+     "NowW",
+     "Wow",
+     "WoW"
+    ]
+   ],
+   [
+    "_",
+    [
+     "Bb",
+     "91245"
+    ]
+   ],
+   [
+    "Sp",
+    [
+     "671235",
+     "Bb"
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 154,
+  "task_id": "Python/154",
+  "entry_point": "cycpattern_check",
+  "signature": "cycpattern_check(a , b)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "str",
+   "str"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    "xyzw",
+    "xyw"
+   ],
+   [
+    "yello",
+    "ell"
+   ],
+   [
+    "whattup",
+    "ptut"
+   ],
+   [
+    "efef",
+    "fee"
+   ],
+   [
+    "abab",
+    "aabb"
+   ],
+   [
+    "winemtt",
+    "tinem"
+   ]
+  ]
+ },
+ {
+  "idx": 155,
+  "task_id": "Python/155",
+  "entry_point": "even_odd_count",
+  "signature": "even_odd_count(num)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    7
+   ],
+   [
+    -78
+   ],
+   [
+    3452
+   ],
+   [
+    346211
+   ],
+   [
+    -345821
+   ],
+   [
+    -2
+   ],
+   [
+    -45347
+   ],
+   [
+    0
+   ]
+  ]
+ },
+ {
+  "idx": 156,
+  "task_id": "Python/156",
+  "entry_point": "int_to_mini_roman",
+  "signature": "int_to_mini_roman(number)",
+  "status": "ok",
+  "n_calls": 14,
+  "param_types": [
+   "int"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    19
+   ],
+   [
+    152
+   ],
+   [
+    251
+   ],
+   [
+    426
+   ],
+   [
+    500
+   ],
+   [
+    1
+   ],
+   [
+    4
+   ],
+   [
+    43
+   ],
+   [
+    90
+   ],
+   [
+    94
+   ],
+   [
+    532
+   ],
+   [
+    900
+   ],
+   [
+    994
+   ],
+   [
+    1000
+   ]
+  ]
+ },
+ {
+  "idx": 157,
+  "task_id": "Python/157",
+  "entry_point": "right_angle_triangle",
+  "signature": "right_angle_triangle(a, b, c)",
+  "status": "ok",
+  "n_calls": 11,
+  "param_types": [
+   "int",
+   "int",
+   "int"
+  ],
+  "return_type": "bool",
+  "seed_inputs": [
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    10,
+    6,
+    8
+   ],
+   [
+    2,
+    2,
+    2
+   ],
+   [
+    7,
+    24,
+    25
+   ],
+   [
+    10,
+    5,
+    7
+   ],
+   [
+    5,
+    12,
+    13
+   ],
+   [
+    15,
+    8,
+    17
+   ],
+   [
+    48,
+    55,
+    73
+   ],
+   [
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    10
+   ]
+  ]
+ },
+ {
+  "idx": 158,
+  "task_id": "Python/158",
+  "entry_point": "find_max",
+  "signature": "find_max(words)",
+  "status": "ok",
+  "n_calls": 10,
+  "param_types": [
+   "list[str]"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    [
+     "name",
+     "of",
+     "string"
+    ]
+   ],
+   [
+    [
+     "name",
+     "enam",
+     "game"
+    ]
+   ],
+   [
+    [
+     "aaaaaaa",
+     "bb",
+     "cc"
+    ]
+   ],
+   [
+    [
+     "abc",
+     "cba"
+    ]
+   ],
+   [
+    [
+     "play",
+     "this",
+     "game",
+     "of",
+     "footbott"
+    ]
+   ],
+   [
+    [
+     "we",
+     "are",
+     "gonna",
+     "rock"
+    ]
+   ],
+   [
+    [
+     "we",
+     "are",
+     "a",
+     "mad",
+     "nation"
+    ]
+   ],
+   [
+    [
+     "this",
+     "is",
+     "a",
+     "prrk"
+    ]
+   ],
+   [
+    [
+     "b"
+    ]
+   ],
+   [
+    [
+     "play",
+     "play",
+     "play"
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 159,
+  "task_id": "Python/159",
+  "entry_point": "eat",
+  "signature": "eat(number, need, remaining)",
+  "status": "ok",
+  "n_calls": 6,
+  "param_types": [
+   "int",
+   "int",
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    5,
+    6,
+    10
+   ],
+   [
+    4,
+    8,
+    9
+   ],
+   [
+    1,
+    10,
+    10
+   ],
+   [
+    2,
+    11,
+    5
+   ],
+   [
+    4,
+    5,
+    7
+   ],
+   [
+    4,
+    5,
+    1
+   ]
+  ]
+ },
+ {
+  "idx": 160,
+  "task_id": "Python/160",
+  "entry_point": "do_algebra",
+  "signature": "do_algebra(operator, operand)",
+  "status": "ok",
+  "n_calls": 3,
+  "param_types": [
+   "list[str]",
+   "list[int]"
+  ],
+  "return_type": "int",
+  "seed_inputs": [
+   [
+    [
+     "**",
+     "*",
+     "+"
+    ],
+    [
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     "+",
+     "*",
+     "-"
+    ],
+    [
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     "//",
+     "*"
+    ],
+    [
+     7,
+     3,
+     4
+    ]
+   ]
+  ]
+ },
+ {
+  "idx": 161,
+  "task_id": "Python/161",
+  "entry_point": "solve",
+  "signature": "solve(s)",
+  "status": "ok",
+  "n_calls": 8,
+  "param_types": [
+   "str"
+  ],
+  "return_type": "str",
+  "seed_inputs": [
+   [
+    "AsDf"
+   ],
+   [
+    "1234"
+   ],
+   [
+    "ab"
+   ],
+   [
+    "#a@C"
+   ],
+   [
+    "#AsdfW^45"
+   ],
+   [
+    "#6@2"
+   ],
+   [
+    "#$a^D"
+   ],
+   [
+    "#ccc"
+   ]
+  ]
+ },
+ {
+  "idx": 163,
+  "task_id": "Python/163",
+  "entry_point": "generate_integers",
+  "signature": "generate_integers(a, b)",
+  "status": "ok",
+  "n_calls": 4,
+  "param_types": [
+   "int",
+   "int"
+  ],
+  "return_type": "list[int]",
+  "seed_inputs": [
+   [
+    2,
+    10
+   ],
+   [
+    10,
+    2
+   ],
+   [
+    132,
+    2
+   ],
+   [
+    17,
+    89
+   ]
+  ]
+ }
+]

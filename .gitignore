@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+code/_build/
+code/_ctl/
+code/_selftest/
+code/_smoke/

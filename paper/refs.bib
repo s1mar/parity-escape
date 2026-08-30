@@ -1,0 +1,246 @@
+% Every entry below was VERIFIED by FETCHING its source page, not recalled. The verification
+% comment above each entry records the URL, and for entries the manuscript quotes, the exact
+% quoted text.
+%
+% NO GATE CAN VERIFY A NOTE. A checker can confirm that a quotation traces to a note beside its
+% entry; nothing can confirm that the note was right when it was written. Re-fetch every quoted
+% sentence, and every author list, from the source itself rather than trusting the note.
+%
+% RETIRED-QUOTE lines at the bottom fail the build if a retired quotation reappears.
+
+% VERIFIED via arxiv.org/abs/2506.10999 (the arXiv version of the ASE 2024 tool
+% demonstration) and the ASE 2024 programme entry; ACM DL returned HTTP 403. Symbolic-execution
+% test generation over the source COBOL, with mocked external calls, and matching JUnit tests to
+% check semantic equivalence.
+@inproceedings{kumar2024validation,
+  author    = {Kumar, Atul and Saha, Diptikalyan and Yasue, Toshikai and Ono, Kohichi and
+               Krishnan, Saravanan and Hans, Sandeep and Satoh, Fumiko and Mitchell, Gerald and
+               Kumar, Sachin},
+  title     = {Automated Validation of {COBOL} to {Java} Transformation},
+  booktitle = {Proceedings of the 39th IEEE/ACM International Conference on Automated Software
+               Engineering (ASE), Tool Demonstrations},
+  year      = {2024},
+  doi       = {10.1145/3691620.3695365}
+}
+
+% VERIFIED at arxiv.org/abs/2504.10548. Testing framework for IBM watsonx Code
+% Assistant for Z; symbolic execution generates COBOL unit tests, mocking external resource
+% calls, and equivalent JUnit tests are emitted.
+@article{hans2025testing,
+  author  = {Hans, Sandeep and Kumar, Atul and Yasue, Toshikai and Ono, Kouichi and
+             Krishnan, Saravanan and Sondhi, Devika and Satoh, Fumiko and Mitchell, Gerald and
+             Kumar, Sachin and Saha, Diptikalyan},
+  title   = {Automated Testing of {COBOL} to {Java} Transformation},
+  journal = {arXiv preprint arXiv:2504.10548},
+  doi     = {10.48550/arXiv.2504.10548},
+  year    = {2025}
+}
+
+% VERIFIED at arxiv.org/abs/2607.28271. QUOTED TERM used in the manuscript, confirmed
+% present on the abstract page: Locksmith Loop
+% Agentic witness search over mocked inputs, then deterministic parity checks between COBOL and
+% Java. Three programs of 430 to 4114 lines. Comments field: "11 pages, 6 figures".
+@article{ferenczi2026locksmith,
+  author  = {Ferenczi, Andras and Docherty, Jordan and Bessonov, Mariya and Findlay, Matthew and
+             Lingamneni, Krishna},
+  title   = {Agentic Method for Deterministic Validation of Legacy Code Migration},
+  journal = {arXiv preprint arXiv:2607.28271},
+  doi     = {10.48550/arXiv.2607.28271},
+  year    = {2026}
+}
+
+% VERIFIED: author list re-fetched from the ICSE 2026 SEIP programme page
+% (conf.researchr.org/details/icse-2026/icse-2026-software-engineering-in-practice/56/) and
+% corrected there against the byline shown on that page. Five of the eight names had been wrong:
+% Chakravarthy->Chakaravarthy, Choudhury/Anamitra R.->Roy Choudhury/Anamitra, Dhaval->Dinesh Garg,
+% Shivmaran S.->Shivmaran Pandian, Ashutosh->Aditya Raghuvanshi. The earlier note on this entry
+% asserted verification while recording only the paper's topic, which is how the names survived.
+% Content: hybrid pipeline of static program analysis plus LLMs, a component of IBM watsonx Code
+% Assistant for Z. The manuscript prints ONE factual claim from it: evaluation by an automated
+% LLM-as-judge on twenty GenAPP programs and ten customer apps. Re-verified against the IBM
+% Research publication page and the ICSE SEIP programme entry, which state the pipeline was
+% evaluated on 20 GenAPP programs and 10 proprietary customer applications with an LLM-as-Judge
+% framework. An earlier version of this note claimed the manuscript prints no number from this
+% entry, which was wrong in exactly the way a stale verification note is wrong.
+% DOI verified against the Crossref REST record itself: exact title, all eight family names,
+% container "Proceedings of the IEEE/ACM 48th ICSE: Software Engineering in Practice".
+% A DOI-title mismatch reported by an OpenAlex-backed checker is that index lagging; the
+% registrar record is the authority.
+@inproceedings{chakravarthy2026enterprise,
+  author    = {Chakaravarthy, Venkatesan and Roy Choudhury, Anamitra and Garg, Dinesh and
+               Kanvar, Vini and Pandian, Shivmaran and Raghuvanshi, Aditya and
+               Sabharwal, Yogish and Singhee, Amith},
+  title     = {Enterprise-Scale {COBOL}-to-{Java} Translation: {LLMs} Augmented with Program
+               Analysis},
+  booktitle = {Proceedings of the 48th International Conference on Software Engineering (ICSE),
+               Software Engineering in Practice},
+  doi       = {10.1145/3786583.3786915},
+  year      = {2026}
+}
+
+% VERIFIED at arxiv.org/abs/2505.09569. 5102 repositories with a curated subset of
+% 300; migration from Java 8 to Java 17 and 21.
+% VERIFIED via the Semantic Scholar Graph API resolving DOI 10.1145/3770855.3817526 (ACM DL
+% itself returned HTTP 403, same failure as kumar2024validation above): venue "Proceedings of
+% the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2", year 2025,
+% matching the year already on this entry. Cites the archival venue.
+@inproceedings{liu2025migrationbench,
+  author    = {Liu, Linbo and Liu, Xinle and Zhou, Qiang and Chen, Lin and Liu, Yihan and
+               Nguyen, Hoan and Omidvar-Tehrani, Behrooz and Shen, Xi and Huan, Jun and
+               Tripp, Omer and Deoras, Anoop},
+  title     = {{MigrationBench}: Repository-Level Code Migration Benchmark from {Java} 8},
+  booktitle = {Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data
+               Mining V.2 (KDD)},
+  year      = {2025},
+  doi       = {10.1145/3770855.3817526}
+}
+
+% VERIFIED at arxiv.org/abs/2605.02195. 6164 translations, five languages, three
+% benchmarks; reported failures inflated by evaluation-induced errors from compilation flags,
+% missing library links and unconfigured runtimes. Mirror image of the present paper: false
+% failures there, false passes here.
+@article{rabbi2026beyond,
+  author  = {Rabbi, Fazle and Saha, Soumit Kanti and Yang, Jinqiu},
+  title   = {Beyond Translation Accuracy: Addressing False Failures in {LLM}-Based Code
+             Translation},
+  journal = {arXiv preprint arXiv:2605.02195},
+  year    = {2026},
+  doi     = {10.1145/3805760.3814890}
+}
+
+% VERIFIED at arxiv.org/abs/2607.22883. Buggy code makes an LLM assert the erroneous
+% behaviour and suppresses bug-finding tests. Concerns the ORACLE VALUE, which the present design
+% removes by construction by executing the source for expected values.
+% VERIFIED at arxiv.org/abs/2607.22883, Comments field: "Accepted at ISSTA 2026; to
+% appear in Proceedings of the ACM on Software Engineering (PACMSE), Vol. 3, No. ISSTA, Article
+% ISSTA113." Cites the accepted venue rather than the arXiv preprint.
+@article{zhao2026misguidance,
+  author    = {Zhao, Junda and Zhou, Shurui and Cohen, Eldan},
+  title     = {Evaluating and Mitigating the Misguidance Effect of Buggy Code in {LLM}-Generated
+               Unit Tests},
+  journal   = {Proceedings of the ACM on Software Engineering (PACMSE)},
+  volume    = {3},
+  number    = {ISSTA},
+  articleno = {ISSTA113},
+  year      = {2026}
+}
+
+% VERIFIED at arxiv.org/abs/2408.10495, and RE-FETCHED separately to confirm the
+% wording character for character. QUOTED SENTENCE, present verbatim in the abstract:
+% both perform poorly when repairing self-produced code, indicating self-repair `blind spots'
+% The abstract reads: "GPT-3.5 and GPT-4 can achieve 33.2%~59.6% success rates in repairing the
+% insecure code produced by the 4 LLMs, but they both perform poorly when repairing self-produced
+% code, indicating self-repair "blind spots"."
+% VERIFIED at dl.acm.org/doi/10.1145/3756681.3756984 and the EASE 2025 programme
+% (conf.researchr.org/details/ease-2025). Cites the archival venue rather than the arXiv
+% preprint (arXiv:2408.10495).
+@inproceedings{gong2024secure,
+  author    = {Gong, Jianian and Duan, Nachuan and Tao, Ziheng and Gong, Zhaohui and Yuan, Yuan and
+               Huang, Minlie},
+  title     = {How Well Do Large Language Models Serve as End-to-End Secure Code Agents for
+               {Python}?},
+  booktitle = {Proceedings of the 29th International Conference on Evaluation and Assessment
+               in Software Engineering (EASE)},
+  year      = {2025},
+  doi       = {10.1145/3756681.3756984}
+}
+
+% VERIFIED at arxiv.org/abs/2305.01210, RE-FETCHED: the abstract says pass-at-k is reduced
+% by UP TO 19.3-28.9 percent (an upper bound over models and benchmarks, not the drop);
+% an earlier version of this note omitted the bound and the manuscript inherited the
+% omission for several rounds. Extends HumanEval's tests by 80x to build HumanEval+.
+@article{liu2023evalplus,
+  author  = {Liu, Jiawei and Xia, Chunqiu Steven and Wang, Yuyao and Zhang, Lingming},
+  title   = {Is Your Code Generated by {ChatGPT} Really Correct? Rigorous Evaluation of Large
+             Language Models for Code Generation},
+  journal = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year    = {2023}
+}
+
+% VERIFIED at arxiv.org/abs/2107.03374. Introduces HumanEval.
+@article{chen2021codex,
+  author  = {Chen, Mark and Tworek, Jerry and Jun, Heewoo and Yuan, Qiming and
+             Pinto, Henrique Ponde de Oliveira and Kaplan, Jared and others},
+  title   = {Evaluating Large Language Models Trained on Code},
+  journal = {arXiv preprint arXiv:2107.03374},
+  doi     = {10.48550/arXiv.2107.03374},
+  year    = {2021}
+}
+
+% VERIFIED at arxiv.org/abs/2308.07124. Introduces HumanEvalPack, extending HumanEval
+% to three tasks across six languages: Python, JavaScript, Java, Go, C++, Rust.
+% VERIFIED via openreview.net (ICLR 2024 Spotlight) and proceedings.iclr.cc, which
+% hosts the camera-ready. Cites the archival venue rather than the arXiv preprint
+% (arXiv:2308.07124).
+@inproceedings{muennighoff2024octopack,
+  author    = {Muennighoff, Niklas and Liu, Qian and Zebaze, Armel and Zheng, Qinkai and
+               Hui, Binyuan and Zhuo, Terry Yue and Singh, Swayam and Tang, Xiangru and
+               von Werra, Leandro and Longpre, Shayne},
+  title     = {{OctoPack}: Instruction Tuning Code Large Language Models},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024}
+}
+
+% VERIFIED at arxiv.org/abs/2108.11590. 9515 problems in Java and Python, with unit
+% tests for only 250 of them: the test-availability asymmetry this paper builds on.
+% VERIFIED at aclanthology.org/2023.findings-acl.143/. Published at Findings of ACL
+% 2023 (arXiv:2108.11590 is the preprint of the same work); cites the archival venue.
+@inproceedings{ahmad2021avatar,
+  author    = {Ahmad, Wasi Uddin and Tushar, Md Golam Rahman and Chakraborty, Saikat and
+               Chang, Kai-Wei},
+  title     = {{AVATAR}: A Parallel Corpus for {Java}-{Python} Program Translation},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2023},
+  year      = {2023},
+  pages     = {2268--2281},
+  doi       = {10.18653/v1/2023.findings-acl.143}
+}
+
+% VERIFIED: title, authors, journal, volume and DOI confirmed via the Wiley landing
+% page and the Semantic Scholar record. WARNING: full text is paywalled (HTTP 402), so NO numeric
+% result from this paper is quoted anywhere in the manuscript. Concerns code GENERATION
+% benchmarks, not migration validation.
+@article{liu2025adequacy,
+  author  = {Liu, Xiangyue and Sun, Xiaobing and Bo, Lili and Hu, Yufei and Liu, Xinwei and
+             Ye, Zhenlei},
+  title   = {Evaluating the Test Adequacy of Benchmarks for {LLMs} on Code Generation},
+  journal = {Journal of Software: Evolution and Process},
+  volume  = {37},
+  year    = {2025},
+  doi     = {10.1002/smr.70034}
+}
+
+% VERIFIED at aism25.github.io/aism25, the AISM 2025 programme. IBM Research.
+@inproceedings{fandina2025vintage,
+  author    = {Fandina, Ora and Amram, Gal and Farchi, Eitan and Froimovich, Shmulik and
+               Gal, Raviv and Ibraheem, Wesam and Katan, Rami and Podolsky, Alice and Raz, Orna},
+  title     = {Vintage Code, Modern Judges: Meta-Validation in Low Data Regimes},
+  booktitle = {Proceedings of the 1st International Workshop on AI for Software Modernization
+               (AISM)},
+  doi       = {10.1109/ASEW67777.2025.00015},
+  year      = {2025}
+}
+
+% VERIFIED at aism25.github.io/aism25, the AISM 2025 programme. Tata Consultancy
+% Services.
+@inproceedings{rajbhoj2025cobol,
+  author    = {Rajbhoj, Asha and Somase, Akanksha and Sant, Tanay and Pathan, Ajim and
+               Doud, Purvesh and Kulkarni, Vinay},
+  title     = {Leveraging {LLM} for Software Modernization: {COBOL} Functionality Extraction Case
+               Study},
+  booktitle = {Proceedings of the 1st International Workshop on AI for Software Modernization
+               (AISM)},
+  doi       = {10.1109/ASEW67777.2025.00012},
+  year      = {2025}
+}
+
+% VERIFIED at aism25.github.io/aism25, the AISM 2025 programme. JP Morgan.
+@inproceedings{tawosi2025dependency,
+  author    = {Tawosi, Vali and Alamir, Salwa and Liu, Xiaomo and Veloso, Manuela},
+  title     = {{LLM} Agents for Automated Dependency Upgrades},
+  booktitle = {Proceedings of the 1st International Workshop on AI for Software Modernization
+               (AISM)},
+  doi       = {10.1109/ASEW67777.2025.00016},
+  year      = {2025}
+}
+
+% RETIRED-QUOTE: (none yet)

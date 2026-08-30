@@ -1,0 +1,24 @@
+{
+ "n_cells": 854,
+ "fixed_effects": {
+  "self_logit_coef": -0.10766298663718986,
+  "self_odds_ratio": 0.8979301599063626,
+  "ci_logit": [
+   -0.37883573687168376,
+   0.13345981232098428
+  ],
+  "ci_odds_ratio": [
+   0.684658067505929,
+   1.1427753397237377
+  ],
+  "p_cluster_bootstrap": 0.376,
+  "n_boot": 2000
+ },
+ "gee_logistic": {
+  "self_coef": -0.11966460765025473,
+  "self_odds_ratio": 0.8872179529360081,
+  "self_se": 0.11231192685894781,
+  "self_p": 0.28666482905029167,
+  "note": "logistic GEE, exchangeable working correlation, clustered on problem"
+ }
+}

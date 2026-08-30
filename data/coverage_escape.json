@@ -1,0 +1,7 @@
+{
+ "n_escapes_analysed": 130,
+ "n_trace_failed": 5,
+ "covered_path_escapes": 112,
+ "uncovered_path_escapes": 18,
+ "share_on_already_covered_paths": 0.8615384615384616
+}
